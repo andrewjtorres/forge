@@ -1,0 +1,28 @@
+{
+  "projectName": "forge",
+  "projectOwner": "ajtorres9",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "readme.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "badgeTemplate": "\n[![All Contributors](https://flat.badgen.net/badge/all%20contributors/<%= contributors.length %>/orange)](#contributors)",
+  "contributors": [
+    {
+      "login": "ajtorres9",
+      "name": "Andrew Torres",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/450495?v=4",
+      "profile": "https://andrewjtorr.es",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "infra"
+      ]
+    }
+  ]
+}
