@@ -1,5 +1,6 @@
 mod api;
 mod config;
+mod database;
 mod routes;
 
 use actix_web::{middleware::Logger, App, HttpServer};
@@ -7,6 +8,7 @@ use dotenv;
 use std::{env, io::Result, sync::Arc};
 
 use config::Config;
+use database::pool;
 
 #[actix_rt::main]
 async fn main() -> Result<()> {
@@ -15,11 +17,17 @@ async fn main() -> Result<()> {
     dotenv::dotenv().ok();
     env_logger::init();
 
-    let Config { host, port, .. } = Config::parse();
+    let Config {
+        database_url,
+        host,
+        port,
+        ..
+    } = Config::parse();
     let schema = Arc::new(api::schema::create());
 
     let server = HttpServer::new(move || {
         App::new()
+            .data(pool::connect(database_url.as_str()))
             .data(schema.clone())
             .wrap(Logger::default())
             .configure(routes::configure)

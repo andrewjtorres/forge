@@ -9,7 +9,7 @@ readme = "readme.md"
 homepage = "https://github.com/ajtorres9/forge#readme"
 repository = "https://github.com/ajtorres9/forge/tree/master/packages/server"
 license = "MIT"
-keywords = ["graphql", "rust", "web-server"]
+keywords = ["graphql", "postgresql", "rust", "web-server"]
 publish = false
 
 [dependencies]
@@ -18,8 +18,15 @@ dotenv = "^0.15.0"
 env_logger = "^0.7.1"
 juniper = "^0.14.2"
 log = "^0.4.8"
+r2d2 = "^0.8.8"
+serde_json = "^1.0.48"
 structopt = "^0.3.11"
 
 [dependencies.actix-web]
 version = "^2.0.0"
 default-features = false
+
+[dependencies.diesel]
+version = "^1.4.3"
+default-features = false
+features = ["postgres", "r2d2"]

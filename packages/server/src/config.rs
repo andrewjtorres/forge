@@ -2,6 +2,10 @@ use structopt::StructOpt;
 
 #[derive(Debug, StructOpt)]
 pub struct Config {
+    /// Database URL to connect to
+    #[structopt(env, long)]
+    pub database_url: String,
+
     /// Port number to listen for requests on
     #[structopt(default_value = "8080", env, long, short)]
     pub port: u16,

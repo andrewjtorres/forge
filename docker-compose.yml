@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  database:
+    image: postgres:11.7-alpine
+    environment:
+      POSTGRES_DB: forge
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: amnesia_fletch_soonest_baruch_syphilis_windbag
+    command: postgres -c max_connections=256 -c shared_buffers=256MB
+    ports:
+      - 5432:5432
+    restart: always
