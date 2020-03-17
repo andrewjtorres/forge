@@ -1,15 +1,12 @@
+mod api;
 mod config;
+mod routes;
 
-use actix_web::{middleware::Logger, App, HttpResponse, HttpServer};
+use actix_web::{middleware::Logger, App, HttpServer};
 use dotenv;
-use std::{env, io::Result};
+use std::{env, io::Result, sync::Arc};
 
 use config::Config;
-
-#[actix_web::get("/")]
-async fn index() -> HttpResponse {
-    HttpResponse::Ok().body("Hello world!")
-}
 
 #[actix_rt::main]
 async fn main() -> Result<()> {
@@ -18,16 +15,14 @@ async fn main() -> Result<()> {
     dotenv::dotenv().ok();
     env_logger::init();
 
-    let Config {
-        host,
-        port,
-        ..
-    } = Config::parse();
+    let Config { host, port, .. } = Config::parse();
+    let schema = Arc::new(api::schema::create());
 
     let server = HttpServer::new(move || {
         App::new()
+            .data(schema.clone())
             .wrap(Logger::default())
-            .service(index)
+            .configure(routes::configure)
     })
     .bind((host.as_str(), port))?
     .run();

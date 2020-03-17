@@ -9,13 +9,14 @@ readme = "readme.md"
 homepage = "https://github.com/ajtorres9/forge#readme"
 repository = "https://github.com/ajtorres9/forge/tree/master/packages/server"
 license = "MIT"
-keywords = ["rust", "web-server"]
+keywords = ["graphql", "rust", "web-server"]
 publish = false
 
 [dependencies]
 actix-rt = "^1.0.0"
 dotenv = "^0.15.0"
 env_logger = "^0.7.1"
+juniper = "^0.14.2"
 log = "^0.4.8"
 structopt = "^0.3.11"
 
