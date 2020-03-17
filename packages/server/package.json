@@ -1,0 +1,47 @@
+{
+  "name": "@forge/server",
+  "version": "0.1.0",
+  "description": "The web server in charge of orchestrating business logic interactions",
+  "keywords": [
+    "rust",
+    "web-server"
+  ],
+  "homepage": "https://github.com/ajtorres9/forge#readme",
+  "bugs": "https://github.com/ajtorres9/forge/issues",
+  "license": "MIT",
+  "author": "Andrew Torres <andrew.jonathan.torres@gmail.com> (https://andrewjtorr.es)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajtorres9/forge.git",
+    "directory": "packages/forge"
+  },
+  "scripts": {
+    "hook:pre-commit": "lint-staged",
+    "lint": "npm-run-all --parallel \"lint:*\"",
+    "lint:files": "prettylint --ignore-path .gitignore \"**/*.{json,md,toml}\"",
+    "lint:scripts": "cargo fmt",
+    "lint:types": "cargo clippy",
+    "start": "cargo run",
+    "test": "npm-run-all --parallel \"test:*\"",
+    "test:units": "cargo test"
+  },
+  "devDependencies": {
+    "lint-staged": "^10.0.8",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "prettylint": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=12.16",
+    "yarn": ">=1.22"
+  },
+  "private": true,
+  "lint-staged": {
+    "*.{json,md,toml}": [
+      "prettylint --fix"
+    ],
+    "*.rs": [
+      "cargo fmt --"
+    ]
+  }
+}

@@ -149,6 +149,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@forge/server@workspace:packages/server":
+  version: 0.0.0-use.local
+  resolution: "@forge/server@workspace:packages/server"
+  dependencies:
+    lint-staged: ^10.0.8
+    npm-run-all: ^4.1.5
+    prettier: ^1.19.1
+    prettylint: ^1.0.0
+  languageName: unknown
+  linkType: soft
+
 "@lerna/add@npm:3.20.0":
   version: 3.20.0
   resolution: "@lerna/add@npm:3.20.0"
@@ -1091,6 +1102,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@toml-tools/lexer@npm:*, @toml-tools/lexer@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@toml-tools/lexer@npm:0.3.1"
+  dependencies:
+    chevrotain: 4.1.1
+  checksum: 3de6f8bd04e2a965d767c07a44c7671a290aa5b409fda69a03f60cfce1cf4ee999dfa120c40f5e63465a1c664d85c59cf2395718f5ceeb3f967f01c5dde1c1cd
+  languageName: node
+  linkType: hard
+
+"@toml-tools/parser@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@toml-tools/parser@npm:0.3.1"
+  dependencies:
+    "@toml-tools/lexer": ^0.3.1
+    chevrotain: 4.1.1
+  checksum: a8cdf1b8c102d2ab34c65baac31f4ccc2dd96f99a2ebbeb92817419fe042c5244b0771dd69e3d7277ab8896fcb261573ff92ba0d1828fe4df5047b6796baa4ad
+  languageName: node
+  linkType: hard
+
 "@types/color-name@npm:^1.1.1":
   version: 1.1.1
   resolution: "@types/color-name@npm:1.1.1"
@@ -1753,6 +1783,15 @@ __metadata:
   version: 0.7.0
   resolution: "chardet@npm:0.7.0"
   checksum: b497a0273e473369bbeaa256b0bbbb6a0d093e082eb500c18eca196a9bd662361e7388ba2b11ef7a44f4466faccbcfe811967eec3e770d7239f50d1d452fb329
+  languageName: node
+  linkType: hard
+
+"chevrotain@npm:4.1.1":
+  version: 4.1.1
+  resolution: "chevrotain@npm:4.1.1"
+  dependencies:
+    regexp-to-ast: 0.3.5
+  checksum: fe758aa0ec1394fa4e5b35298d0ff39b9ba57b50b2bc34a9bdddcb19f1fae92791f3d480f40789e3440c193981cb855a1b6b8664b7641fd673489272c91f69f8
   languageName: node
   linkType: hard
 
@@ -3006,6 +3045,7 @@ __metadata:
     lint-staged: ^10.0.8
     npm-run-all: ^4.1.5
     prettier: ^1.19.1
+    prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
     rxjs: ^6.5.4
   dependenciesMeta:
@@ -5760,7 +5800,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^1.19.1":
+"prettier-plugin-toml@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "prettier-plugin-toml@npm:0.3.1"
+  dependencies:
+    "@toml-tools/parser": ^0.3.1
+    prettier: ^1.16.0
+  checksum: 2ce41487b0f7e86c626475dd5fed0049d8b457b4dba8cbbd86ff5fe178e79966326498ec1de514eb9382e403bfa32b1706db81039ee329fd58e4c28bac4a3b75
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^1.16.0, prettier@npm:^1.19.1":
   version: 1.19.1
   resolution: "prettier@npm:1.19.1"
   bin:
@@ -6085,6 +6135,13 @@ __metadata:
     extend-shallow: ^3.0.2
     safe-regex: ^1.1.0
   checksum: 0be0f572ae86579904058db2285ad91029020fc554ee4695781dc4805a02e643b90adc31669b7fa72872977b4e02abfc7f90c6ebf429c02131e010e0ca7779d9
+  languageName: node
+  linkType: hard
+
+"regexp-to-ast@npm:0.3.5":
+  version: 0.3.5
+  resolution: "regexp-to-ast@npm:0.3.5"
+  checksum: 81e8f086956d54fc77252f279628b4a1c27314b30d92d820102be9cb1228dafed2e01d28169c04e3f7b3ca2194bb8533f4d3df646eee23fa5eecc54be6d1f320
   languageName: node
   linkType: hard
 

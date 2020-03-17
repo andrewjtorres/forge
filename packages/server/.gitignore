@@ -1,0 +1,6 @@
+# Dependencies
+target
+
+# Miscellaneous
+.env*
+!.env.example

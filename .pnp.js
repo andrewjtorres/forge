@@ -21,11 +21,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "forge",
         "reference": "workspace:."
+      },
+      {
+        "name": "@forge/server",
+        "reference": "workspace:packages/server"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.vscode\\/pnpify(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
+      ["@forge/server", ["workspace:packages/server"]],
       ["forge", ["workspace:."]]
     ],
     "locationBlacklistData": [
@@ -97,6 +102,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       62,
       60,
       58,
+      18,
       2
     ],
     "packageRegistryData": [
@@ -110,6 +116,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:10.0.8"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:1.19.1"],
+            ["prettier-plugin-toml", "npm:0.3.1"],
             ["prettylint", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0"],
             ["rxjs", "npm:6.5.4"]
           ],
@@ -270,6 +277,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["which", "npm:1.3.1"]
           ],
           "linkType": "HARD"
+        }]
+      ]],
+      ["@forge/server", [
+        ["workspace:packages/server", {
+          "packageLocation": "./packages/server/",
+          "packageDependencies": [
+            ["@forge/server", "workspace:packages/server"],
+            ["lint-staged", "npm:10.0.8"],
+            ["npm-run-all", "npm:4.1.5"],
+            ["prettier", "npm:1.19.1"],
+            ["prettylint", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0"]
+          ],
+          "linkType": "SOFT"
         }]
       ]],
       ["@lerna/add", [
@@ -1291,6 +1311,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"
         }]
       ]],
+      ["@toml-tools/lexer", [
+        ["npm:0.3.1", {
+          "packageLocation": "./.yarn/cache/@toml-tools-lexer-npm-0.3.1-fb17e55dd3-1.zip/node_modules/@toml-tools/lexer/",
+          "packageDependencies": [
+            ["@toml-tools/lexer", "npm:0.3.1"],
+            ["chevrotain", "npm:4.1.1"]
+          ],
+          "linkType": "HARD"
+        }]
+      ]],
+      ["@toml-tools/parser", [
+        ["npm:0.3.1", {
+          "packageLocation": "./.yarn/cache/@toml-tools-parser-npm-0.3.1-92339187a3-1.zip/node_modules/@toml-tools/parser/",
+          "packageDependencies": [
+            ["@toml-tools/parser", "npm:0.3.1"],
+            ["@toml-tools/lexer", "npm:0.3.1"],
+            ["chevrotain", "npm:4.1.1"]
+          ],
+          "linkType": "HARD"
+        }]
+      ]],
       ["@types/color-name", [
         ["npm:1.1.1", {
           "packageLocation": "./.yarn/cache/@types-color-name-npm-1.1.1-00b0925070-1.zip/node_modules/@types/color-name/",
@@ -2048,6 +2089,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/chardet-npm-0.7.0-27933dd6c7-1.zip/node_modules/chardet/",
           "packageDependencies": [
             ["chardet", "npm:0.7.0"]
+          ],
+          "linkType": "HARD"
+        }]
+      ]],
+      ["chevrotain", [
+        ["npm:4.1.1", {
+          "packageLocation": "./.yarn/cache/chevrotain-npm-4.1.1-efb4d0cd87-1.zip/node_modules/chevrotain/",
+          "packageDependencies": [
+            ["chevrotain", "npm:4.1.1"],
+            ["regexp-to-ast", "npm:0.3.5"]
           ],
           "linkType": "HARD"
         }]
@@ -3421,6 +3472,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:10.0.8"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:1.19.1"],
+            ["prettier-plugin-toml", "npm:0.3.1"],
             ["prettylint", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0"],
             ["rxjs", "npm:6.5.4"]
           ],
@@ -6460,6 +6512,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"
         }]
       ]],
+      ["prettier-plugin-toml", [
+        ["npm:0.3.1", {
+          "packageLocation": "./.yarn/cache/prettier-plugin-toml-npm-0.3.1-a4a923f5b6-1.zip/node_modules/prettier-plugin-toml/",
+          "packageDependencies": [
+            ["prettier-plugin-toml", "npm:0.3.1"],
+            ["@toml-tools/lexer", "npm:0.3.1"],
+            ["@toml-tools/parser", "npm:0.3.1"],
+            ["prettier", "npm:1.19.1"]
+          ],
+          "linkType": "HARD"
+        }]
+      ]],
       ["prettylint", [
         ["virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0", {
           "packageLocation": "./.yarn/$$virtual/prettylint-virtual-8096d64bd4/0/cache/prettylint-npm-1.0.0-a842502f9a-1.zip/node_modules/prettylint/",
@@ -6804,6 +6868,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["regex-not", "npm:1.0.2"],
             ["extend-shallow", "npm:3.0.2"],
             ["safe-regex", "npm:1.1.0"]
+          ],
+          "linkType": "HARD"
+        }]
+      ]],
+      ["regexp-to-ast", [
+        ["npm:0.3.5", {
+          "packageLocation": "./.yarn/cache/regexp-to-ast-npm-0.3.5-58e437ff63-1.zip/node_modules/regexp-to-ast/",
+          "packageDependencies": [
+            ["regexp-to-ast", "npm:0.3.5"]
           ],
           "linkType": "HARD"
         }]
