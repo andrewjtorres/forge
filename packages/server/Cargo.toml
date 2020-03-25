@@ -27,6 +27,6 @@ version = "^2.0.0"
 default-features = false
 
 [dependencies.diesel]
-version = "^1.4.3"
+version = "^1.4.4"
 default-features = false
 features = ["postgres", "r2d2"]
