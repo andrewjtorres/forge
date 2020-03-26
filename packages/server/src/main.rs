@@ -1,6 +1,10 @@
+#[macro_use]
+extern crate diesel;
+
 mod api;
 mod config;
 mod database;
+mod models;
 mod routes;
 
 use actix_web::{middleware::Logger, App, HttpServer};
