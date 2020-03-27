@@ -7,12 +7,12 @@ mod database;
 mod models;
 mod routes;
 
-use actix_web::{middleware::Logger, App, HttpServer};
+use actix_rt;
+use actix_web::{middleware::Logger, web::Data, App, HttpServer};
 use dotenv;
 use std::{env, io::Result, sync::Arc};
 
 use config::Config;
-use database::pool;
 
 #[actix_rt::main]
 async fn main() -> Result<()> {
@@ -27,11 +27,12 @@ async fn main() -> Result<()> {
         port,
         ..
     } = Config::parse();
+    let pool = Data::new(database::pool::connect(database_url.as_str()));
     let schema = Arc::new(api::schema::create());
 
     let server = HttpServer::new(move || {
         App::new()
-            .data(pool::connect(database_url.as_str()))
+            .app_data(pool.clone())
             .data(schema.clone())
             .wrap(Logger::default())
             .configure(routes::configure)
