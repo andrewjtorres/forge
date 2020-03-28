@@ -446,9 +446,9 @@ checksum = "6ff9c56c9fb2a49c05ef0e431485a22400af20d33226dc0764d891d09e724127"
 
 [[package]]
 name = "derive_more"
-version = "0.99.3"
+version = "0.99.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a806e96c59a76a5ba6e18735b6cf833344671e61e7863f2edb5c518ea2cac95c"
+checksum = "71384e8785f24a1754e9c7be805f5e5ca3a2663c6bd49ed7090b4941085de42c"
 dependencies = [
  "proc-macro2",
  "quote",
