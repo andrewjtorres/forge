@@ -42,9 +42,9 @@ jobs:
       - name: Install Rust and Cargo
         uses: actions-rs/toolchain@v1.0.6
         with:
+          toolchain: nightly
           profile: minimal
           components: clippy, rustfmt
-        working-directory: packages/server
   #     - name: Restore Cargo cache
   #       uses: actions/cache@v1.1.2
   #       with:
