@@ -26,8 +26,6 @@ jobs:
   server_static_analysis:
     name: Server Static Analysis
     runs-on: ubuntu-18.04
-    env:
-      CARGO_HOME: .cargo
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
