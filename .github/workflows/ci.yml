@@ -50,32 +50,42 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/bin
-          key: ${{ runner.os }}-server-cargo-executables-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-cargo-executables-
+          key: ${{ runner.os }}-server-cargo-executables-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-server-cargo-executables-${{ github.ref }}-
+            ${{ runner.os }}-server-cargo-executables-
       - name: Restore Cargo git repositories
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/git/db
-          key: ${{ runner.os }}-server-cargo-git-repositories-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-cargo-git-repositories-
+          key: ${{ runner.os }}-server-cargo-git-repositories-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-server-cargo-git-repositories-${{ github.ref }}-
+            ${{ runner.os }}-server-cargo-git-repositories-
       - name: Restore Cargo cache
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/cache
-          key: ${{ runner.os }}-server-cargo-cache-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-cargo-cache-
+          key: ${{ runner.os }}-server-cargo-cache-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-server-cargo-cache-${{ github.ref }}-
+            ${{ runner.os }}-server-cargo-cache-
       - name: Restore Cargo metadata
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/index
-          key: ${{ runner.os }}-server-cargo-metadata-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-cargo-metadata-
+          key: ${{ runner.os }}-server-cargo-metadata-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-server-cargo-metadata-${{ github.ref }}-
+            ${{ runner.os }}-server-cargo-metadata-
       - name: Restore Cargo artifacts
         uses: actions/cache@v1.1.2
         with:
           path: packages/server/target
-          key: ${{ runner.os }}-server-cargo-artifacts-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-cargo-artifacts-
+          key: ${{ runner.os }}-server-cargo-artifacts-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-server-cargo-artifacts-${{ github.ref }}-
+            ${{ runner.os }}-server-cargo-artifacts-
       - name: Install Rust dependencies
         run: rustup component add clippy rustfmt
         working-directory: packages/server
@@ -109,38 +119,51 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/bin
-          key: ${{ runner.os }}-server-cargo-executables-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-cargo-executables-
+          key: ${{ runner.os }}-server-cargo-executables-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-server-cargo-executables-${{ github.ref }}-
+            ${{ runner.os }}-server-cargo-executables-
       - name: Restore Cargo git repositories
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/git/db
-          key: ${{ runner.os }}-server-cargo-git-repositories-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-cargo-git-repositories-
+          key: ${{ runner.os }}-server-cargo-git-repositories-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-server-cargo-git-repositories-${{ github.ref }}-
+            ${{ runner.os }}-server-cargo-git-repositories-
       - name: Restore Cargo cache
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/cache
-          key: ${{ runner.os }}-server-cargo-cache-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-cargo-cache-
+          key: ${{ runner.os }}-server-cargo-cache-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-server-cargo-cache-${{ github.ref }}-
+            ${{ runner.os }}-server-cargo-cache-
       - name: Restore Cargo metadata
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/index
-          key: ${{ runner.os }}-server-cargo-metadata-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-cargo-metadata-
+          key: ${{ runner.os }}-server-cargo-metadata-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-server-cargo-metadata-${{ github.ref }}-
+            ${{ runner.os }}-server-cargo-metadata-
       - name: Restore Cargo artifacts
         uses: actions/cache@v1.1.2
         with:
           path: packages/server/target
-          key: ${{ runner.os }}-server-cargo-artifacts-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-cargo-artifacts-
+          key: ${{ runner.os }}-server-cargo-artifacts-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-server-cargo-artifacts-${{ github.ref }}-
+            ${{ runner.os }}-server-cargo-artifacts-
       - name: Install Rust dependencies
         run: cargo install grcov
         working-directory: packages/server
       - name: Test units
         run: yarn test:units
         working-directory: packages/server
+      # - name: Generate code coverage results
+      #   run: grcov --branch --ignore "/*" --ignore-not-existing --llvm --output-file lcov.info --source-dir . target
+      #   working-directory: packages/server
       # - name: Publish code coverage results
       #   uses: codecov/codecov-action@v1.0.6
       #   with:
