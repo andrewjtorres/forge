@@ -47,7 +47,6 @@ jobs:
           default: true
           profile: minimal
 
-      - run: chown --recursive $(whoami):$(id --group --name) ~/.cargo/{bin,git/db,registry/{cache,index}}
       - run: sudo chown --recursive $(whoami):$(id --group --name) ~/.cargo/{bin,git/db,registry/{cache,index}}
       - run: ls -ahl ~/.cargo/{bin,git/db,registry/{cache,index}}
       - run: sudo ls -ahl ~/.cargo/{bin,git/db,registry/{cache,index}}
