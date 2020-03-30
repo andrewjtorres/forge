@@ -166,7 +166,9 @@ jobs:
         run: yarn test:units
         working-directory: packages/server
       - name: Generate code coverage report
-        run: grcov --branch --ignore '/*' --ignore-not-existing --llvm --output-file coverage/lcov.info --source-dir . target
+        run: |
+          mkdir coverage
+          grcov --branch --ignore '/*' --ignore-not-existing --llvm --output-file coverage/lcov.info --source-dir . target
         working-directory: packages/server
       - name: Publish code coverage report
         uses: codecov/codecov-action@v1.0.6
