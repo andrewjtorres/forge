@@ -40,16 +40,15 @@ jobs:
       - name: Install Rust and Cargo
         uses: actions-rs/toolchain@v1.0.6
         with:
-          toolchain: nightly
+          toolchain: nightly-2020-03-19
           profile: minimal
-          components: clippy, rustfmt
-  #     - name: Restore Cargo cache
-  #       uses: actions/cache@v1.1.2
-  #       with:
-  #         path: $CARGO_HOME/bin
-  #         key: ${{ runner.os }}-server-cargo-cache-${{ hashFiles('**/Cargo.lock') }}
-  #         restore-keys: ${{ runner.os }}-cargo-cache-
-  #       working-directory: packages/server
+      # - name: Restore Cargo cache
+      #   uses: actions/cache@v1.1.2
+      #   with:
+      #     path: ~/.cargo/bin
+      #     key: ${{ runner.os }}-server-cargo-cache-${{ hashFiles('**/Cargo.lock') }}
+      #     restore-keys: ${{ runner.os }}-cargo-cache-
+      #   working-directory: packages/server
   #     - name: Restore Cargo cache
   #       uses: actions/cache@v1.1.2
   #       with:
