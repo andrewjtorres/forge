@@ -166,12 +166,12 @@ jobs:
         run: yarn test:units
         working-directory: packages/server
       - name: Generate code coverage report
-        run: grcov --branch --ignore '/*' --ignore-not-existing --llvm --output-file lcov.info --source-dir . target
+        run: grcov --branch --ignore '/*' --ignore-not-existing --llvm --output-file coverage/lcov.info --source-dir . target
         working-directory: packages/server
       - name: Publish code coverage report
         uses: codecov/codecov-action@v1.0.6
         with:
-          file: packages/server/lcov.info
+          file: packages/server/coverage/lcov.info
           flags: server
       - name: Cleanup Cargo cache
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server*,examples,incremental,.cargo-lock,server{,.d}},.rustc_info.json}

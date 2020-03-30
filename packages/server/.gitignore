@@ -1,5 +1,8 @@
-# Dependencies
+# Artifacts and Compiled Output
 target
+
+# Test and Code Coverage
+coverage
 
 # Miscellaneous
 .env*
