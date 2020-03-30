@@ -42,13 +42,13 @@ jobs:
         with:
           toolchain: nightly-2020-03-19
           profile: minimal
-      # - name: Restore Cargo cache
-      #   uses: actions/cache@v1.1.2
-      #   with:
-      #     path: ~/.cargo/bin
-      #     key: ${{ runner.os }}-server-cargo-cache-${{ hashFiles('**/Cargo.lock') }}
-      #     restore-keys: ${{ runner.os }}-cargo-cache-
-      #   working-directory: packages/server
+      - name: Restore crate executables
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.cargo/bin
+          key: ${{ runner.os }}-server-crate-executables-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-server-crate-executables-
+        working-directory: packages/server
   #     - name: Restore Cargo cache
   #       uses: actions/cache@v1.1.2
   #       with:
