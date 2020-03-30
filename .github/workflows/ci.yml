@@ -42,34 +42,30 @@ jobs:
         with:
           toolchain: nightly-2020-03-19
           profile: minimal
-      - name: Restore crate executables
+      - name: Restore Cargo executables
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/bin
-          key: ${{ runner.os }}-server-crate-executables-${{ hashFiles('**/Cargo.lock') }}
-          restore-keys: ${{ runner.os }}-server-crate-executables-
-        working-directory: packages/server
-  #     - name: Restore Cargo cache
-  #       uses: actions/cache@v1.1.2
-  #       with:
-  #         path: $CARGO_HOME/git/db
-  #         key: ${{ runner.os }}-server-cargo-cache-${{ hashFiles('**/Cargo.lock') }}
-  #         restore-keys: ${{ runner.os }}-cargo-cache-
-  #       working-directory: packages/server
-  #     - name: Restore Cargo cache
-  #       uses: actions/cache@v1.1.2
-  #       with:
-  #         path: $CARGO_HOME/registry/cache
-  #         key: ${{ runner.os }}-server-cargo-cache-${{ hashFiles('**/Cargo.lock') }}
-  #         restore-keys: ${{ runner.os }}-cargo-cache-
-  #       working-directory: packages/server
-  #     - name: Restore Cargo cache
-  #       uses: actions/cache@v1.1.2
-  #       with:
-  #         path: $CARGO_HOME/registry/index
-  #         key: ${{ runner.os }}-server-cargo-cache-${{ hashFiles('**/Cargo.lock') }}
-  #         restore-keys: ${{ runner.os }}-cargo-cache-
-  #       working-directory: packages/server
+          key: ${{ runner.os }}-server-cargo-executables-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-server-cargo-executables-
+      - name: Restore Cargo git repositories
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.cargo/git/db
+          key: ${{ runner.os }}-server-cargo-git-repositories-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-server-cargo-git-repositories-
+      - name: Restore Cargo cache
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.cargo/registry/cache
+          key: ${{ runner.os }}-server-cargo-cache-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-server-cargo-cache-
+      - name: Restore Cargo metadata
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.cargo/registry/index
+          key: ${{ runner.os }}-server-cargo-metadata-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-server-cargo-metadata-
   #     - name: Lint files, scripts, and types
   #       run: yarn lint
   #       working-directory: packages/server
