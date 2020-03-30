@@ -88,7 +88,6 @@ jobs:
           restore-keys: |
             server-cargo-artifacts-${{ github.ref }}-
             server-cargo-artifacts-
-
       - name: Install Rust dependencies
         run: rustup component add clippy rustfmt
         working-directory: packages/server
@@ -166,9 +165,10 @@ jobs:
       - name: Test units
         run: yarn test:units
         working-directory: packages/server
-      # - name: Generate code coverage results
-      #   run: grcov --branch --ignore "/*" --ignore-not-existing --llvm --output-file lcov.info --source-dir . target
-      #   working-directory: packages/server
+      - name: Generate code coverage results
+        run: grcov --branch --ignore "/*" --ignore-not-existing --llvm --output-file lcov.info --source-dir . target
+        working-directory: packages/server
+      - run: cat packages/server/lcov.info
       # - name: Publish code coverage results
       #   uses: codecov/codecov-action@v1.0.6
       #   with:
