@@ -92,8 +92,8 @@ jobs:
       - name: Lint files, scripts, and types
         run: yarn lint
         working-directory: packages/server
-      - run: ls -ahl packages/server/target
-      - run: ls -ahl packages/server/target/debug
+      - name: Cleanup Cargo cache
+        run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server*,examples,incremental,.cargo-lock,server{,.d}},.rustc_info.json}
   server_test:
     name: Server Test
     runs-on: ubuntu-18.04
@@ -162,9 +162,6 @@ jobs:
       - name: Install Rust dependencies
         run: cargo install grcov
         working-directory: packages/server
-      - name: Build
-        run: yarn build
-        working-directory: packages/server
       - name: Test units
         run: yarn test:units
         working-directory: packages/server
@@ -174,11 +171,7 @@ jobs:
       - name: Publish code coverage report
         uses: codecov/codecov-action@v1.0.6
         with:
+          file: packages/server/lcov.info
           flags: server
-      - run: ls -ahl packages/server/target
-      - run: ls -ahl packages/server/target/debug
-      # - name: Cleanup Cargo cache
-      #   run: |
-      #     rm --force --recursive packages/server/target/debug/{.fingerpint,deps}/server*
-      #     rm --force --recursive packages/server/target/debug/{examples,incremental,.cargo-lock}
-      #     rm --force --recursive packages/server/target/.rustc_info.json
+      - name: Cleanup Cargo cache
+        run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server*,examples,incremental,.cargo-lock,server{,.d}},.rustc_info.json}
