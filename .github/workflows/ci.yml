@@ -66,9 +66,11 @@ jobs:
           path: ~/.cargo/registry/index
           key: ${{ runner.os }}-server-cargo-metadata-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: ${{ runner.os }}-server-cargo-metadata-
-  #     - name: Lint files, scripts, and types
-  #       run: yarn lint
-  #       working-directory: packages/server
+      - name: Install Rust dependencies
+        run: cargo install clippy rustfmt
+      - name: Lint files, scripts, and types
+        run: yarn lint
+        working-directory: packages/server
   # server_test:
   #   name: Server Test
   #   runs-on: ubuntu-18.04
