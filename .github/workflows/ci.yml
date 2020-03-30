@@ -26,6 +26,9 @@ jobs:
   server_static_analysis:
     name: Server Static Analysis
     runs-on: ubuntu-18.04
+    env:
+      CARGO_INCREMENTAL: 0
+      RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
