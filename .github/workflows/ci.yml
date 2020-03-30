@@ -46,6 +46,11 @@ jobs:
           toolchain: nightly-2020-03-19
           default: true
           profile: minimal
+
+      - run: |
+          id --help
+          chown --help
+
       - name: Restore Cargo executables
         uses: actions/cache@v1.1.2
         with:
