@@ -47,7 +47,7 @@ jobs:
           default: true
           profile: minimal
 
-      - run: sudo chown -Rh $(whoami):$(id --group --name) ~/.cargo
+      - run: sudo chown -R $(whoami):$(id --group --name) ~/.cargo
       - run: ls -ahl ~/.cargo
       - run: ls -ahl /usr/share/rust/.cargo
 
