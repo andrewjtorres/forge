@@ -92,6 +92,8 @@ jobs:
       - name: Lint files, scripts, and types
         run: yarn lint
         working-directory: packages/server
+      - run: ls -ahl target
+      - run: ls -ahl target/debug
   server_test:
     name: Server Test
     runs-on: ubuntu-18.04
@@ -170,3 +172,11 @@ jobs:
         uses: codecov/codecov-action@v1.0.6
         with:
           flags: server
+      - run: ls -ahl target
+      - run: ls -ahl target/debug
+      # - find target/debug -type f -maxdepth 1 -delete
+      # - rm -rf target/.rustc_info.json
+      # - name: Cleanup Cargo cache
+      #   run: |
+      #     rm --force --recursive target/debug/{.fingerpint,deps}/server*
+      #     rm --force --recursive target/debug/{examples,incremental}
