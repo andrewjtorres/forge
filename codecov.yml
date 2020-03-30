@@ -1,0 +1,15 @@
+coverage:
+  status:
+    project:
+      default: false
+      server:
+        flags:
+          - server
+        paths:
+          - ^packages/server/.*
+comment:
+  require_changes: true
+flags:
+  server:
+    paths:
+      - ^packages/server/.*
