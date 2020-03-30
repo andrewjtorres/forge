@@ -66,7 +66,7 @@ jobs:
         with:
           toolchain: nightly-2020-03-19
           profile: minimal
-          components: clippy rustfmt
+          components: clippy, rustfmt
       - name: Lint files, scripts, and types
         run: yarn lint
         working-directory: packages/server
