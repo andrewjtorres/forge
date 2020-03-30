@@ -50,6 +50,7 @@ jobs:
       - run: sudo echo "$(whoami):$(id --group --name)"
       - run: sudo chown --help
       - run: sudo chown -h --recursive $(whoami):$(id --group --name) ~/.cargo
+      - run: sudo chown --recursive $(whoami):$(id --group --name) ~/.cargo/bin
       - run: sudo ls -ahl /usr/share/rust/.cargo
 
       - name: Restore Cargo executables
