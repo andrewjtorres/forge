@@ -4,7 +4,6 @@ use actix_web::{
     Error, HttpResponse,
 };
 use juniper::http::{playground, GraphQLRequest};
-use serde_json;
 use std::sync::Arc;
 
 use crate::api::schema::{Context, Schema};
