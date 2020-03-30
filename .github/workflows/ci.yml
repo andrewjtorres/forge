@@ -47,7 +47,9 @@ jobs:
           default: true
           profile: minimal
 
+      - run: sudo echo "$(whoami):$(id --group --name)"
       - run: sudo chown --recursive $(whoami):$(id --group --name) ~/.cargo
+      - run: sudo ls -ahl .
       - run: sudo ls -ahl /usr/share/rust/.cargo
 
       - name: Restore Cargo executables
