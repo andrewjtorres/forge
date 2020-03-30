@@ -37,6 +37,11 @@ jobs:
         run: npm install --global yarn@1.22
       - name: Install Node dependencies
         run: yarn install --immutable --immutable-cache
+      - name: Setup Rust
+        uses: actions-rs/toolchain@v1.0.6
+        with:
+          toolchain: nightly-2020-03-19
+          profile: minimal
       - name: Restore Cargo executables
         uses: actions/cache@v1.1.2
         with:
@@ -61,12 +66,14 @@ jobs:
           path: ~/.cargo/registry/index
           key: ${{ runner.os }}-server-cargo-metadata-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: ${{ runner.os }}-server-cargo-metadata-
-      - name: Install Rust and Cargo
-        uses: actions-rs/toolchain@v1.0.6
+      - name: Restore Cargo artifacts
+        uses: actions/cache@v1.1.2
         with:
-          toolchain: nightly-2020-03-19
-          profile: minimal
-          components: clippy, rustfmt
+          path: packages/server/target
+          key: ${{ runner.os }}-server-cargo-artifacts-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-server-cargo-artifacts-
+      - name: Install Rust dependencies
+        run: rustup component add clippy rustfmt
       - name: Lint files, scripts, and types
         run: yarn lint
         working-directory: packages/server
