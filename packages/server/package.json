@@ -18,6 +18,7 @@
     "directory": "packages/forge"
   },
   "scripts": {
+    "build": "cargo build",
     "hook:pre-commit": "lint-staged",
     "lint": "npm-run-all --parallel \"lint:*\"",
     "lint:files": "prettylint --ignore-path .gitignore \"**/*.{json,md,toml}\"",

@@ -162,6 +162,9 @@ jobs:
       - name: Install Rust dependencies
         run: cargo install grcov
         working-directory: packages/server
+      - name: Build
+        run: yarn build
+        working-directory: packages/server
       - name: Test units
         run: yarn test:units
         working-directory: packages/server
@@ -174,9 +177,8 @@ jobs:
           flags: server
       - run: ls -ahl packages/server/target
       - run: ls -ahl packages/server/target/debug
-      # - find target/debug -type f -maxdepth 1 -delete
-      # - rm -rf target/.rustc_info.json
       # - name: Cleanup Cargo cache
       #   run: |
       #     rm --force --recursive packages/server/target/debug/{.fingerpint,deps}/server*
-      #     rm --force --recursive packages/server/target/debug/{examples,incremental}
+      #     rm --force --recursive packages/server/target/debug/{examples,incremental,.cargo-lock}
+      #     rm --force --recursive packages/server/target/.rustc_info.json
