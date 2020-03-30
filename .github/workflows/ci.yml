@@ -47,9 +47,7 @@ jobs:
           default: true
           profile: minimal
 
-      - run: |
-          id --help
-          chown --help
+      - run: sudo chown --recursive $(whoami):$(id --group --name) ~/.cargo
 
       - name: Restore Cargo executables
         uses: actions/cache@v1.1.2
