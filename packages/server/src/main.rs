@@ -7,9 +7,7 @@ mod database;
 mod models;
 mod routes;
 
-use actix_rt;
 use actix_web::{middleware::Logger, web::Data, App, HttpServer};
-use dotenv;
 use std::{env, io::Result, sync::Arc};
 
 use config::Config;
