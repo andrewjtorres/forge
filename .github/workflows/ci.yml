@@ -159,12 +159,15 @@ jobs:
           toolchain: nightly-2020-03-19
           default: true
           profile: minimal
+      - run: ls -ahl packages/server/target
       - name: Install Rust dependencies
         run: cargo install grcov
         working-directory: packages/server
+      - run: ls -ahl packages/server/target
       - name: Test units
         run: yarn test:units
         working-directory: packages/server
+      - run: ls -ahl packages/server/target
       - name: Generate code coverage report
         run: |
           mkdir coverage
