@@ -163,6 +163,4 @@ jobs:
           file: packages/server/coverage/lcov.info
           flags: server
       - name: Cleanup Cargo cache
-        run: |
-          ls -ahl packages/server/target/{debug/{{.fingerpint,deps}/server*,examples,incremental,.cargo-lock,server{,.d}},.rustc_info.json}
-          rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server*,examples,incremental,.cargo-lock,server{,.d}},.rustc_info.json}
+        run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server*,examples,incremental,.cargo-lock,server{,.d}},.rustc_info.json}
