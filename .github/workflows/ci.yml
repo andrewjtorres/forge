@@ -77,8 +77,12 @@ jobs:
           profile: minimal
           components: clippy, rustfmt
       - name: Install Rust dependencies
-        run: cargo install grcov 2>&1
-        working-directory: packages/server
+        uses: actions-rs/cargo@v1.0.3
+        with:
+          command: install
+          args: grcov
+      # - name: Install Rust dependencies
+      #   run: cargo install grcov
       - name: Build
         env:
           CARGO_INCREMENTAL: 0
@@ -143,8 +147,12 @@ jobs:
           default: true
           profile: minimal
       - name: Install Rust dependencies
-        run: cargo install grcov 2>&1
-        working-directory: packages/server
+        uses: actions-rs/cargo@v1.0.3
+        with:
+          command: install
+          args: grcov
+      # - name: Install Rust dependencies
+      #   run: cargo install grcov
       - name: Build
         env:
           CARGO_INCREMENTAL: 0
