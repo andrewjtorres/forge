@@ -79,6 +79,7 @@ jobs:
           default: true
           profile: minimal
           components: clippy, rustfmt
+      - run: cargo --version
       - name: Install Rust dependencies
         run: cargo install grcov
         working-directory: packages/server
@@ -166,4 +167,3 @@ jobs:
           flags: server
       - name: Cleanup Cargo cache
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server*,examples,incremental,.cargo-lock,server{,.d}},.rustc_info.json}
-      - run: echo 'hello'
