@@ -77,12 +77,11 @@ jobs:
           profile: minimal
           components: clippy, rustfmt
       - name: Install Rust dependencies
-        run: cargo install grcov
+        run: cargo install grcov || exit 0
       - name: Build
         env:
           CARGO_INCREMENTAL: 0
           RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
-        if: always()
         run: yarn build
         working-directory: packages/server
       - name: Lint files, scripts, and types
@@ -143,13 +142,12 @@ jobs:
           default: true
           profile: minimal
       - name: Install Rust dependencies
-        run: cargo install grcov
+        run: cargo install grcov || exit 0
       - name: Build
         env:
           CARGO_INCREMENTAL: 0
           RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
         run: yarn build
-        if: always()
         working-directory: packages/server
       - name: Test units
         env:
