@@ -76,6 +76,15 @@ jobs:
           default: true
           profile: minimal
           components: clippy, rustfmt
+      - name: Version 1
+        uses: actions-rs/cargo@v1.0.3
+        with:
+          command: version
+      - name: Version 2
+        uses: actions-rs/cargo@v1.0.3
+        with:
+          toolchain: nightly-2020-03-19
+          command: version
       - name: Install Rust dependencies
         uses: actions-rs/cargo@v1.0.3
         with:
