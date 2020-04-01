@@ -54,7 +54,6 @@ jobs:
           path: ~/.cargo/git/db
           key: server-cargo-git-sources-${{ hashFiles('packages/server/**/Cargo.lock') }}
           restore-keys: server-cargo-git-sources-
-            server-cargo-git-sources-
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
         with:
@@ -122,7 +121,6 @@ jobs:
           path: ~/.cargo/git/db
           key: server-cargo-git-sources-${{ hashFiles('packages/server/**/Cargo.lock') }}
           restore-keys: server-cargo-git-sources-
-            server-cargo-git-sources-
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
         with:
