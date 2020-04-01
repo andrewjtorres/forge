@@ -46,42 +46,32 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/bin
-          key: server-cargo-executables-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: |
-            server-cargo-executables-${{ github.ref }}-
-            server-cargo-executables-
+          key: server-cargo-executables-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: server-cargo-executables-
       - name: Restore Cargo Git sources
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/git/db
-          key: server-cargo-git-sources-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: |
-            server-cargo-git-sources-${{ github.ref }}-
-            server-cargo-git-sources-
+          key: server-cargo-git-sources-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: server-cargo-git-sources-
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/cache
-          key: server-cargo-packages-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: |
-            server-cargo-packages-${{ github.ref }}-
-            server-cargo-packages-
+          key: server-cargo-packages-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: server-cargo-packages-
       - name: Restore Cargo metadata
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/index
-          key: server-cargo-metadata-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: |
-            server-cargo-metadata-${{ github.ref }}-
-            server-cargo-metadata-
+          key: server-cargo-metadata-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: server-cargo-metadata-
       - name: Restore Cargo artifacts
         uses: actions/cache@v1.1.2
         with:
           path: packages/server/target
-          key: server-cargo-artifacts-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: |
-            server-cargo-artifacts-${{ github.ref }}-
-            server-cargo-artifacts-
+          key: server-cargo-artifacts-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: server-cargo-artifacts-
       - name: Install Rust and Cargo
         uses: actions-rs/toolchain@v1.0.6
         with:
@@ -89,6 +79,11 @@ jobs:
           default: true
           profile: minimal
           components: clippy, rustfmt
+      - name: Install Rust dependencies
+        run: cargo install grcov || exit 0
+      - name: Build
+        run: yarn build
+        working-directory: packages/server
       - name: Lint files, scripts, and types
         run: yarn lint
         working-directory: packages/server
@@ -117,42 +112,32 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/bin
-          key: server-cargo-executables-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: |
-            server-cargo-executables-${{ github.ref }}-
-            server-cargo-executables-
+          key: server-cargo-executables-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: server-cargo-executables-
       - name: Restore Cargo Git sources
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/git/db
-          key: server-cargo-git-sources-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: |
-            server-cargo-git-sources-${{ github.ref }}-
-            server-cargo-git-sources-
+          key: server-cargo-git-sources-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: server-cargo-git-sources-
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/cache
-          key: server-cargo-packages-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: |
-            server-cargo-packages-${{ github.ref }}-
-            server-cargo-packages-
+          key: server-cargo-packages-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: server-cargo-packages-
       - name: Restore Cargo metadata
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/index
-          key: server-cargo-metadata-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: |
-            server-cargo-metadata-${{ github.ref }}-
-            server-cargo-metadata-
+          key: server-cargo-metadata-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: server-cargo-metadata-
       - name: Restore Cargo artifacts
         uses: actions/cache@v1.1.2
         with:
           path: packages/server/target
-          key: server-cargo-artifacts-${{ github.ref }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: |
-            server-cargo-artifacts-${{ github.ref }}-
-            server-cargo-artifacts-
+          key: server-cargo-artifacts-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          restore-keys: server-cargo-artifacts-
       - name: Install Rust and Cargo
         uses: actions-rs/toolchain@v1.0.6
         with:
@@ -160,7 +145,9 @@ jobs:
           default: true
           profile: minimal
       - name: Install Rust dependencies
-        run: cargo install grcov
+        run: cargo install grcov || exit 0
+      - name: Build
+        run: yarn build
         working-directory: packages/server
       - name: Test units
         run: yarn test:units
