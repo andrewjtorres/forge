@@ -26,9 +26,6 @@ jobs:
   server_static_analysis:
     name: Server Static Analysis
     runs-on: ubuntu-18.04
-    env:
-      CARGO_INCREMENTAL: 0
-      RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
@@ -79,11 +76,13 @@ jobs:
           default: true
           profile: minimal
           components: clippy, rustfmt
-      - run: cargo --version
       - name: Install Rust dependencies
         run: cargo install grcov
         working-directory: packages/server
       - name: Build
+        env:
+          CARGO_INCREMENTAL: 0
+          RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
         run: yarn build
         working-directory: packages/server
       - name: Lint files, scripts, and types
@@ -94,9 +93,6 @@ jobs:
   server_test:
     name: Server Test
     runs-on: ubuntu-18.04
-    env:
-      CARGO_INCREMENTAL: 0
-      RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
@@ -150,9 +146,15 @@ jobs:
         run: cargo install grcov
         working-directory: packages/server
       - name: Build
+        env:
+          CARGO_INCREMENTAL: 0
+          RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
         run: yarn build
         working-directory: packages/server
       - name: Test units
+        env:
+          CARGO_INCREMENTAL: 0
+          RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
         run: yarn test:units
         working-directory: packages/server
       - name: Generate code coverage report
