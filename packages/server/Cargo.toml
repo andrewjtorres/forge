@@ -38,7 +38,7 @@ default-features = false
 features = ["32-column-tables", "chrono", "postgres", "r2d2", "uuidv07"]
 
 [dependencies.serde]
-version = "^1.0.105"
+version = "^1.0.106"
 default-features = false
 features = ["std", "derive"]
 
