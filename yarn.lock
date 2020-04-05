@@ -162,7 +162,7 @@ __metadata:
   dependencies:
     lint-staged: ^10.1.1
     npm-run-all: ^4.1.5
-    prettier: ^2.0.2
+    prettier: ^2.0.3
     prettylint: ^1.0.0
   languageName: unknown
   linkType: soft
@@ -2265,13 +2265,13 @@ __metadata:
   linkType: hard
 
 "cross-spawn@npm:^7.0.0":
-  version: 7.0.1
-  resolution: "cross-spawn@npm:7.0.1"
+  version: 7.0.2
+  resolution: "cross-spawn@npm:7.0.2"
   dependencies:
     path-key: ^3.1.0
     shebang-command: ^2.0.0
     which: ^2.0.1
-  checksum: 63d23ab6119e61fd9fc1c008b7e03bd59282962978dc3bd83f227203c35007bbfe83cd329b1a50393e5f655c2de1236eab59c2a715977ae7784d596f1b119540
+  checksum: b1dd4360115a6dfe4699bad4584fe7b017772ac9a7a576f5a52419802e55e3853e9fc60157696f6be0687091d4d28b788b6251ffc73a8359cf6b94b3eb9ca851
   languageName: node
   linkType: hard
 
@@ -3062,7 +3062,7 @@ __metadata:
     lerna: ^3.20.2
     lint-staged: ^10.1.1
     npm-run-all: ^4.1.5
-    prettier: ^2.0.2
+    prettier: ^2.0.3
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
     rxjs: ^6.5.5
@@ -4367,8 +4367,8 @@ __metadata:
   linkType: hard
 
 "lint-staged@npm:^10.1.1":
-  version: 10.1.1
-  resolution: "lint-staged@npm:10.1.1"
+  version: 10.1.2
+  resolution: "lint-staged@npm:10.1.2"
   dependencies:
     chalk: ^3.0.0
     commander: ^4.0.1
@@ -4385,7 +4385,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 18e14045ee6d172ebfd413888920874bbece8f99385da09010907c6ec2a2208c6e731e23bf40b33b3880e87f77e135a5e579ad8f24e035a3c9b59c7a5e608b04
+  checksum: 266da02fd77f89218166f5b3f2e5df86608bc7df35a73e0a466d49b285004024b9eafe4522ba34a7bbf0a103aae78ab1ef8ed3814ddfcc99b4b649c0f7f32927
   languageName: node
   linkType: hard
 
@@ -5467,11 +5467,11 @@ __metadata:
   linkType: hard
 
 "p-limit@npm:^2.0.0, p-limit@npm:^2.2.0":
-  version: 2.2.2
-  resolution: "p-limit@npm:2.2.2"
+  version: 2.3.0
+  resolution: "p-limit@npm:2.3.0"
   dependencies:
     p-try: ^2.0.0
-  checksum: 6e308b5ac80d62e7a8c07ac8a884bc34858aeeed21d518640445e5005f9092678a5180793958f1b84f93cd8dfa8a145c893712e3db83510ba383f34570c3f600
+  checksum: 5dc7448442d71b536654a3054c179bcbf1a0998f28df801415298751b01baa839b96921be1f7e68227130741b1ab4cf8e276a2d67fd6362df8f09429dd538e40
   languageName: node
   linkType: hard
 
@@ -5865,12 +5865,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "prettier@npm:2.0.2"
+"prettier@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "prettier@npm:2.0.3"
   bin:
     prettier: bin-prettier.js
-  checksum: 5eaa36cd3ed2b0d46586e786c99bf63cb7a0e1ee9950c52d580e8fc03400bd2d36fb098b4c5033ec4d95a0c90e5ec6a1cd54c8027d5d3809fd2103f497fc2723
+  checksum: 8f6008b9ffd66ad43f49faa73ad0c020fdf38b7a90ca02faa9a4458f307a65e53211733db295185c26262ae08307f02743d5441019075bc4158354156bd0e053
   languageName: node
   linkType: hard
 
