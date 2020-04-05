@@ -114,7 +114,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["husky", "npm:4.2.3"],
             ["lerna", "npm:3.20.2"],
-            ["lint-staged", "npm:10.1.1"],
+            ["lint-staged", "npm:10.1.2"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.2"],
             ["prettier-plugin-toml", "npm:0.3.1"],
@@ -294,7 +294,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/server/",
           "packageDependencies": [
             ["@forge/server", "workspace:packages/server"],
-            ["lint-staged", "npm:10.1.1"],
+            ["lint-staged", "npm:10.1.2"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.2"],
             ["prettylint", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0"]
@@ -2615,10 +2615,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD"
         }],
-        ["npm:7.0.1", {
-          "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.1-ef4846765e-1.zip/node_modules/cross-spawn/",
+        ["npm:7.0.2", {
+          "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.2-fef0e84eed-1.zip/node_modules/cross-spawn/",
           "packageDependencies": [
-            ["cross-spawn", "npm:7.0.1"],
+            ["cross-spawn", "npm:7.0.2"],
             ["path-key", "npm:3.1.1"],
             ["shebang-command", "npm:2.0.0"],
             ["which", "npm:2.0.2"]
@@ -3167,7 +3167,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/execa-npm-3.4.0-ac88a31854-1.zip/node_modules/execa/",
           "packageDependencies": [
             ["execa", "npm:3.4.0"],
-            ["cross-spawn", "npm:7.0.1"],
+            ["cross-spawn", "npm:7.0.2"],
             ["get-stream", "npm:5.1.0"],
             ["human-signals", "npm:1.1.1"],
             ["is-stream", "npm:2.0.0"],
@@ -3487,7 +3487,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-conventional-changelog", "npm:3.1.0"],
             ["husky", "npm:4.2.3"],
             ["lerna", "npm:3.20.2"],
-            ["lint-staged", "npm:10.1.1"],
+            ["lint-staged", "npm:10.1.2"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.0.2"],
             ["prettier-plugin-toml", "npm:0.3.1"],
@@ -4920,10 +4920,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lint-staged", [
-        ["npm:10.1.1", {
-          "packageLocation": "./.yarn/cache/lint-staged-npm-10.1.1-56cf0814bf-1.zip/node_modules/lint-staged/",
+        ["npm:10.1.2", {
+          "packageLocation": "./.yarn/cache/lint-staged-npm-10.1.2-be9d974a3e-1.zip/node_modules/lint-staged/",
           "packageDependencies": [
-            ["lint-staged", "npm:10.1.1"],
+            ["lint-staged", "npm:10.1.2"],
             ["chalk", "npm:3.0.0"],
             ["commander", "npm:4.1.1"],
             ["cosmiconfig", "npm:6.0.0"],
