@@ -116,7 +116,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lerna", "npm:3.20.2"],
             ["lint-staged", "npm:10.1.2"],
             ["npm-run-all", "npm:4.1.5"],
-            ["prettier", "npm:2.0.3"],
+            ["prettier", "npm:2.0.4"],
             ["prettier-plugin-toml", "npm:0.3.1"],
             ["prettylint", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0"],
             ["rxjs", "npm:6.5.5"]
@@ -296,7 +296,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@forge/server", "workspace:packages/server"],
             ["lint-staged", "npm:10.1.2"],
             ["npm-run-all", "npm:4.1.5"],
-            ["prettier", "npm:2.0.3"],
+            ["prettier", "npm:2.0.4"],
             ["prettylint", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0"]
           ],
           "linkType": "SOFT"
@@ -3122,7 +3122,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:8096d64bd41aff32ec04b17337c9ffc0772ab68a7a85de4d3d71a00563a5f6c92c0ea5d749dda1f644735e2e28c5acac3e5f1be630ec4ef6b70b1776e35337d0#npm:2.7.0"],
             ["fast-diff", "npm:1.2.0"],
             ["jest-docblock", "npm:21.2.0"],
-            ["prettier", "npm:2.0.3"]
+            ["prettier", "npm:2.0.4"]
           ],
           "packagePeers": [
             "prettier"
@@ -3489,7 +3489,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lerna", "npm:3.20.2"],
             ["lint-staged", "npm:10.1.2"],
             ["npm-run-all", "npm:4.1.5"],
-            ["prettier", "npm:2.0.3"],
+            ["prettier", "npm:2.0.4"],
             ["prettier-plugin-toml", "npm:0.3.1"],
             ["prettylint", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0"],
             ["rxjs", "npm:6.5.5"]
@@ -6074,7 +6074,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["os-name", "npm:3.1.0"],
             ["macos-release", "npm:2.3.0"],
-            ["windows-release", "npm:3.2.0"]
+            ["windows-release", "npm:3.3.0"]
           ],
           "linkType": "HARD"
         }]
@@ -6553,10 +6553,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD"
         }],
-        ["npm:2.0.3", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.0.3-9b6f69b20a-1.zip/node_modules/prettier/",
+        ["npm:2.0.4", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.0.4-8d1f5f638d-1.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.0.3"]
+            ["prettier", "npm:2.0.4"]
           ],
           "linkType": "HARD"
         }]
@@ -6584,7 +6584,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ignore", "npm:3.3.10"],
             ["lines-and-columns", "npm:1.1.6"],
             ["meow", "npm:3.7.0"],
-            ["prettier", "npm:2.0.3"],
+            ["prettier", "npm:2.0.4"],
             ["tslib", "npm:1.11.1"]
           ],
           "packagePeers": [
@@ -8396,10 +8396,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["windows-release", [
-        ["npm:3.2.0", {
-          "packageLocation": "./.yarn/cache/windows-release-npm-3.2.0-bb84765c45-1.zip/node_modules/windows-release/",
+        ["npm:3.3.0", {
+          "packageLocation": "./.yarn/cache/windows-release-npm-3.3.0-71b6a7e2e0-1.zip/node_modules/windows-release/",
           "packageDependencies": [
-            ["windows-release", "npm:3.2.0"],
+            ["windows-release", "npm:3.3.0"],
             ["execa", "npm:1.0.0"]
           ],
           "linkType": "HARD"
