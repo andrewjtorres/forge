@@ -7,7 +7,7 @@ on:
     branches:
       - master
 env:
-  CARGO_CACHE_VERSION: v1
+  CARGO_CACHE_VERSION: v2
 jobs:
   root_static_analysis:
     name: Root Static Analysis
@@ -73,12 +73,6 @@ jobs:
       #     path: packages/server/target
       #     key: server-artifacts-v1-${{ hashFiles('packages/server/**/Cargo.lock') }}
       #     restore-keys: server-artifacts-v1-
-
-      - env:
-          A: ${{ steps.restore-cargo-executables.outputs.cache-hit }}
-          B: ${{ steps.restore-cargo-packages.outputs.cache-hit }}
-          C: ${{ steps.restore-cargo-metadata.outputs.cache-hit }}
-        run: echo $A $B $C
 
       - name: Install Rust and Cargo
         if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
@@ -147,12 +141,6 @@ jobs:
       #     path: packages/server/target
       #     key: server-cargo-artifacts-v1-${{ hashFiles('packages/server/**/Cargo.lock') }}
       #     restore-keys: server-cargo-artifacts-v1-
-
-      - env:
-          A: ${{ steps.restore-cargo-executables.outputs.cache-hit }}
-          B: ${{ steps.restore-cargo-packages.outputs.cache-hit }}
-          C: ${{ steps.restore-cargo-metadata.outputs.cache-hit }}
-        run: echo $A $B $C
 
       - name: Install Rust and Cargo
         if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
