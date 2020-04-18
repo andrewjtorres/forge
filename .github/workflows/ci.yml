@@ -96,6 +96,14 @@ jobs:
         working-directory: packages/server
       - name: Cleanup Cargo cache
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
+
+      - run: \
+          du -hs ~/.cargo/bin
+          du -hs ~/.cargo/git/db
+          du -hs ~/.cargo/registry/cache
+          du -hs ~/.cargo/registry/index
+          du -hs packages/server/target
+
   server_test:
     name: Server Test
     runs-on: ubuntu-18.04
@@ -178,3 +186,10 @@ jobs:
           flags: server
       - name: Cleanup Cargo cache
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
+
+      - run: \
+          du -hs ~/.cargo/bin
+          du -hs ~/.cargo/git/db
+          du -hs ~/.cargo/registry/cache
+          du -hs ~/.cargo/registry/index
+          du -hs packages/server/target
