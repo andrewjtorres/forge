@@ -51,13 +51,6 @@ jobs:
           path: ~/.cargo/bin
           key: server-cargo-executables-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-executables-${{ env.CARGO_CACHE_VERSION }}-
-      - name: Restore Cargo Git sources
-        uses: actions/cache@v1.1.2
-        id: restore-cargo-git-sources
-        with:
-          path: ~/.cargo/git/db
-          key: server-cargo-git-sources-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
-          restore-keys: server-cargo-git-sources-${{ env.CARGO_CACHE_VERSION }}-
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
         id: restore-cargo-packages
@@ -83,13 +76,12 @@ jobs:
 
       - env:
           A: ${{ steps.restore-cargo-executables.outputs.cache-hit }}
-          B: ${{ steps.restore-cargo-git-sources.outputs.cache-hit }}
-          C: ${{ steps.restore-cargo-packages.outputs.cache-hit }}
-          D: ${{ steps.restore-cargo-metadata.outputs.cache-hit }}
-        run: echo $A $B $C $D
+          B: ${{ steps.restore-cargo-packages.outputs.cache-hit }}
+          C: ${{ steps.restore-cargo-metadata.outputs.cache-hit }}
+        run: echo $A $B $C
 
       - name: Install Rust and Cargo
-        if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-git-sources.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
+        if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
         uses: actions-rs/toolchain@v1.0.6
         with:
           toolchain: nightly-2020-04-18
@@ -133,13 +125,6 @@ jobs:
           path: ~/.cargo/bin
           key: server-cargo-executables-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-executables-${{ env.CARGO_CACHE_VERSION }}-
-      - name: Restore Cargo Git sources
-        uses: actions/cache@v1.1.2
-        id: restore-cargo-git-sources
-        with:
-          path: ~/.cargo/git/db
-          key: server-cargo-git-sources-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
-          restore-keys: server-cargo-git-sources-${{ env.CARGO_CACHE_VERSION }}-
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
         id: restore-cargo-packages
@@ -165,13 +150,12 @@ jobs:
 
       - env:
           A: ${{ steps.restore-cargo-executables.outputs.cache-hit }}
-          B: ${{ steps.restore-cargo-git-sources.outputs.cache-hit }}
-          C: ${{ steps.restore-cargo-packages.outputs.cache-hit }}
-          D: ${{ steps.restore-cargo-metadata.outputs.cache-hit }}
-        run: echo $A $B $C $D
+          B: ${{ steps.restore-cargo-packages.outputs.cache-hit }}
+          C: ${{ steps.restore-cargo-metadata.outputs.cache-hit }}
+        run: echo $A $B $C
 
       - name: Install Rust and Cargo
-        if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-git-sources.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
+        if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
         uses: actions-rs/toolchain@v1.0.6
         with:
           toolchain: nightly-2020-04-18
