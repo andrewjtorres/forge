@@ -81,6 +81,13 @@ jobs:
       #     key: server-artifacts-v1-${{ hashFiles('packages/server/**/Cargo.lock') }}
       #     restore-keys: server-artifacts-v1-
 
+      - env:
+          A: ${{ steps.restore-cargo-executables.outputs.cache-hit }}
+          B: ${{ steps.restore-cargo-git-sources.outputs.cache-hit }}
+          C: ${{ steps.restore-cargo-packages.outputs.cache-hit }}
+          D: ${{ steps.restore-cargo-metadata.outputs.cache-hit }}
+        run: echo $A $B $C $D
+
       - name: Install Rust and Cargo
         if: steps.restore-cargo-executables.outputs.cache-hit == 'false' || steps.restore-cargo-git-sources.outputs.cache-hit == 'false' || steps.restore-cargo-packages.outputs.cache-hit == 'false' || steps.restore-cargo-metadata.outputs.cache-hit == 'false'
         uses: actions-rs/toolchain@v1.0.6
@@ -155,6 +162,13 @@ jobs:
       #     path: packages/server/target
       #     key: server-cargo-artifacts-v1-${{ hashFiles('packages/server/**/Cargo.lock') }}
       #     restore-keys: server-cargo-artifacts-v1-
+
+      - env:
+          A: ${{ steps.restore-cargo-executables.outputs.cache-hit }}
+          B: ${{ steps.restore-cargo-git-sources.outputs.cache-hit }}
+          C: ${{ steps.restore-cargo-packages.outputs.cache-hit }}
+          D: ${{ steps.restore-cargo-metadata.outputs.cache-hit }}
+        run: echo $A $B $C $D
 
       - name: Install Rust and Cargo
         if: steps.restore-cargo-executables.outputs.cache-hit == 'false' || steps.restore-cargo-git-sources.outputs.cache-hit == 'false' || steps.restore-cargo-packages.outputs.cache-hit == 'false' || steps.restore-cargo-metadata.outputs.cache-hit == 'false'
