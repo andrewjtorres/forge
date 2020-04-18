@@ -7,8 +7,8 @@ on:
     branches:
       - master
 env:
-  CARGO_CACHE_VERSION: v2
-  SERVER_CACHE_VERSION: v1
+  CARGO_CACHE_VERSION: v3
+  SERVER_CACHE_VERSION: v3
 jobs:
   root_static_analysis:
     name: Root Static Analysis
@@ -66,9 +66,9 @@ jobs:
           path: ~/.cargo/registry/index
           key: server-cargo-metadata-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-metadata-${{ env.CARGO_CACHE_VERSION }}-
-      - name: Restore server artifacts
+      - name: Restore artifacts
         uses: actions/cache@v1.1.2
-        id: restore-server-artifacts
+        id: restore-artifacts
         with:
           path: packages/server/target
           key: server-artifacts-${{ env.SERVER_CACHE_VERSION }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
@@ -84,13 +84,13 @@ jobs:
       - name: Install Rust dependencies
         run: cargo install --version 0.5.13 grcov || exit 0
       - name: Build
-        if: steps.restore-server-artifacts.outputs.cache-hit != 'true'
+        if: steps.restore-artifacts.outputs.cache-hit != 'true'
         run: yarn build
         working-directory: packages/server
       - name: Lint files, scripts, and types
         run: yarn lint
         working-directory: packages/server
-      - name: Cleanup server artifacts
+      - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
   server_test:
     name: Server Test
@@ -132,9 +132,9 @@ jobs:
           path: ~/.cargo/registry/index
           key: server-cargo-metadata-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-metadata-${{ env.CARGO_CACHE_VERSION }}-
-      - name: Restore server artifacts
+      - name: Restore artifacts
         uses: actions/cache@v1.1.2
-        id: restore-server-artifacts
+        id: restore-artifacts
         with:
           path: packages/server/target
           key: server-artifacts-${{ env.SERVER_CACHE_VERSION }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
@@ -150,7 +150,7 @@ jobs:
       - name: Install Rust dependencies
         run: cargo install --version 0.5.13 grcov || exit 0
       - name: Build
-        if: steps.restore-server-artifacts.outputs.cache-hit != 'true'
+        if: steps.restore-artifacts.outputs.cache-hit != 'true'
         run: yarn build
         working-directory: packages/server
       - name: Test units
@@ -166,5 +166,5 @@ jobs:
         with:
           file: packages/server/coverage/lcov.info
           flags: server
-      - name: Cleanup server artifacts
+      - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
