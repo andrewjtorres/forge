@@ -49,8 +49,8 @@ jobs:
         id: restore-cargo-executables
         with:
           path: ~/.cargo/bin
-          key: server-cargo-executables-${{ env.cargo_cache_version }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
-          restore-keys: server-cargo-executables-${{ env.cargo_cache_version }}-
+          key: server-cargo-executables-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
+          restore-keys: server-cargo-executables-${{ env.CARGO_CACHE_VERSION }}-
 
       # - name: Restore Cargo Git sources
       #   uses: actions/cache@v1.1.2
