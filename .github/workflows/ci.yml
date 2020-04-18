@@ -88,7 +88,7 @@ jobs:
           profile: minimal
           components: clippy, rustfmt
       - name: Install Rust dependencies
-        run: cargo install grcov@0.5.9 || exit 0
+        run: cargo install --version 0.5.13 grcov || exit 0
       - name: Build
         # if: steps.restore-cargo-artifacts.outputs.cache-hit == 'false'
         run: yarn build
@@ -162,9 +162,7 @@ jobs:
           default: true
           profile: minimal
       - name: Install Rust dependencies
-        run: |
-          cargo install grcov || exit 0
-          grcov --version
+        run: cargo install --version 0.5.13 grcov || exit 0
       - name: Build
         # if: steps.restore-cargo-artifacts.outputs.cache-hit == 'false'
         run: yarn build
