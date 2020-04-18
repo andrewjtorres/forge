@@ -92,7 +92,7 @@ jobs:
         if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-git-sources.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
         uses: actions-rs/toolchain@v1.0.6
         with:
-          toolchain: nightly-2020-04-10
+          toolchain: nightly-2020-04-18
           default: true
           profile: minimal
           components: clippy, rustfmt
@@ -174,9 +174,10 @@ jobs:
         if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-git-sources.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
         uses: actions-rs/toolchain@v1.0.6
         with:
-          toolchain: nightly-2020-04-10
+          toolchain: nightly-2020-04-18
           default: true
           profile: minimal
+          components: clippy, rustfmt
       - name: Install Rust dependencies
         run: cargo install --version 0.5.13 grcov || exit 0
       - name: Build
