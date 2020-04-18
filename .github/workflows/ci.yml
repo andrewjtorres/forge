@@ -44,35 +44,41 @@ jobs:
         run: sudo chown -H --recursive $(id --name --user):$(id --group --name) ~/.cargo
       - name: Restore Cargo executables
         uses: actions/cache@v1.1.2
+        id: restore-cargo-executables
         with:
           path: ~/.cargo/bin
-          key: server-cargo-executables-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          key: server-cargo-executables-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-executables-
       - name: Restore Cargo Git sources
         uses: actions/cache@v1.1.2
+        id: restore-cargo-git-sources
         with:
           path: ~/.cargo/git/db
-          key: server-cargo-git-sources-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          key: server-cargo-git-sources-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-git-sources-
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
+        id: restore-cargo-packages
         with:
           path: ~/.cargo/registry/cache
-          key: server-cargo-packages-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          key: server-cargo-packages-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-packages-
       - name: Restore Cargo metadata
         uses: actions/cache@v1.1.2
+        id: restore-cargo-metadata
         with:
           path: ~/.cargo/registry/index
-          key: server-cargo-metadata-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          key: server-cargo-metadata-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-metadata-
       - name: Restore Cargo artifacts
         uses: actions/cache@v1.1.2
+        id: restore-cargo-artifacts
         with:
           path: packages/server/target
           key: server-cargo-artifacts-${{ hashFiles('packages/server/**/Cargo.lock') }}
           restore-keys: server-cargo-artifacts-
       - name: Install Rust and Cargo
+        if: steps.restore-cargo-executables.outputs.cache-hit == 'false' || steps.restore-cargo-git-sources.outputs.cache-hit == 'false' || steps.restore-cargo-packages.outputs.cache-hit == 'false' || steps.restore-cargo-metadata.outputs.cache-hit == 'false'
         uses: actions-rs/toolchain@v1.0.6
         with:
           toolchain: nightly-2020-04-10
@@ -80,15 +86,16 @@ jobs:
           profile: minimal
           components: clippy, rustfmt
       - name: Install Rust dependencies
-        run: cargo install grcov || exit 0
+        run: cargo install grcov@0.5.13 || exit 0
       - name: Build
+        if: steps.restore-cargo-artifacts.outputs.cache-hit == 'false'
         run: yarn build
         working-directory: packages/server
       - name: Lint files, scripts, and types
         run: yarn lint
         working-directory: packages/server
       - name: Cleanup Cargo cache
-        run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server*,examples,incremental,.cargo-lock,server{,.d}},.rustc_info.json}
+        run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
   server_test:
     name: Server Test
     runs-on: ubuntu-18.04
@@ -110,43 +117,50 @@ jobs:
         run: sudo chown -H --recursive $(id --name --user):$(id --group --name) ~/.cargo
       - name: Restore Cargo executables
         uses: actions/cache@v1.1.2
+        id: restore-cargo-executables
         with:
           path: ~/.cargo/bin
-          key: server-cargo-executables-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          key: server-cargo-executables-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-executables-
       - name: Restore Cargo Git sources
         uses: actions/cache@v1.1.2
+        id: restore-cargo-git-sources
         with:
           path: ~/.cargo/git/db
-          key: server-cargo-git-sources-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          key: server-cargo-git-sources-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-git-sources-
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
+        id: restore-cargo-packages
         with:
           path: ~/.cargo/registry/cache
-          key: server-cargo-packages-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          key: server-cargo-packages-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-packages-
       - name: Restore Cargo metadata
         uses: actions/cache@v1.1.2
+        id: restore-cargo-metadata
         with:
           path: ~/.cargo/registry/index
-          key: server-cargo-metadata-${{ hashFiles('packages/server/**/Cargo.lock') }}
+          key: server-cargo-metadata-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-metadata-
       - name: Restore Cargo artifacts
         uses: actions/cache@v1.1.2
+        id: restore-cargo-artifacts
         with:
           path: packages/server/target
           key: server-cargo-artifacts-${{ hashFiles('packages/server/**/Cargo.lock') }}
           restore-keys: server-cargo-artifacts-
       - name: Install Rust and Cargo
+        if: steps.restore-cargo-executables.outputs.cache-hit == 'false' || steps.restore-cargo-git-sources.outputs.cache-hit == 'false' || steps.restore-cargo-packages.outputs.cache-hit == 'false' || steps.restore-cargo-metadata.outputs.cache-hit == 'false'
         uses: actions-rs/toolchain@v1.0.6
         with:
           toolchain: nightly-2020-04-10
           default: true
           profile: minimal
       - name: Install Rust dependencies
-        run: cargo install grcov || exit 0
+        run: cargo install grcov@0.5.13 || exit 0
       - name: Build
+        if: steps.restore-cargo-artifacts.outputs.cache-hit == 'false'
         run: yarn build
         working-directory: packages/server
       - name: Test units
@@ -163,4 +177,4 @@ jobs:
           file: packages/server/coverage/lcov.info
           flags: server
       - name: Cleanup Cargo cache
-        run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server*,examples,incremental,.cargo-lock,server{,.d}},.rustc_info.json}
+        run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
