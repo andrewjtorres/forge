@@ -6,6 +6,8 @@ on:
   push:
     branches:
       - master
+env:
+  CARGO_CACHE_VERSION: v1
 jobs:
   root_static_analysis:
     name: Root Static Analysis
@@ -42,14 +44,14 @@ jobs:
         run: yarn install --immutable --immutable-cache
       - name: Setup Cargo cache
         run: sudo chown -H --recursive $(id --name --user):$(id --group --name) ~/.cargo
+      - name: Restore Cargo executables
+        uses: actions/cache@v1.1.2
+        id: restore-cargo-executables
+        with:
+          path: ~/.cargo/bin
+          key: server-cargo-executables-${{ env.cargo_cache_version }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
+          restore-keys: server-cargo-executables-${{ env.cargo_cache_version }}-
 
-      # - name: Restore Cargo executables
-      #   uses: actions/cache@v1.1.2
-      #   id: restore-cargo-executables
-      #   with:
-      #     path: ~/.cargo/bin
-      #     key: server-cargo-executables-v1-${{ hashFiles('packages/server/**/rust-toolchain') }}
-      #     restore-keys: server-cargo-executables-v1-
       # - name: Restore Cargo Git sources
       #   uses: actions/cache@v1.1.2
       #   id: restore-cargo-git-sources
@@ -71,13 +73,14 @@ jobs:
       #     path: ~/.cargo/registry/index
       #     key: server-cargo-metadata-v1-${{ hashFiles('packages/server/**/rust-toolchain') }}
       #     restore-keys: server-cargo-metadata-v1-
-      # - name: Restore Cargo artifacts
+
+      # - name: Restore server artifacts
       #   uses: actions/cache@v1.1.2
-      #   id: restore-cargo-artifacts
+      #   id: restore-server-artifacts
       #   with:
       #     path: packages/server/target
-      #     key: server-cargo-artifacts-v1-${{ hashFiles('packages/server/**/Cargo.lock') }}
-      #     restore-keys: server-cargo-artifacts-v1-
+      #     key: server-artifacts-v1-${{ hashFiles('packages/server/**/Cargo.lock') }}
+      #     restore-keys: server-artifacts-v1-
 
       - name: Install Rust and Cargo
         # if: steps.restore-cargo-executables.outputs.cache-hit == 'false' || steps.restore-cargo-git-sources.outputs.cache-hit == 'false' || steps.restore-cargo-packages.outputs.cache-hit == 'false' || steps.restore-cargo-metadata.outputs.cache-hit == 'false'
@@ -146,6 +149,7 @@ jobs:
       #     path: ~/.cargo/registry/index
       #     key: server-cargo-metadata-v1-${{ hashFiles('packages/server/**/rust-toolchain') }}
       #     restore-keys: server-cargo-metadata-v1-
+
       # - name: Restore Cargo artifacts
       #   uses: actions/cache@v1.1.2
       #   id: restore-cargo-artifacts
