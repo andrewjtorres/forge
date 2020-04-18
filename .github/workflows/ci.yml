@@ -89,7 +89,7 @@ jobs:
         run: echo $A $B $C $D
 
       - name: Install Rust and Cargo
-        if: steps.restore-cargo-executables.outputs.cache-hit == 'false' || steps.restore-cargo-git-sources.outputs.cache-hit == 'false' || steps.restore-cargo-packages.outputs.cache-hit == 'false' || steps.restore-cargo-metadata.outputs.cache-hit == 'false'
+        if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-git-sources.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
         uses: actions-rs/toolchain@v1.0.6
         with:
           toolchain: nightly-2020-04-10
@@ -99,7 +99,7 @@ jobs:
       - name: Install Rust dependencies
         run: cargo install --version 0.5.13 grcov || exit 0
       - name: Build
-        # if: steps.restore-cargo-artifacts.outputs.cache-hit == 'false'
+        # if: steps.restore-cargo-artifacts.outputs.cache-hit != 'true'
         run: yarn build
         working-directory: packages/server
       - name: Lint files, scripts, and types
@@ -171,7 +171,7 @@ jobs:
         run: echo $A $B $C $D
 
       - name: Install Rust and Cargo
-        if: steps.restore-cargo-executables.outputs.cache-hit == 'false' || steps.restore-cargo-git-sources.outputs.cache-hit == 'false' || steps.restore-cargo-packages.outputs.cache-hit == 'false' || steps.restore-cargo-metadata.outputs.cache-hit == 'false'
+        if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-git-sources.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
         uses: actions-rs/toolchain@v1.0.6
         with:
           toolchain: nightly-2020-04-10
@@ -180,7 +180,7 @@ jobs:
       - name: Install Rust dependencies
         run: cargo install --version 0.5.13 grcov || exit 0
       - name: Build
-        # if: steps.restore-cargo-artifacts.outputs.cache-hit == 'false'
+        # if: steps.restore-cargo-artifacts.outputs.cache-hit != 'true'
         run: yarn build
         working-directory: packages/server
       - name: Test units
