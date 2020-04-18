@@ -47,21 +47,18 @@ jobs:
         run: sudo chown -H --recursive $(id --name --user):$(id --group --name) ~/.cargo
       - name: Restore Cargo executables
         uses: actions/cache@v1.1.2
-        id: restore-cargo-executables
         with:
           path: ~/.cargo/bin
           key: server-cargo-executables-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-executables-${{ env.CARGO_CACHE_VERSION }}-
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
-        id: restore-cargo-packages
         with:
           path: ~/.cargo/registry/cache
           key: server-cargo-packages-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-packages-${{ env.CARGO_CACHE_VERSION }}-
       - name: Restore Cargo metadata
         uses: actions/cache@v1.1.2
-        id: restore-cargo-metadata
         with:
           path: ~/.cargo/registry/index
           key: server-cargo-metadata-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
@@ -74,7 +71,6 @@ jobs:
           key: server-artifacts-${{ env.SERVER_CACHE_VERSION }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
           restore-keys: server-artifacts-${{ env.SERVER_CACHE_VERSION }}-
       - name: Install Rust and Cargo
-        if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
         uses: actions-rs/toolchain@v1.0.6
         with:
           toolchain: nightly-2020-04-18
@@ -113,21 +109,18 @@ jobs:
         run: sudo chown -H --recursive $(id --name --user):$(id --group --name) ~/.cargo
       - name: Restore Cargo executables
         uses: actions/cache@v1.1.2
-        id: restore-cargo-executables
         with:
           path: ~/.cargo/bin
           key: server-cargo-executables-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-executables-${{ env.CARGO_CACHE_VERSION }}-
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
-        id: restore-cargo-packages
         with:
           path: ~/.cargo/registry/cache
           key: server-cargo-packages-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
           restore-keys: server-cargo-packages-${{ env.CARGO_CACHE_VERSION }}-
       - name: Restore Cargo metadata
         uses: actions/cache@v1.1.2
-        id: restore-cargo-metadata
         with:
           path: ~/.cargo/registry/index
           key: server-cargo-metadata-${{ env.CARGO_CACHE_VERSION }}-${{ hashFiles('packages/server/**/rust-toolchain') }}
@@ -140,7 +133,6 @@ jobs:
           key: server-artifacts-${{ env.SERVER_CACHE_VERSION }}-${{ hashFiles('packages/server/**/Cargo.lock') }}
           restore-keys: server-artifacts-${{ env.SERVER_CACHE_VERSION }}-
       - name: Install Rust and Cargo
-        if: steps.restore-cargo-executables.outputs.cache-hit != 'true' || steps.restore-cargo-packages.outputs.cache-hit != 'true' || steps.restore-cargo-metadata.outputs.cache-hit != 'true'
         uses: actions-rs/toolchain@v1.0.6
         with:
           toolchain: nightly-2020-04-18
@@ -168,4 +160,3 @@ jobs:
           flags: server
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
-      - run: echo "hello"
