@@ -168,3 +168,4 @@ jobs:
           flags: server
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
+      - run: echo "hello"
