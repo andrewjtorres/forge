@@ -81,10 +81,9 @@ jobs:
         run: yarn build
         working-directory: packages/server
 
-      - run: |
-          ls -ahl ~/.cargo/bin
-          ls -ahl ~/.cargo/registry/cache
-          ls -ahl ~/.cargo/registry/index
+      - run: ls -ahl ~/.cargo/bin
+      - run: ls -ahl ~/.cargo/registry/cache/*
+      - run: ls -ahl ~/.cargo/registry/index/*
 
       - name: Lint files, scripts, and types
         run: yarn lint
@@ -92,9 +91,8 @@ jobs:
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
 
-      - run: |
-          ls -ahl packages/server/target
-          ls -ahl packages/server/debug/*
+      - run: ls -ahl packages/server/target
+      - run: ls -ahl packages/server/target/debug/*
 
   server_test:
     name: Server Test
@@ -153,10 +151,9 @@ jobs:
         run: yarn build
         working-directory: packages/server
 
-      - run: |
-          ls -ahl ~/.cargo/bin
-          ls -ahl ~/.cargo/registry/cache
-          ls -ahl ~/.cargo/registry/index
+      - run: ls -ahl ~/.cargo/bin
+      - run: ls -ahl ~/.cargo/registry/cache/*
+      - run: ls -ahl ~/.cargo/registry/index/*
 
       - name: Test units
         run: yarn test:units
@@ -174,6 +171,5 @@ jobs:
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
 
-      - run: |
-          ls -ahl packages/server/target
-          ls -ahl packages/server/debug/*
+      - run: ls -ahl packages/server/target
+      - run: ls -ahl packages/server/target/debug/*
