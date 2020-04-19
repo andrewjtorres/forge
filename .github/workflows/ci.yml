@@ -76,18 +76,26 @@ jobs:
           components: clippy, rustfmt
       - name: Install Rust dependencies
         run: cargo install --version 0.5.13 grcov || exit 0
-
-      - run: ls -ahl ~/.cargo/*
-
       - name: Build
         if: steps.restore-artifacts.outputs.cache-hit != 'true'
         run: yarn build
         working-directory: packages/server
+
+      - run: |
+          ls -ahl ~/.cargo/bin
+          ls -ahl ~/.cargo/registry/cache
+          ls -ahl ~/.cargo/registry/index
+
       - name: Lint files, scripts, and types
         run: yarn lint
         working-directory: packages/server
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
+
+      - run: |
+          ls -ahl packages/server/target
+          ls -ahl packages/server/debug/*
+
   server_test:
     name: Server Test
     runs-on: ubuntu-18.04
@@ -140,13 +148,16 @@ jobs:
           profile: minimal
       - name: Install Rust dependencies
         run: cargo install --version 0.5.13 grcov || exit 0
-
-      - run: ls -ahl ~/.cargo/*
-
       - name: Build
         if: steps.restore-artifacts.outputs.cache-hit != 'true'
         run: yarn build
         working-directory: packages/server
+
+      - run: |
+          ls -ahl ~/.cargo/bin
+          ls -ahl ~/.cargo/registry/cache
+          ls -ahl ~/.cargo/registry/index
+
       - name: Test units
         run: yarn test:units
         working-directory: packages/server
@@ -162,3 +173,7 @@ jobs:
           flags: server
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
+
+      - run: |
+          ls -ahl packages/server/target
+          ls -ahl packages/server/debug/*
