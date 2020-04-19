@@ -46,27 +46,28 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/bin
-          key: server-cargo-executables-${{ hashFiles('packages/server/**/rust-toolchain') }}
-          restore-keys: server-cargo-executables-
+          key: server-cargo-executables-${{ hashFiles('packages/server/Cargo.lock') }}
+      - name: Restore Cargo Git sources
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.cargo/git/db
+          key: server-cargo-git-sources-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/cache
-          key: server-cargo-packages-${{ hashFiles('packages/server/**/rust-toolchain') }}
-          restore-keys: server-cargo-packages-
+          key: server-cargo-packages-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Restore Cargo metadata
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/index
-          key: server-cargo-metadata-${{ hashFiles('packages/server/**/rust-toolchain') }}
-          restore-keys: server-cargo-metadata-
+          key: server-cargo-metadata-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Restore artifacts
         uses: actions/cache@v1.1.2
         id: restore-artifacts
         with:
           path: packages/server/target
-          key: server-artifacts-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: server-artifacts-
+          key: server-artifacts-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Install Rust and Cargo
         uses: actions-rs/toolchain@v1.0.6
         with:
@@ -80,17 +81,16 @@ jobs:
         if: steps.restore-artifacts.outputs.cache-hit != 'true'
         run: yarn build
         working-directory: packages/server
-
-      - run: ls -ahl ~/.cargo/bin
-      - run: ls -ahl ~/.cargo/registry/cache/*
-      - run: ls -ahl ~/.cargo/registry/index/*
-
       - name: Lint files, scripts, and types
         run: yarn lint
         working-directory: packages/server
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
 
+      - run: ls -ahl ~/.cargo/bin
+      - run: ls -ahl ~/.cargo/registry/cache/*
+      - run: ls -ahl ~/.cargo/registry/index/*
+      - run: ls -ahl ~/.cargo/registry/index/*/*
       - run: ls -ahl packages/server/target
       - run: ls -ahl packages/server/target/debug/*
 
@@ -117,27 +117,28 @@ jobs:
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/bin
-          key: server-cargo-executables-${{ hashFiles('packages/server/**/rust-toolchain') }}
-          restore-keys: server-cargo-executables-
+          key: server-cargo-executables-${{ hashFiles('packages/server/Cargo.lock') }}
+      - name: Restore Cargo Git sources
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.cargo/git/db
+          key: server-cargo-git-sources-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Restore Cargo packages
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/cache
-          key: server-cargo-packages-${{ hashFiles('packages/server/**/rust-toolchain') }}
-          restore-keys: server-cargo-packages-
+          key: server-cargo-packages-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Restore Cargo metadata
         uses: actions/cache@v1.1.2
         with:
           path: ~/.cargo/registry/index
-          key: server-cargo-metadata-${{ hashFiles('packages/server/**/rust-toolchain') }}
-          restore-keys: server-cargo-metadata-
+          key: server-cargo-metadata-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Restore artifacts
         uses: actions/cache@v1.1.2
         id: restore-artifacts
         with:
           path: packages/server/target
-          key: server-artifacts-${{ hashFiles('packages/server/**/Cargo.lock') }}
-          restore-keys: server-artifacts-
+          key: server-artifacts-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Install Rust and Cargo
         uses: actions-rs/toolchain@v1.0.6
         with:
@@ -150,11 +151,6 @@ jobs:
         if: steps.restore-artifacts.outputs.cache-hit != 'true'
         run: yarn build
         working-directory: packages/server
-
-      - run: ls -ahl ~/.cargo/bin
-      - run: ls -ahl ~/.cargo/registry/cache/*
-      - run: ls -ahl ~/.cargo/registry/index/*
-
       - name: Test units
         run: yarn test:units
         working-directory: packages/server
@@ -171,5 +167,9 @@ jobs:
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
 
+      - run: ls -ahl ~/.cargo/bin
+      - run: ls -ahl ~/.cargo/registry/cache/*
+      - run: ls -ahl ~/.cargo/registry/index/*
+      - run: ls -ahl ~/.cargo/registry/index/*/*
       - run: ls -ahl packages/server/target
       - run: ls -ahl packages/server/target/debug/*
