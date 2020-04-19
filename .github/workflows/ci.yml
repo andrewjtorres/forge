@@ -48,6 +48,11 @@ jobs:
         with:
           path: ~/.cargo/bin
           key: server-cargo-executables-${{ hashFiles('packages/server/Cargo.lock') }}
+      - name: Restore Cargo Git sources
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.cargo/git/db
+          key: server-cargo-git-sources-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Restore Cargo packages
         id: restore-cargo-packages
         uses: actions/cache@v1.1.2
@@ -109,6 +114,11 @@ jobs:
         with:
           path: ~/.cargo/bin
           key: server-cargo-executables-${{ hashFiles('packages/server/Cargo.lock') }}
+      - name: Restore Cargo Git sources
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.cargo/git/db
+          key: server-cargo-git-sources-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Restore Cargo packages
         id: restore-cargo-packages
         uses: actions/cache@v1.1.2
