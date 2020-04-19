@@ -77,10 +77,7 @@ jobs:
       - name: Install Rust dependencies
         run: cargo install --version 0.5.13 grcov || exit 0
 
-      - run: \
-          which rustup
-          which cargo
-          ls -ahl ~/.cargo/*
+      - run: ls -ahl ~/.cargo/*
 
       - name: Build
         if: steps.restore-artifacts.outputs.cache-hit != 'true'
@@ -144,10 +141,7 @@ jobs:
       - name: Install Rust dependencies
         run: cargo install --version 0.5.13 grcov || exit 0
 
-      - run: \
-          which rustup
-          which cargo
-          ls -ahl ~/.cargo/*
+      - run: ls -ahl ~/.cargo/*
 
       - name: Build
         if: steps.restore-artifacts.outputs.cache-hit != 'true'
