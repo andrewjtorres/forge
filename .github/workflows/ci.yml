@@ -86,14 +86,6 @@ jobs:
         working-directory: packages/server
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
-
-      - run: ls -ahl ~/.cargo/bin
-      - run: ls -ahl ~/.cargo/registry/cache/*
-      - run: ls -ahl ~/.cargo/registry/index/*
-      - run: ls -ahl ~/.cargo/registry/index/*/*
-      - run: ls -ahl packages/server/target
-      - run: ls -ahl packages/server/target/debug/*
-
   server_test:
     name: Server Test
     runs-on: ubuntu-18.04
@@ -166,10 +158,3 @@ jobs:
           flags: server
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
-
-      - run: ls -ahl ~/.cargo/bin
-      - run: ls -ahl ~/.cargo/registry/cache/*
-      - run: ls -ahl ~/.cargo/registry/index/*
-      - run: ls -ahl ~/.cargo/registry/index/*/*
-      - run: ls -ahl packages/server/target
-      - run: ls -ahl packages/server/target/debug/*
