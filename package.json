@@ -39,6 +39,9 @@
     "rxjs": "^6.5.5"
   },
   "dependenciesMeta": {
+    "ajv": {
+      "built": false
+    },
     "core-js": {
       "built": false
     },
