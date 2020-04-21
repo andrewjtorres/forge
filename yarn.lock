@@ -162,7 +162,7 @@ __metadata:
   dependencies:
     lint-staged: ^10.1.6
     npm-run-all: ^4.1.5
-    prettier: ^2.0.4
+    prettier: ^2.0.5
     prettylint: ^1.0.0
   languageName: unknown
   linkType: soft
@@ -1172,9 +1172,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>= 8":
-  version: 13.13.0
-  resolution: "@types/node@npm:13.13.0"
-  checksum: 2/30bc5a1ade71f18de9a4324b273d140a131310e92245a449b39c3aaa1271ca03d6a59b79cb12154bbedd8960f99d184e0d757e53fe704d6d1736d9567696468e
+  version: 13.13.1
+  resolution: "@types/node@npm:13.13.1"
+  checksum: 2/f0afea7a32a6a69463a4af16a8f821773987411d1158de2c6ef9b0a70d6724bb199328788086d9727295b2a94272ee9711162cd0e5c61960da71b04ca008d4ab
   languageName: node
   linkType: hard
 
@@ -1243,15 +1243,14 @@ __metadata:
   linkType: hard
 
 "ajv@npm:^6.5.5":
-  version: 6.12.1
-  resolution: "ajv@npm:6.12.1"
+  version: 6.12.2
+  resolution: "ajv@npm:6.12.2"
   dependencies:
     fast-deep-equal: ^3.1.1
     fast-json-stable-stringify: ^2.0.0
     json-schema-traverse: ^0.4.1
-    opencollective-postinstall: ^2.0.2
     uri-js: ^4.2.2
-  checksum: 2/8833fb9a16f9fd461fc316f0f68ef37947068a7e05f1366cf52dbeef784a0bf88ea89874298e5c2b90b70dfaf5a99fd29ea56bc3c9260026af9e2c1bee302f6f
+  checksum: 2/09f3d7992c4a6e554e65accab279878c2da2a7e3ca782032de51c7c91d80a43a3e2aeb26efb8e8950b3941a89882f21aaca1170dafada784a7a0f275b5e6e745
   languageName: node
   linkType: hard
 
@@ -3062,7 +3061,7 @@ __metadata:
     lerna: ^3.20.2
     lint-staged: ^10.1.6
     npm-run-all: ^4.1.5
-    prettier: ^2.0.4
+    prettier: ^2.0.5
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
     rxjs: ^6.5.5
@@ -4369,8 +4368,8 @@ __metadata:
   linkType: hard
 
 "lint-staged@npm:^10.1.6":
-  version: 10.1.6
-  resolution: "lint-staged@npm:10.1.6"
+  version: 10.1.7
+  resolution: "lint-staged@npm:10.1.7"
   dependencies:
     chalk: ^4.0.0
     commander: ^5.0.0
@@ -4387,7 +4386,7 @@ __metadata:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 2/168bbb1e1f9fefffcf7560c6dc9766b7c429d39ae66eb8fcfea2c593d3bcf76d87e3e3584245b2526f63e88e63ea89e76a5d0d0b90414ccd5e10e17ae77900f3
+  checksum: 2/daad067bf95eb6edd3509b027e86a2c022aa111ee37792950de19118a86e8ec02f9329fe5d8d017c1d2e5d6e148ae1dee19bdec3577fb21b5b7e77f333ff965d
   languageName: node
   linkType: hard
 
@@ -5860,12 +5859,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "prettier@npm:2.0.4"
+"prettier@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "prettier@npm:2.0.5"
   bin:
     prettier: bin-prettier.js
-  checksum: 2/a43343ac00250ce239439a723e5b0860a46e4703542b925c962d8c3dfceab1f69a326ba4c8de2f24ad39c4daef07831439b0b237cda9c63e4981164075e7dc5a
+  checksum: 2/d249d89361870a29b20e8b268cb09e908490b8c9e21f70393d12a213701f29ba7e95b7f9ce0ad63929c16ce475176742481911737ae3da4a498873e4a3b90990
   languageName: node
   linkType: hard
 
@@ -6697,9 +6696,9 @@ __metadata:
   linkType: hard
 
 "spdx-exceptions@npm:^2.1.0":
-  version: 2.2.0
-  resolution: "spdx-exceptions@npm:2.2.0"
-  checksum: 2/748c042fb1928b5ece6b5ae939ef091207e0c45066419d6c6a4944e21219c038a2a1a6df60d6b1adf3a600cd1da846d72adb246b09d9b8ef56c12b5d92bbfc01
+  version: 2.3.0
+  resolution: "spdx-exceptions@npm:2.3.0"
+  checksum: 2/3cbd2498897dc384158666a9dd7435e3b42ece5da42fd967b218b790e248381d001ec77a676d13d1f4e8da317d97b7bc0ebf4fff37bfbb95923d49b024030c96
   languageName: node
   linkType: hard
 
@@ -7647,11 +7646,11 @@ __metadata:
   linkType: hard
 
 "yaml@npm:^1.7.2":
-  version: 1.9.1
-  resolution: "yaml@npm:1.9.1"
+  version: 1.9.2
+  resolution: "yaml@npm:1.9.2"
   dependencies:
     "@babel/runtime": ^7.9.2
-  checksum: 2/56973fe2f959d5e36952c5c676439fa399d42c5a169b9f001574198fd654d3a6038e6429549f20df3f422af5130fcc22c05979fb95824be3fcf92833dd483884
+  checksum: 2/098baa974d33f13c3a93efba4e83c8992f533e78463010afc41a9c2ae574890fa670d91e8d18ffaf9af616c3a0683a4e93b69057bd143f53306570a117ebcb7f
   languageName: node
   linkType: hard
 
