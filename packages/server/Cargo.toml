@@ -13,7 +13,7 @@ keywords = ["graphql", "postgresql", "rust", "web-server"]
 publish = false
 
 [dependencies]
-actix-rt = "^1.1.0"
+actix-rt = "^1.1.1"
 dotenv = "^0.15.0"
 env_logger = "^0.7.1"
 juniper = "^0.14.2"
