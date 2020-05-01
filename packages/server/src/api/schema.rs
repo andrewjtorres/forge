@@ -1,15 +1,27 @@
 use juniper::{self, RootNode};
+use std::sync::Arc;
+
+use crate::database::pool::PooledConnection;
 
 pub type Schema = RootNode<'static, Query, Mutation>;
 
-#[derive(Debug)]
-pub struct Context;
+pub struct Context {
+    pub connection: Arc<PooledConnection>,
+}
 
 impl juniper::Context for Context {}
 
-#[derive(Debug)]
+impl Context {
+    pub fn new(connection: PooledConnection) -> Self {
+        Self {
+            connection: Arc::new(connection),
+        }
+    }
+}
+
 pub struct Mutation;
 
+/// The mutation root of the GraphQL interface.
 #[juniper::object(Context = Context)]
 impl Mutation {
     fn mutation() -> bool {
@@ -17,9 +29,9 @@ impl Mutation {
     }
 }
 
-#[derive(Debug)]
 pub struct Query;
 
+/// The query root of the GraphQL interface.
 #[juniper::object(Context = Context)]
 impl Query {
     fn query() -> bool {

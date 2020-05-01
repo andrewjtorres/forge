@@ -4,6 +4,7 @@ extern crate diesel;
 mod api;
 mod config;
 mod database;
+mod error;
 mod models;
 mod routes;
 
