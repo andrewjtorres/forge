@@ -8,6 +8,7 @@ mod error;
 mod models;
 mod routes;
 
+use actix_cors::Cors;
 use actix_web::{middleware::Logger, web::Data, App, HttpServer};
 use std::{env, io::Result, sync::Arc};
 
@@ -33,6 +34,12 @@ async fn main() -> Result<()> {
         App::new()
             .app_data(pool.clone())
             .data(schema.clone())
+            .wrap(
+                Cors::new()
+                    .allowed_methods(vec!["GET", "POST"])
+                    .max_age(3600)
+                    .finish(),
+            )
             .wrap(Logger::default())
             .configure(routes::configure)
     })
