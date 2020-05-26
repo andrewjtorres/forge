@@ -1,8 +1,7 @@
 'use strict'
 
 module.exports = {
-  plugins: ['prettier-plugin-toml'],
+  plugins: [require.resolve('prettier-plugin-toml')],
   semi: false,
   singleQuote: true,
-  trailingComma: 'es5',
 }

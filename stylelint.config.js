@@ -1,7 +1,11 @@
 'use strict'
 
 module.exports = {
-  plugins: ['stylelint-a11y', 'stylelint-order', 'stylelint-prettier'],
+  plugins: [
+    require.resolve('stylelint-a11y'),
+    require.resolve('stylelint-order'),
+    require.resolve('stylelint-prettier'),
+  ],
   extends: [
     'stylelint-config-recommended',
     'stylelint-a11y/recommended',
@@ -14,12 +18,12 @@ module.exports = {
       [
         {
           groupName: 'Positioning',
-          emptyLineBefore: "always",
+          emptyLineBefore: 'always',
           properties: ['position', 'top', 'right', 'bottom', 'left', 'z-index'],
         },
         {
           groupName: 'Box model',
-          emptyLineBefore: "always",
+          emptyLineBefore: 'always',
           properties: [
             'display',
             'flex',
@@ -83,7 +87,7 @@ module.exports = {
         },
         {
           groupName: 'Typography',
-          emptyLineBefore: "always",
+          emptyLineBefore: 'always',
           properties: [
             'color',
             'font',
@@ -146,7 +150,7 @@ module.exports = {
         },
         {
           groupName: 'Visual',
-          emptyLineBefore: "always",
+          emptyLineBefore: 'always',
           properties: [
             'list-style',
             'list-style-position',
@@ -224,7 +228,7 @@ module.exports = {
         },
         {
           groupName: 'Animation',
-          emptyLineBefore: "always",
+          emptyLineBefore: 'always',
           properties: [
             'transition',
             'transition-delay',
@@ -244,7 +248,7 @@ module.exports = {
         },
         {
           groupName: 'Miscellaneous',
-          emptyLineBefore: "always",
+          emptyLineBefore: 'always',
           properties: [
             'appearance',
             'content',
@@ -271,7 +275,7 @@ module.exports = {
           ],
         },
       ],
-      { unspecified: 'bottom' }
+      { unspecified: 'bottom' },
     ],
     'prettier/prettier': true,
   },
