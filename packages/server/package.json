@@ -15,13 +15,13 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ajtorres9/forge.git",
-    "directory": "packages/forge"
+    "directory": "packages/server"
   },
   "scripts": {
     "build": "cargo build",
     "hook:pre-commit": "lint-staged",
     "lint": "npm-run-all --parallel \"lint:*\"",
-    "lint:files": "prettylint --ignore-path .gitignore \"**/*.{json,md,toml}\"",
+    "lint:files": "prettylint \"**/*.{json,md,toml}\"",
     "lint:scripts": "cargo fmt",
     "lint:types": "cargo clippy",
     "start": "cargo run",
@@ -32,6 +32,7 @@
     "lint-staged": "^10.2.6",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
+    "prettier-plugin-toml": "^0.3.1",
     "prettylint": "^1.0.0"
   },
   "engines": {

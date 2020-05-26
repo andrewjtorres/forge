@@ -1,11 +1,12 @@
-# Dependencies
-.yarn/unplugged
-.yarn/build-state.yml
-node_modules
-.pnp.js
-
-# Logs
-*.log*
-
 # Miscellaneous
+!**/.*
 .all-contributorsrc
+
+# Dependencies
+.yarn
+
+# Version Control
+.git
+
+# Workspaces
+packages
