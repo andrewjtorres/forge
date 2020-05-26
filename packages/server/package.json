@@ -1,7 +1,7 @@
 {
   "name": "@forge/server",
   "version": "0.1.0",
-  "description": "The web server in charge of orchestrating business logic interactions",
+  "description": "Web server in charge of orchestrating business logic interactions",
   "keywords": [
     "graphql",
     "postgresql",
