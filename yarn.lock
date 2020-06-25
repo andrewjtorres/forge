@@ -4365,7 +4365,7 @@ __metadata:
     rxjs: ^6.5.5
     stylelint: ^13.6.1
     stylelint-a11y: ^1.2.3
-    stylelint-config-prettier: ^8.0.1
+    stylelint-config-prettier: ^8.0.2
     stylelint-config-recommended: ^3.0.0
     stylelint-order: ^4.1.0
     stylelint-prettier: ^1.1.2
@@ -9312,7 +9312,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-config-prettier@npm:^8.0.1":
+"stylelint-config-prettier@npm:^8.0.2":
   version: 8.0.2
   resolution: "stylelint-config-prettier@npm:8.0.2"
   peerDependencies:
