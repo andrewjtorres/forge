@@ -36,7 +36,7 @@ module.exports = {
     'formatjs/enforce-default-message': 'error',
     'formatjs/enforce-description': 'error',
     'formatjs/enforce-placeholders': 'error',
-    'formatjs/enforce-plural-rules': 'error',
+    'formatjs/enforce-plural-rules': ['error', { other: true }],
     'formatjs/no-multiple-whitespaces': 'error',
     'formatjs/supported-datetime-skeleton': 'error',
     'import/order': [
@@ -49,23 +49,25 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
+    'unicorn/prevent-abbreviations': 'off',
     'prettier/prettier': 'error',
   },
   overrides: [
     {
       files: ['*.ts?(x)'],
       parser: typescriptPlugin.configs.base.parser,
-      parserOptions: { project: ['tsconfig.json', 'packages/*/tsconfig.json'] },
+      parserOptions: { project: 'tsconfig.json' },
       plugins: typescriptPlugin.configs.base.plugins,
       rules: {
         ...typescriptPlugin.configs.recommended.rules,
         ...typescriptPlugin.configs['recommended-requiring-type-checking']
           .rules,
+        'import/named': 'off',
         ...prettierTypescriptConfig.rules,
       },
     },
     {
-      files: ['__mocks__/**/*.ts', '?(*.)test.ts?(x)'],
+      files: ['?(*.)test.ts?(x)'],
       globals: jestPlugin.environments.globals.globals,
       plugins: [
         ...jestPlugin.configs.recommended.plugins,
@@ -83,10 +85,7 @@ module.exports = {
     'import/extensions': ['.d.ts', '.js', '.ts', '.tsx'],
     'import/parsers': { '@typescript-eslint/parser': ['.d.ts', '.ts', '.tsx'] },
     'import/resolver': {
-      typescript: {
-        alwaysTryTypes: true,
-        directory: ['tsconfig.json', 'packages/*/tsconfig.json'],
-      },
+      typescript: { alwaysTryTypes: true, directory: 'tsconfig.json' },
     },
     react: { version: 'latest' },
   },
