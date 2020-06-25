@@ -3788,7 +3788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^20.0.0":
+"eslint-plugin-unicorn@npm:^20.1.0":
   version: 20.1.0
   resolution: "eslint-plugin-unicorn@npm:20.1.0"
   dependencies:
@@ -4354,7 +4354,7 @@ __metadata:
     eslint-plugin-react: ^7.20.0
     eslint-plugin-react-hooks: ^4.0.4
     eslint-plugin-testing-library: ^3.3.0
-    eslint-plugin-unicorn: ^20.0.0
+    eslint-plugin-unicorn: ^20.1.0
     husky: ^4.2.5
     lerna: ^3.22.0
     lint-staged: ^10.2.6
