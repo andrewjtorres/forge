@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.0.0
+        uses: actions/checkout@v2.3.1
       - name: Setup Node
         uses: actions/setup-node@v1.4.1
         with:
@@ -31,7 +31,7 @@ jobs:
       RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.0.0
+        uses: actions/checkout@v2.3.1
       - name: Setup Node
         uses: actions/setup-node@v1.4.1
         with:
@@ -97,7 +97,7 @@ jobs:
       RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.0.0
+        uses: actions/checkout@v2.3.1
       - name: Setup Node
         uses: actions/setup-node@v1.4.1
         with:
