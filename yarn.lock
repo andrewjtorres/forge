@@ -3579,19 +3579,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "eslint-import-resolver-typescript@npm:2.0.0"
+"eslint-import-resolver-typescript@npm:1.1.1":
+  version: 1.1.1
+  resolution: "eslint-import-resolver-typescript@npm:1.1.1"
   dependencies:
-    debug: ^4.1.1
-    is-glob: ^4.0.1
-    resolve: ^1.12.0
-    tiny-glob: ^0.2.6
-    tsconfig-paths: ^3.9.0
+    debug: ^4.0.1
+    resolve: ^1.4.0
+    tsconfig-paths: ^3.6.0
   peerDependencies:
     eslint: "*"
     eslint-plugin-import: "*"
-  checksum: 2600360cf6a019a49b44ffe3ab5b76b0e200933ca9401c0282dcbd71c029ec0be2c20de736adfdc77274e7032057e868a7095bb8dcbe144bf55c6345e5b071e5
+  checksum: 52f925eaaf602886fc837a8a20fbca8bc483d356f6a852f82960a0b6d5403b15b1b6cfece0249afc1f8c956c156557cc570b3d2a72f75da90d78358e1af57e6b
   languageName: node
   linkType: hard
 
@@ -4342,7 +4340,7 @@ __metadata:
     cz-conventional-changelog: ^3.2.0
     eslint: ^7.3.1
     eslint-config-prettier: ^6.11.0
-    eslint-import-resolver-typescript: ^2.0.0
+    eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.3.16
     eslint-plugin-import: ^2.21.2
     eslint-plugin-jest: ^23.17.1
@@ -4772,13 +4770,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globalyzer@npm:^0.1.0":
-  version: 0.1.4
-  resolution: "globalyzer@npm:0.1.4"
-  checksum: 31b1ffae741a3dbe3b1dc8dc7fd637b852583af4842839ba101d72f1beab9c0499c102643274fc202eac609711e64dfa32354fc976e239ff7a38a0dbc35e47f1
-  languageName: node
-  linkType: hard
-
 "globby@npm:^11.0.1":
   version: 11.0.1
   resolution: "globby@npm:11.0.1"
@@ -4826,13 +4817,6 @@ __metadata:
   version: 0.1.4
   resolution: "globjoin@npm:0.1.4"
   checksum: 777faae772023edb3f63c2187ccf10d56d7857fb89a6a4d16a1020d97aecb7368993603298655ab08651ffcbe0ed0d6565b50f90a664d0981d46aa93a0670c46
-  languageName: node
-  linkType: hard
-
-"globrex@npm:^0.1.1":
-  version: 0.1.2
-  resolution: "globrex@npm:0.1.2"
-  checksum: 78825a08abba1994cc3f79a3812a627cf22ac676b08e3b812a7c284af47d39d4dcddff6ac811cb994e817949df1ea53a17c13aa561d9c265b4d3fc34b7362990
   languageName: node
   linkType: hard
 
@@ -8457,7 +8441,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@^1.10.0, resolve@^1.10.1, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.15.1, resolve@^1.17.0, resolve@^1.3.2":
+"resolve@^1.10.0, resolve@^1.10.1, resolve@^1.13.1, resolve@^1.15.1, resolve@^1.17.0, resolve@^1.3.2, resolve@^1.4.0":
   version: 1.17.0
   resolution: "resolve@npm:1.17.0"
   dependencies:
@@ -8466,7 +8450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#builtin<compat/resolve>, resolve@patch:resolve@^1.15.1#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#builtin<compat/resolve>":
+"resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#builtin<compat/resolve>, resolve@patch:resolve@^1.15.1#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#builtin<compat/resolve>, resolve@patch:resolve@^1.4.0#builtin<compat/resolve>":
   version: 1.17.0
   resolution: "resolve@patch:resolve@npm%3A1.17.0#builtin<compat/resolve>::version=1.17.0&hash=3388aa"
   dependencies:
@@ -9587,16 +9571,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tiny-glob@npm:^0.2.6":
-  version: 0.2.6
-  resolution: "tiny-glob@npm:0.2.6"
-  dependencies:
-    globalyzer: ^0.1.0
-    globrex: ^0.1.1
-  checksum: f31491e934e480f3177c22ab8f74b1df7c6064953e0d64beea3b4aa71602c810f87af5ca0650a32ba6cab28ab1e2060de5c69102bab358b022eda7514ad4202c
-  languageName: node
-  linkType: hard
-
 "tmp@npm:^0.0.33":
   version: 0.0.33
   resolution: "tmp@npm:0.0.33"
@@ -9721,7 +9695,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfig-paths@npm:^3.9.0":
+"tsconfig-paths@npm:^3.6.0, tsconfig-paths@npm:^3.9.0":
   version: 3.9.0
   resolution: "tsconfig-paths@npm:3.9.0"
   dependencies:

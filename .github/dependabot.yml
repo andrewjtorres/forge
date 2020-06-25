@@ -32,6 +32,10 @@ updates:
       interval: daily
     allow:
       - dependency-type: all
+    ignore:
+      - dependency-name: eslint-import-resolver-typescript
+        versions:
+          - '> 1.1.1'
     labels:
       - ':horse: chore'
     open-pull-requests-limit: 10
