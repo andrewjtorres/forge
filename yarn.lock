@@ -191,7 +191,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2":
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.9.6":
   version: 7.10.3
   resolution: "@babel/runtime@npm:7.10.3"
   dependencies:
@@ -1527,7 +1527,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^3.0.1":
+"@typescript-eslint/eslint-plugin@npm:^3.4.0":
   version: 3.4.0
   resolution: "@typescript-eslint/eslint-plugin@npm:3.4.0"
   dependencies:
@@ -1576,7 +1576,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^3.0.1":
+"@typescript-eslint/parser@npm:^3.4.0":
   version: 3.4.0
   resolution: "@typescript-eslint/parser@npm:3.4.0"
   dependencies:
@@ -3366,9 +3366,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.481":
-  version: 1.3.481
-  resolution: "electron-to-chromium@npm:1.3.481"
-  checksum: 6b0e3038225dbc9761334a2db981529006fb8e6a9037322389d51c6753e945febe512b42b2d619ed229457098448402503f5c725fd87a559af1bbe382a515658
+  version: 1.3.482
+  resolution: "electron-to-chromium@npm:1.3.482"
+  checksum: 82ea7451083c997993399781ba141b3d6924da7b3400703fd3f8deff289244529407874c592cc28576a16c3f10988665bfa76f10642fbdfec8934065f87fab7c
   languageName: node
   linkType: hard
 
@@ -3617,7 +3617,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.3.6":
+"eslint-plugin-formatjs@npm:^2.3.16":
   version: 2.3.16
   resolution: "eslint-plugin-formatjs@npm:2.3.16"
   dependencies:
@@ -3633,7 +3633,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.20.2":
+"eslint-plugin-import@npm:^2.21.2":
   version: 2.21.2
   resolution: "eslint-plugin-import@npm:2.21.2"
   dependencies:
@@ -3656,16 +3656,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest-dom@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "eslint-plugin-jest-dom@npm:2.1.0"
+"eslint-plugin-jest-dom@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "eslint-plugin-jest-dom@npm:3.0.1"
   dependencies:
-    requireindex: ~1.2.0
-  checksum: fbfe9a9e272e840431ae036b06d182a954bd43203449f55e49c8439be86a79ecddd1bcd61038d5ef03f1246f264e9ce2ca21627afdb7f556615a26980cb53df4
+    "@babel/runtime": ^7.9.6
+    requireindex: ^1.2.0
+  peerDependencies:
+    eslint: ^7.0.0
+  checksum: 0d6923cb3833083698d61853a6c731a36792be90705ca5fa2d3c629f95f0b58b6109ae00801245a69307ee42afee00312c4982c7af3cf73a2003eaab53de42e4
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^23.13.1":
+"eslint-plugin-jest@npm:^23.17.1":
   version: 23.17.1
   resolution: "eslint-plugin-jest@npm:23.17.1"
   dependencies:
@@ -3676,7 +3679,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:^6.2.3":
+"eslint-plugin-jsx-a11y@npm:^6.3.1":
   version: 6.3.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.3.1"
   dependencies:
@@ -3725,7 +3728,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.1.3":
+"eslint-plugin-prettier@npm:^3.1.4":
   version: 3.1.4
   resolution: "eslint-plugin-prettier@npm:3.1.4"
   dependencies:
@@ -3744,7 +3747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^4.0.2":
+"eslint-plugin-react-hooks@npm:^4.0.4":
   version: 4.0.4
   resolution: "eslint-plugin-react-hooks@npm:4.0.4"
   peerDependencies:
@@ -3847,7 +3850,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.1.0":
+"eslint@npm:^7.3.1":
   version: 7.3.1
   resolution: "eslint@npm:7.3.1"
   dependencies:
@@ -4334,22 +4337,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "forge@workspace:."
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^3.0.1
-    "@typescript-eslint/parser": ^3.0.1
+    "@typescript-eslint/eslint-plugin": ^3.4.0
+    "@typescript-eslint/parser": ^3.4.0
     cz-conventional-changelog: ^3.2.0
-    eslint: ^7.1.0
+    eslint: ^7.3.1
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: ^2.0.0
-    eslint-plugin-formatjs: ^2.3.6
-    eslint-plugin-import: ^2.20.2
-    eslint-plugin-jest: ^23.13.1
-    eslint-plugin-jest-dom: ^2.1.0
-    eslint-plugin-jsx-a11y: ^6.2.3
+    eslint-plugin-formatjs: ^2.3.16
+    eslint-plugin-import: ^2.21.2
+    eslint-plugin-jest: ^23.17.1
+    eslint-plugin-jest-dom: ^3.0.1
+    eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-node: ^11.1.0
-    eslint-plugin-prettier: ^3.1.3
+    eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.20.0
-    eslint-plugin-react-hooks: ^4.0.2
+    eslint-plugin-react-hooks: ^4.0.4
     eslint-plugin-testing-library: ^3.3.0
     eslint-plugin-unicorn: ^20.0.0
     husky: ^4.2.5
@@ -4366,7 +4369,7 @@ __metadata:
     stylelint-config-recommended: ^3.0.0
     stylelint-order: ^4.0.0
     stylelint-prettier: ^1.1.2
-    typescript: ^3.9.3
+    typescript: ^3.9.5
   dependenciesMeta:
     core-js:
       built: false
@@ -8382,7 +8385,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"requireindex@npm:~1.2.0":
+"requireindex@npm:^1.2.0":
   version: 1.2.0
   resolution: "requireindex@npm:1.2.0"
   checksum: a6c6c2edd46bcce88f839f69f1d29a11920664862d8b78c205fc69ab2d65a8f592c1a8d68755335898af14ab110cc9fdfc7c572412d38cec485bdf4db45c49c5
@@ -9803,7 +9806,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-typescript@^3.9.3:
+typescript@^3.9.5:
   version: 3.9.5
   resolution: "typescript@npm:3.9.5"
   bin:
@@ -9813,7 +9816,7 @@ typescript@^3.9.3:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^3.9.3#builtin<compat/typescript>":
+"typescript@patch:typescript@^3.9.5#builtin<compat/typescript>":
   version: 3.9.5
   resolution: "typescript@patch:typescript@npm%3A3.9.5#builtin<compat/typescript>::version=3.9.5&hash=64df9d"
   bin:
