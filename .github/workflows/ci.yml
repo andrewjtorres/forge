@@ -28,7 +28,8 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       CARGO_INCREMENTAL: 0
-      RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
+      RUSTDOCFLAGS: -C panic=abort
+      RUSTFLAGS: -C codegen-units=1 -C link-dead-code -C opt-level=0 -C overflow-checks=off -C panic=abort -Z panic_abort_tests -Z profile
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.1
@@ -56,12 +57,12 @@ jobs:
       - name: Install Rust and Cargo
         uses: actions-rs/toolchain@v1.0.6
         with:
-          toolchain: nightly-2020-04-18
+          toolchain: nightly-2020-06-25
           default: true
           profile: minimal
           components: clippy, rustfmt
       - name: Install Rust dependencies
-        run: cargo install --version 0.5.13 grcov || exit 0
+        run: cargo install --version 0.5.15 grcov || exit 0
       - name: Build
         if: steps.restore-cargo-cache-and-artifacts.outputs.cache-hit != 'true'
         run: yarn build
@@ -76,7 +77,8 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       CARGO_INCREMENTAL: 0
-      RUSTFLAGS: -C codegen-units=1 -C inline-threshold=0 -C link-dead-code -C overflow-checks=off -Z no-landing-pads -Z profile
+      RUSTDOCFLAGS: -C panic=abort
+      RUSTFLAGS: -C codegen-units=1 -C link-dead-code -C opt-level=0 -C overflow-checks=off -C panic=abort -Z panic_abort_tests -Z profile
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.1
@@ -104,11 +106,11 @@ jobs:
       - name: Install Rust and Cargo
         uses: actions-rs/toolchain@v1.0.6
         with:
-          toolchain: nightly-2020-04-18
+          toolchain: nightly-2020-06-25
           default: true
           profile: minimal
       - name: Install Rust dependencies
-        run: cargo install --version 0.5.13 grcov || exit 0
+        run: cargo install --version 0.5.15 grcov || exit 0
       - name: Build
         if: steps.restore-cargo-cache-and-artifacts.outputs.cache-hit != 'true'
         run: yarn build
@@ -119,10 +121,10 @@ jobs:
       - name: Generate code coverage report
         run: |
           mkdir coverage
-          grcov --branch --ignore '/*' --ignore-not-existing --llvm --output-file coverage/lcov.info --source-dir . target
+          grcov --branch --ignore '/*' --ignore-not-existing --llvm --output-path coverage/lcov.info --source-dir . target
         working-directory: packages/server
       - name: Publish code coverage report
-        uses: codecov/codecov-action@v1.0.6
+        uses: codecov/codecov-action@v1.0.7
         with:
           file: packages/server/coverage/lcov.info
           flags: server
