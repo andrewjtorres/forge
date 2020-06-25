@@ -191,7 +191,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2":
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.9.6":
   version: 7.10.3
   resolution: "@babel/runtime@npm:7.10.3"
   dependencies:
@@ -366,7 +366,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@forge/server@workspace:packages/server"
   dependencies:
-    lint-staged: ^10.2.6
+    lint-staged: ^10.2.11
     npm-run-all: ^4.1.5
     prettier: ^2.0.5
     prettier-plugin-toml: ^0.3.1
@@ -1527,7 +1527,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^3.0.1":
+"@typescript-eslint/eslint-plugin@npm:^3.4.0":
   version: 3.4.0
   resolution: "@typescript-eslint/eslint-plugin@npm:3.4.0"
   dependencies:
@@ -1576,7 +1576,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^3.0.1":
+"@typescript-eslint/parser@npm:^3.4.0":
   version: 3.4.0
   resolution: "@typescript-eslint/parser@npm:3.4.0"
   dependencies:
@@ -3617,7 +3617,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.3.6":
+"eslint-plugin-formatjs@npm:^2.3.16":
   version: 2.3.16
   resolution: "eslint-plugin-formatjs@npm:2.3.16"
   dependencies:
@@ -3633,7 +3633,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.20.2":
+"eslint-plugin-import@npm:^2.21.2":
   version: 2.21.2
   resolution: "eslint-plugin-import@npm:2.21.2"
   dependencies:
@@ -3656,16 +3656,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest-dom@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "eslint-plugin-jest-dom@npm:2.1.0"
+"eslint-plugin-jest-dom@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "eslint-plugin-jest-dom@npm:3.0.1"
   dependencies:
-    requireindex: ~1.2.0
-  checksum: fbfe9a9e272e840431ae036b06d182a954bd43203449f55e49c8439be86a79ecddd1bcd61038d5ef03f1246f264e9ce2ca21627afdb7f556615a26980cb53df4
+    "@babel/runtime": ^7.9.6
+    requireindex: ^1.2.0
+  peerDependencies:
+    eslint: ^7.0.0
+  checksum: 0d6923cb3833083698d61853a6c731a36792be90705ca5fa2d3c629f95f0b58b6109ae00801245a69307ee42afee00312c4982c7af3cf73a2003eaab53de42e4
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^23.13.1":
+"eslint-plugin-jest@npm:^23.17.1":
   version: 23.17.1
   resolution: "eslint-plugin-jest@npm:23.17.1"
   dependencies:
@@ -3676,7 +3679,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:^6.2.3":
+"eslint-plugin-jsx-a11y@npm:^6.3.1":
   version: 6.3.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.3.1"
   dependencies:
@@ -3725,7 +3728,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.1.3":
+"eslint-plugin-prettier@npm:^3.1.4":
   version: 3.1.4
   resolution: "eslint-plugin-prettier@npm:3.1.4"
   dependencies:
@@ -3744,7 +3747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^4.0.2":
+"eslint-plugin-react-hooks@npm:^4.0.4":
   version: 4.0.4
   resolution: "eslint-plugin-react-hooks@npm:4.0.4"
   peerDependencies:
@@ -3774,18 +3777,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^3.1.3":
-  version: 3.3.1
-  resolution: "eslint-plugin-testing-library@npm:3.3.1"
+"eslint-plugin-testing-library@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "eslint-plugin-testing-library@npm:3.3.0"
   dependencies:
     "@typescript-eslint/experimental-utils": ^2.29.0
   peerDependencies:
-    eslint: ^5 || ^6
-  checksum: 5ebf5dca8fb36e09c9fde3c78d8d60f462a77d89cea19792e40131cd1724c799b5a5d5f76a189b0c6dc31c7d3b9e1a1daa578c6d8c6bf4eb25c4294aa62551e0
+    eslint: ">=5"
+  checksum: 0b2646844e30543a6f3f93de58f245532d82f7f8970f33d6bf99cda746b0a398def59352aefeb38ba459764b0c3f5e9ee90e84b83556c66c2b80e4a7fe2c4f4c
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^20.0.0":
+"eslint-plugin-unicorn@npm:^20.1.0":
   version: 20.1.0
   resolution: "eslint-plugin-unicorn@npm:20.1.0"
   dependencies:
@@ -3847,7 +3850,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.1.0":
+"eslint@npm:^7.3.1":
   version: 7.3.1
   resolution: "eslint@npm:7.3.1"
   dependencies:
@@ -4334,39 +4337,39 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "forge@workspace:."
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^3.0.1
-    "@typescript-eslint/parser": ^3.0.1
+    "@typescript-eslint/eslint-plugin": ^3.4.0
+    "@typescript-eslint/parser": ^3.4.0
     cz-conventional-changelog: ^3.2.0
-    eslint: ^7.1.0
+    eslint: ^7.3.1
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: ^2.0.0
-    eslint-plugin-formatjs: ^2.3.6
-    eslint-plugin-import: ^2.20.2
-    eslint-plugin-jest: ^23.13.1
-    eslint-plugin-jest-dom: ^2.1.0
-    eslint-plugin-jsx-a11y: ^6.2.3
+    eslint-plugin-formatjs: ^2.3.16
+    eslint-plugin-import: ^2.21.2
+    eslint-plugin-jest: ^23.17.1
+    eslint-plugin-jest-dom: ^3.0.1
+    eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-node: ^11.1.0
-    eslint-plugin-prettier: ^3.1.3
+    eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.20.0
-    eslint-plugin-react-hooks: ^4.0.2
-    eslint-plugin-testing-library: ^3.1.3
-    eslint-plugin-unicorn: ^20.0.0
+    eslint-plugin-react-hooks: ^4.0.4
+    eslint-plugin-testing-library: ^3.3.0
+    eslint-plugin-unicorn: ^20.1.0
     husky: ^4.2.5
     lerna: ^3.22.0
-    lint-staged: ^10.2.6
+    lint-staged: ^10.2.11
     npm-run-all: ^4.1.5
     prettier: ^2.0.5
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
     rxjs: ^6.5.5
-    stylelint: ^13.5.0
+    stylelint: ^13.6.1
     stylelint-a11y: ^1.2.3
     stylelint-config-prettier: ^8.0.2
     stylelint-config-recommended: ^3.0.0
-    stylelint-order: ^4.0.0
+    stylelint-order: ^4.1.0
     stylelint-prettier: ^1.1.2
-    typescript: ^3.9.3
+    typescript: ^3.9.5
   dependenciesMeta:
     core-js:
       built: false
@@ -6003,7 +6006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.2.6":
+"lint-staged@npm:^10.2.11":
   version: 10.2.11
   resolution: "lint-staged@npm:10.2.11"
   dependencies:
@@ -8382,7 +8385,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"requireindex@npm:~1.2.0":
+"requireindex@npm:^1.2.0":
   version: 1.2.0
   resolution: "requireindex@npm:1.2.0"
   checksum: a6c6c2edd46bcce88f839f69f1d29a11920664862d8b78c205fc69ab2d65a8f592c1a8d68755335898af14ab110cc9fdfc7c572412d38cec485bdf4db45c49c5
@@ -9330,7 +9333,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-order@npm:^4.0.0":
+"stylelint-order@npm:^4.1.0":
   version: 4.1.0
   resolution: "stylelint-order@npm:4.1.0"
   dependencies:
@@ -9355,7 +9358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^13.5.0":
+"stylelint@npm:^13.6.1":
   version: 13.6.1
   resolution: "stylelint@npm:13.6.1"
   dependencies:
@@ -9803,7 +9806,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-typescript@^3.9.3:
+typescript@^3.9.5:
   version: 3.9.5
   resolution: "typescript@npm:3.9.5"
   bin:
@@ -9813,7 +9816,7 @@ typescript@^3.9.3:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^3.9.3#builtin<compat/typescript>":
+"typescript@patch:typescript@^3.9.5#builtin<compat/typescript>":
   version: 3.9.5
   resolution: "typescript@patch:typescript@npm%3A3.9.5#builtin<compat/typescript>::version=3.9.5&hash=64df9d"
   bin:
