@@ -4369,7 +4369,7 @@ __metadata:
     stylelint-config-recommended: ^3.0.0
     stylelint-order: ^4.0.0
     stylelint-prettier: ^1.1.2
-    typescript: ^3.9.3
+    typescript: ^3.9.5
   dependenciesMeta:
     core-js:
       built: false
@@ -9806,7 +9806,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-typescript@^3.9.3:
+typescript@^3.9.5:
   version: 3.9.5
   resolution: "typescript@npm:3.9.5"
   bin:
@@ -9816,7 +9816,7 @@ typescript@^3.9.3:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^3.9.3#builtin<compat/typescript>":
+"typescript@patch:typescript@^3.9.5#builtin<compat/typescript>":
   version: 3.9.5
   resolution: "typescript@patch:typescript@npm%3A3.9.5#builtin<compat/typescript>::version=3.9.5&hash=64df9d"
   bin:
