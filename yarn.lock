@@ -172,7 +172,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.10.3":
+"@babel/parser@npm:^7.10.3, @babel/parser@npm:^7.8.3":
   version: 7.10.3
   resolution: "@babel/parser@npm:7.10.3"
   bin:
@@ -211,7 +211,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.10.1, @babel/traverse@npm:^7.10.3":
+"@babel/traverse@npm:^7.10.1, @babel/traverse@npm:^7.10.3, @babel/traverse@npm:^7.8.3":
   version: 7.10.3
   resolution: "@babel/traverse@npm:7.10.3"
   dependencies:
@@ -4367,8 +4367,10 @@ __metadata:
     stylelint-a11y: ^1.2.3
     stylelint-config-prettier: ^8.0.2
     stylelint-config-recommended: ^3.0.0
+    stylelint-config-styled-components: ^0.1.1
     stylelint-order: ^4.1.0
     stylelint-prettier: ^1.1.2
+    stylelint-processor-styled-components: ^1.10.0
     typescript: ^3.9.5
   dependenciesMeta:
     core-js:
@@ -9333,6 +9335,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"stylelint-config-styled-components@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "stylelint-config-styled-components@npm:0.1.1"
+  checksum: 174eb36c0ddfee5aae5938677efbb2406f6492450d231d1eeee9e828090a396601de317abaf02c9e9c93d704ee6410444230548f9e6f2e726a6ef31eea03a33b
+  languageName: node
+  linkType: hard
+
 "stylelint-order@npm:^4.1.0":
   version: 4.1.0
   resolution: "stylelint-order@npm:4.1.0"
@@ -9355,6 +9364,18 @@ __metadata:
     prettier: ">= 0.11.0"
     stylelint: ">= 9.2.1"
   checksum: 10d48ff46f70bbee1ab810b4339ed3214f9a35b48cf7f5d962268bc65a7900705999fde0ea16cb6d27f6cdff2c0488fbc938a01368f0733a2bbda10694804b52
+  languageName: node
+  linkType: hard
+
+"stylelint-processor-styled-components@npm:^1.10.0":
+  version: 1.10.0
+  resolution: "stylelint-processor-styled-components@npm:1.10.0"
+  dependencies:
+    "@babel/parser": ^7.8.3
+    "@babel/traverse": ^7.8.3
+    micromatch: ^4.0.2
+    postcss: ^7.0.26
+  checksum: 9ff9a43666dda4459b94d5acea415afee4cccc6ea1967a67d96777456d9680828d80f0daad191dec9b0763b74041569ee159b6ff296b8f4ed8350680488f41a4
   languageName: node
   linkType: hard
 

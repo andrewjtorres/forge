@@ -1,29 +1,27 @@
 'use strict'
 
 module.exports = {
-  plugins: [
-    require.resolve('stylelint-a11y'),
-    require.resolve('stylelint-order'),
-    require.resolve('stylelint-prettier'),
-  ],
+  processors: ['stylelint-processor-styled-components'],
+  plugins: ['stylelint-a11y', 'stylelint-order', 'stylelint-prettier'],
   extends: [
     'stylelint-config-recommended',
+    'stylelint-config-styled-components',
     'stylelint-a11y/recommended',
     'stylelint-config-prettier',
   ],
   rules: {
-    'property-no-vendor-prefix': true,
-    'value-no-vendor-prefix': true,
     'order/properties-order': [
       [
         {
+          emptyLineBefore: 'never',
           groupName: 'Positioning',
-          emptyLineBefore: 'always',
+          noEmptyLineBetween: true,
           properties: ['position', 'top', 'right', 'bottom', 'left', 'z-index'],
         },
         {
-          groupName: 'Box model',
-          emptyLineBefore: 'always',
+          emptyLineBefore: 'never',
+          groupName: 'Box Model',
+          noEmptyLineBetween: true,
           properties: [
             'display',
             'flex',
@@ -86,8 +84,9 @@ module.exports = {
           ],
         },
         {
+          emptyLineBefore: 'never',
           groupName: 'Typography',
-          emptyLineBefore: 'always',
+          noEmptyLineBetween: true,
           properties: [
             'color',
             'font',
@@ -98,11 +97,7 @@ module.exports = {
             'font-variant',
             'font-size-adjust',
             'font-stretch',
-            'font-effect',
-            'font-emphasize',
-            'font-emphasize-position',
-            'font-emphasize-style',
-            'font-smooth',
+            'font-smoothing',
             'line-height',
             'direction',
             'letter-spacing',
@@ -117,11 +112,8 @@ module.exports = {
             'text-emphasis-position',
             'text-indent',
             'text-justify',
-            'text-outline',
             'text-wrap',
             'text-overflow',
-            'text-overflow-ellipsis',
-            'text-overflow-mode',
             'text-orientation',
             'text-shadow',
             'vertical-align',
@@ -149,8 +141,9 @@ module.exports = {
           ],
         },
         {
+          emptyLineBefore: 'never',
           groupName: 'Visual',
-          emptyLineBefore: 'always',
+          noEmptyLineBetween: true,
           properties: [
             'list-style',
             'list-style-position',
@@ -227,8 +220,9 @@ module.exports = {
           ],
         },
         {
+          emptyLineBefore: 'never',
           groupName: 'Animation',
-          emptyLineBefore: 'always',
+          noEmptyLineBetween: true,
           properties: [
             'transition',
             'transition-delay',
@@ -247,8 +241,9 @@ module.exports = {
           ],
         },
         {
+          emptyLineBefore: 'never',
           groupName: 'Miscellaneous',
-          emptyLineBefore: 'always',
+          noEmptyLineBetween: true,
           properties: [
             'appearance',
             'content',
@@ -275,7 +270,10 @@ module.exports = {
           ],
         },
       ],
-      { unspecified: 'bottom' },
+      {
+        emptyLineBeforeUnspecified: 'always',
+        unspecified: 'bottomAlphabetical',
+      },
     ],
     'prettier/prettier': true,
   },
