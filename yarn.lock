@@ -4367,7 +4367,7 @@ __metadata:
     stylelint-a11y: ^1.2.3
     stylelint-config-prettier: ^8.0.1
     stylelint-config-recommended: ^3.0.0
-    stylelint-order: ^4.0.0
+    stylelint-order: ^4.1.0
     stylelint-prettier: ^1.1.2
     typescript: ^3.9.5
   dependenciesMeta:
@@ -9333,7 +9333,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-order@npm:^4.0.0":
+"stylelint-order@npm:^4.1.0":
   version: 4.1.0
   resolution: "stylelint-order@npm:4.1.0"
   dependencies:
