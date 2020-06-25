@@ -3747,14 +3747,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "eslint-plugin-testing-library@npm:3.3.0"
+"eslint-plugin-testing-library@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "eslint-plugin-testing-library@npm:3.3.1"
   dependencies:
     "@typescript-eslint/experimental-utils": ^2.29.0
   peerDependencies:
-    eslint: ">=5"
-  checksum: 0b2646844e30543a6f3f93de58f245532d82f7f8970f33d6bf99cda746b0a398def59352aefeb38ba459764b0c3f5e9ee90e84b83556c66c2b80e4a7fe2c4f4c
+    eslint: ^5 || ^6
+  checksum: 5ebf5dca8fb36e09c9fde3c78d8d60f462a77d89cea19792e40131cd1724c799b5a5d5f76a189b0c6dc31c7d3b9e1a1daa578c6d8c6bf4eb25c4294aa62551e0
   languageName: node
   linkType: hard
 
@@ -4322,7 +4322,7 @@ __metadata:
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.20.0
     eslint-plugin-react-hooks: ^4.0.4
-    eslint-plugin-testing-library: ^3.3.0
+    eslint-plugin-testing-library: ^3.3.1
     eslint-plugin-unicorn: ^20.1.0
     husky: ^4.2.5
     lerna: ^3.22.0
