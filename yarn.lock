@@ -4312,7 +4312,6 @@ __metadata:
     prettier: ^2.0.5
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
-    rxjs: ^6.5.5
     stylelint: ^13.6.1
     stylelint-a11y: ^1.2.3
     stylelint-config-prettier: ^8.0.2

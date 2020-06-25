@@ -131,10 +131,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0"
       ],
       [
-        "rxjs",
-        "npm:6.5.5"
-      ],
-      [
         "stylelint",
         "npm:13.6.1"
       ],
@@ -202,7 +198,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["prettier-plugin-toml", "npm:0.3.1"],
             ["prettylint", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0"],
-            ["rxjs", "npm:6.5.5"],
             ["stylelint", "npm:13.6.1"],
             ["stylelint-a11y", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.2.3"],
             ["stylelint-config-prettier", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:8.0.2"],
@@ -5020,7 +5015,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["prettier-plugin-toml", "npm:0.3.1"],
             ["prettylint", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.0.0"],
-            ["rxjs", "npm:6.5.5"],
             ["stylelint", "npm:13.6.1"],
             ["stylelint-a11y", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:1.2.3"],
             ["stylelint-config-prettier", "virtual:22175db59baceb65080053cd2b6ac654269807b288b0f95b6795baeea1015674d6a474c102e996594d68c76caa355ef670ac1a353857044788dbddd1d92a81ce#npm:8.0.2"],
