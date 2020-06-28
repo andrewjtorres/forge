@@ -374,12 +374,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@formatjs/intl-numberformat@npm:^4.2.9":
-  version: 4.2.9
-  resolution: "@formatjs/intl-numberformat@npm:4.2.9"
+"@formatjs/intl-numberformat@npm:^4.2.10":
+  version: 4.2.10
+  resolution: "@formatjs/intl-numberformat@npm:4.2.10"
   dependencies:
     "@formatjs/intl-utils": ^3.4.1
-  checksum: 6a252d38d7fd34e9d7169c0eb133d4d38321b3ff8a18d78bd25125c764e24186b2df28b4735ec2323f37f0a1fc031547972aa716eb9180932b278f920b90932f
+  checksum: fa9f7be238baf462a1f76f427d430cc109ee884843b392c40a78820673a106e75b184b5949e44bd315a6d856bd87f1967ff85073af1da3ef7c8f9770fbe5556f
   languageName: node
   linkType: hard
 
@@ -3591,19 +3591,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.3.16":
-  version: 2.3.16
-  resolution: "eslint-plugin-formatjs@npm:2.3.16"
+"eslint-plugin-formatjs@npm:^2.3.17":
+  version: 2.3.17
+  resolution: "eslint-plugin-formatjs@npm:2.3.17"
   dependencies:
     "@types/emoji-regex": ^8.0.0
     "@types/eslint": ^6.8.0
     "@types/estree": ^0.0.44
     "@typescript-eslint/typescript-estree": ^2.29.0
     emoji-regex: ^9.0.0
-    intl-messageformat-parser: ^5.1.6
+    intl-messageformat-parser: ^5.2.0
   peerDependencies:
     eslint: ^6.8.0
-  checksum: 3d630091906d50d59677efb8006f8afa3cbeb9ddd4b4b068e9c15646fd2c259d1be304e0999d14119417309d6095e6cf688b535f587d013235510a9545f4120f
+  checksum: b1170204d154410fb88823f5270351501547e2fc0eb569eea72a2aad02f610a3d5ca02b3ba09cf6831bf901cbc02d2b5139844f3a4b9e6e0fbefb9be43b23b9b
   languageName: node
   linkType: hard
 
@@ -4294,7 +4294,7 @@ __metadata:
     eslint: ^7.3.1
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.3.16
+    eslint-plugin-formatjs: ^2.3.17
     eslint-plugin-import: ^2.21.2
     eslint-plugin-jest: ^23.17.1
     eslint-plugin-jest-dom: ^3.0.1
@@ -5227,12 +5227,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"intl-messageformat-parser@npm:^5.1.6":
-  version: 5.1.6
-  resolution: "intl-messageformat-parser@npm:5.1.6"
+"intl-messageformat-parser@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "intl-messageformat-parser@npm:5.2.0"
   dependencies:
-    "@formatjs/intl-numberformat": ^4.2.9
-  checksum: adcf4484b4de701904ff69684ee1f14a988cb09a1431f1237d7ca50d58a15ee4f9eea68cab5214f4bb97183dd813aaa72f17913d0418944c8d8a648c042b3c41
+    "@formatjs/intl-numberformat": ^4.2.10
+  checksum: c6aea320924fa6e430db33701e8d968fca487358d5b513cdf035e4ac62dc5195cf968c62cd0196147e2a0b9d9a2d01a2835ace9a3f4251ee542dedf439fb5255
   languageName: node
   linkType: hard
 
