@@ -1,3 +1,7 @@
 # Dependencies
+.yarn/sdks
 .yarn/unplugged
 .yarn/build-state.yml
+
+# Logs
+*.log*
