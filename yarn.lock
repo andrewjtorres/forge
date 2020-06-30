@@ -1527,7 +1527,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^3.4.0":
+"@typescript-eslint/eslint-plugin@npm:^3.5.0":
   version: 3.5.0
   resolution: "@typescript-eslint/eslint-plugin@npm:3.5.0"
   dependencies:
@@ -3756,7 +3756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.20.1":
+"eslint-plugin-react@npm:^7.20.2":
   version: 7.20.2
   resolution: "eslint-plugin-react@npm:7.20.2"
   dependencies:
@@ -4337,7 +4337,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "forge@workspace:."
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^3.4.0
+    "@typescript-eslint/eslint-plugin": ^3.5.0
     "@typescript-eslint/parser": ^3.5.0
     cz-conventional-changelog: ^3.2.0
     eslint: ^7.3.1
@@ -4350,7 +4350,7 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
-    eslint-plugin-react: ^7.20.1
+    eslint-plugin-react: ^7.20.2
     eslint-plugin-react-hooks: ^4.0.4
     eslint-plugin-testing-library: ^3.3.1
     eslint-plugin-unicorn: ^20.1.0
