@@ -3633,7 +3633,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.3.17":
+"eslint-plugin-formatjs@npm:^2.3.18":
   version: 2.3.18
   resolution: "eslint-plugin-formatjs@npm:2.3.18"
   dependencies:
@@ -4343,7 +4343,7 @@ __metadata:
     eslint: ^7.3.1
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.3.17
+    eslint-plugin-formatjs: ^2.3.18
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.17.1
     eslint-plugin-jest-dom: ^3.0.1
