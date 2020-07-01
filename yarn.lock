@@ -3756,7 +3756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.20.2":
+"eslint-plugin-react@npm:^7.20.3":
   version: 7.20.3
   resolution: "eslint-plugin-react@npm:7.20.3"
   dependencies:
@@ -4350,7 +4350,7 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
-    eslint-plugin-react: ^7.20.2
+    eslint-plugin-react: ^7.20.3
     eslint-plugin-react-hooks: ^4.0.4
     eslint-plugin-testing-library: ^3.3.1
     eslint-plugin-unicorn: ^20.1.0
