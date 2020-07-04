@@ -374,21 +374,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@formatjs/intl-numberformat@npm:^4.2.11":
-  version: 4.2.11
-  resolution: "@formatjs/intl-numberformat@npm:4.2.11"
+"@formatjs/intl-numberformat@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "@formatjs/intl-numberformat@npm:5.0.2"
   dependencies:
-    "@formatjs/intl-utils": ^3.5.0
-  checksum: caddd5205f89bf6377a3c27a25004ffd0125fa1e527e824713ef86fcb69b3d1f814c2e4e358d0becc642c9b98356cc9168c4b5d62b6d5118b16e7b250add5c0c
+    "@formatjs/intl-utils": ^3.6.0
+  checksum: 46b496356f63efe06453b4a3d6b2bd48ca6d5e52ef6fe6671ef0f5be7c130a5bdc578d1f083bf098f97473e642d45938bb207750d81cf1ca1dda644b782007d0
   languageName: node
   linkType: hard
 
-"@formatjs/intl-utils@npm:^3.5.0":
-  version: 3.5.0
-  resolution: "@formatjs/intl-utils@npm:3.5.0"
+"@formatjs/intl-utils@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "@formatjs/intl-utils@npm:3.6.0"
   dependencies:
     emojis-list: ^3.0.0
-  checksum: b169d094d78e2185607a4f03d377a3b0dead197e325193e507b668bd43d4ca5122a106598f3f381329e614615eb2ae1b2847df8c5590fbae03ad11491b71f0e8
+  checksum: 77a1ada4d77a458ef43357b8cd689d1b760f00e30da6e99f9b7f82881f07965f43e28ac2d4a1028773ddc5086c93e43d297c129bde8a4f08efd589d0bebd116d
   languageName: node
   linkType: hard
 
@@ -3396,9 +3396,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.483":
-  version: 1.3.484
-  resolution: "electron-to-chromium@npm:1.3.484"
-  checksum: 8afd97df42597dc1fab476b7fb5499a0ea7f2b636f3bf55656bbec2cbfacdb7563d540c5a74e59a56e55e13542ed7d3b0cefd856a7bb9e7a2171e09280efa7e5
+  version: 1.3.487
+  resolution: "electron-to-chromium@npm:1.3.487"
+  checksum: 9faba3e06dd8d6f2817b9ca941c0c1ba50fd97393060a062b610486ef367f9fb8f9ec8d68a4f2a4e155d11f7b17863ffb56761610026385c7a6f773487f695f4
   languageName: node
   linkType: hard
 
@@ -3633,19 +3633,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.3.18":
-  version: 2.3.18
-  resolution: "eslint-plugin-formatjs@npm:2.3.18"
+"eslint-plugin-formatjs@npm:^2.3.21":
+  version: 2.3.21
+  resolution: "eslint-plugin-formatjs@npm:2.3.21"
   dependencies:
     "@types/emoji-regex": ^8.0.0
     "@types/eslint": ^6.8.0
     "@types/estree": ^0.0.44
     "@typescript-eslint/typescript-estree": ^2.29.0
     emoji-regex: ^9.0.0
-    intl-messageformat-parser: ^5.2.1
+    intl-messageformat-parser: ^5.2.4
   peerDependencies:
     eslint: ^6.8.0
-  checksum: a41b0e6f2219b358be4ae2d4fad8f83586d3941b0894b499e7ec0fba9871cd3319ff77801b09c1a75875fd32e7fa8adfcb17ef5fbd16fa76375e98dc71833393
+  checksum: 7992b01b0baa1f17cd958809698ec9419f2164441e1511ac29d609183bdf887e99e6b8fe2fcb6ef3374f0845391e25b1c7ae8e051ced0d1aeb9f98da82a83ea3
   languageName: node
   linkType: hard
 
@@ -3822,15 +3822,16 @@ __metadata:
   linkType: hard
 
 "eslint-template-visitor@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "eslint-template-visitor@npm:2.0.0"
+  version: 2.1.1
+  resolution: "eslint-template-visitor@npm:2.1.1"
   dependencies:
-    eslint-visitor-keys: ^1.1.0
-    espree: ^7.0.0
+    eslint-visitor-keys: ^1.3.0
+    espree: ^7.1.0
+    esquery: ^1.3.1
     multimap: ^1.1.0
   peerDependencies:
     eslint: ">=7.0.0"
-  checksum: f161aa86a34ccfa1e5095f149d3f0c3d09b55f62587d2a8421ff996c631d52a72bd3a892d1ac34a3989a0be20d64872341d159cd3d258aa0d2e7e4bb9c30f82f
+  checksum: 8ecc294cd7ea14cd90e940101c5b3a21379547d9fb61b08aaec47bd4c375445ac44c3f8ef021e9cc260cb211e5980667c729e22ae768d5d4b03b0cd52c97fd95
   languageName: node
   linkType: hard
 
@@ -3843,7 +3844,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-visitor-keys@npm:^1.1.0, eslint-visitor-keys@npm:^1.2.0":
+"eslint-visitor-keys@npm:^1.1.0, eslint-visitor-keys@npm:^1.2.0, eslint-visitor-keys@npm:^1.3.0":
   version: 1.3.0
   resolution: "eslint-visitor-keys@npm:1.3.0"
   checksum: 58ab7a0107621d8a0fe19142a5e1306fd527c0f36b65d5c79033639e80278d8060264804f42c56f68e5541c4cc83d9175f9143083774cec8222f6cd5a695306e
@@ -3896,7 +3897,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:^7.0.0, espree@npm:^7.1.0":
+"espree@npm:^7.1.0":
   version: 7.1.0
   resolution: "espree@npm:7.1.0"
   dependencies:
@@ -3917,7 +3918,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esquery@npm:^1.2.0":
+"esquery@npm:^1.2.0, esquery@npm:^1.3.1":
   version: 1.3.1
   resolution: "esquery@npm:1.3.1"
   dependencies:
@@ -4343,7 +4344,7 @@ __metadata:
     eslint: ^7.3.1
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.3.18
+    eslint-plugin-formatjs: ^2.3.21
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.17.1
     eslint-plugin-jest-dom: ^3.0.1
@@ -5297,12 +5298,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"intl-messageformat-parser@npm:^5.2.1":
-  version: 5.2.1
-  resolution: "intl-messageformat-parser@npm:5.2.1"
+"intl-messageformat-parser@npm:^5.2.4":
+  version: 5.2.4
+  resolution: "intl-messageformat-parser@npm:5.2.4"
   dependencies:
-    "@formatjs/intl-numberformat": ^4.2.11
-  checksum: 284b47a7290b7facbe023cfb3b1dc905f74a41fd5c1a6d4a51baae803044d2443046f2cdf3b27ee5f05853f4d1863b06855f9c215565d30eec98353284886a60
+    "@formatjs/intl-numberformat": ^5.0.2
+  checksum: f12a47ab6b5be7bc0a850a012acf0d776b0aa1cf871d374b390425aa0beee4ebb672b047b0cff75b9192901c87176ae1b270850ffa187b0b0d0772a74b8f05ce
   languageName: node
   linkType: hard
 
