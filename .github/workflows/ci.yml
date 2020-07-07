@@ -130,3 +130,20 @@ jobs:
           flags: server
       - name: Cleanup artifacts
         run: rm --force --recursive packages/server/target/{debug/{{.fingerpint,deps}/server-*,examples,incremental,.cargo-lock,server{,.d*}},.rustc_info.json}
+  user_static_analysis:
+    name: User Static Analysis
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+      - name: Setup Node
+        uses: actions/setup-node@v2.1.0
+        with:
+          node-version: 12.18
+      - name: Install Yarn
+        run: npm install --global yarn@1.22
+      - name: Install Node dependencies
+        run: yarn install --immutable --immutable-cache
+      - name: Lint files, scripts, and styles
+        run: yarn lint
+        working-directory: packages/user
