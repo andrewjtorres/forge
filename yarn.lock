@@ -386,7 +386,7 @@ __metadata:
     eslint-plugin-formatjs: ^2.3.21
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.18.0
-    eslint-plugin-jest-dom: ^3.0.1
+    eslint-plugin-jest-dom: ^3.1.1
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
@@ -2452,9 +2452,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001087, caniuse-lite@npm:^1.0.30001093":
-  version: 1.0.30001096
-  resolution: "caniuse-lite@npm:1.0.30001096"
-  checksum: bf50f7386388f40740a8f4be9c3bf26875792817ce40e2781c78bb1665587cce234c9d0df17c95a94114195371a39f69c09b5097563061586a0428443e0aeb3e
+  version: 1.0.30001097
+  resolution: "caniuse-lite@npm:1.0.30001097"
+  checksum: 2fdcc308dee5271b0918fb3ce7890248fbb39e486f4b0a7985c649beea9eb9016b35a3d1f140e8defd0b12b5c57b4e216c1b45a78ee098a5eeb69294f4885499
   languageName: node
   linkType: hard
 
@@ -3449,9 +3449,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.488":
-  version: 1.3.494
-  resolution: "electron-to-chromium@npm:1.3.494"
-  checksum: f5114bc8ebf297262b02746bc64eb1e45310d161ef365198350a4b5cfe0d3a385cf87ec99f23b25c6dd435fef018b917f7da14aed95ad0bef9d8458c341a238f
+  version: 1.3.495
+  resolution: "electron-to-chromium@npm:1.3.495"
+  checksum: 68e32696b5b0e0afabd2a6483e20ebd57466809ebb59b7d26c4b6c7a084244b8c940a8835243c3f6c1af0cf221e9b65ea6220cd413ebb8c25e7afbfc814b8e29
   languageName: node
   linkType: hard
 
@@ -3725,15 +3725,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest-dom@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "eslint-plugin-jest-dom@npm:3.0.1"
+"eslint-plugin-jest-dom@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "eslint-plugin-jest-dom@npm:3.1.1"
   dependencies:
     "@babel/runtime": ^7.9.6
     requireindex: ^1.2.0
   peerDependencies:
     eslint: ^7.0.0
-  checksum: 0d6923cb3833083698d61853a6c731a36792be90705ca5fa2d3c629f95f0b58b6109ae00801245a69307ee42afee00312c4982c7af3cf73a2003eaab53de42e4
+  checksum: 4040305608ba9c9a9ee2f3fd047f252e6955f51a72891c5583f07a76b9381cee76ed49d4e504e0f7ae1c7e11dbe4178d2a85f2d1a70b2860ae89dd3f528c0004
   languageName: node
   linkType: hard
 
@@ -4400,7 +4400,7 @@ __metadata:
     eslint-plugin-formatjs: ^2.3.21
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.18.0
-    eslint-plugin-jest-dom: ^3.0.1
+    eslint-plugin-jest-dom: ^3.1.1
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
@@ -6814,9 +6814,9 @@ __metadata:
   linkType: hard
 
 "neo-async@npm:^2.6.0":
-  version: 2.6.1
-  resolution: "neo-async@npm:2.6.1"
-  checksum: b359ccaa5cc3eea9c49605b830382e2ec7661f1746b7210dc1f997645a40f9daf3084328151ecb21800e0e78d891dbf8d46f70c3cb5e8c5dab8a909b5597f9a1
+  version: 2.6.2
+  resolution: "neo-async@npm:2.6.2"
+  checksum: 34a8f5309135be258a97082af810ea43700a3e0121e7b1ea31b3e22e2663d7c0d502cd949abb6d1ab8c11abfd04500ee61721ec5408b2d4bef8105241fd8a4c2
   languageName: node
   linkType: hard
 
