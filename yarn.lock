@@ -379,11 +379,11 @@ __metadata:
   resolution: "@forge/user@workspace:packages/user"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^3.6.0
-    "@typescript-eslint/parser": ^3.6.0
+    "@typescript-eslint/parser": ^3.6.1
     eslint: ^7.4.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.3.21
+    eslint-plugin-formatjs: ^2.5.2
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.18.0
     eslint-plugin-jest-dom: ^3.1.4
@@ -391,7 +391,7 @@ __metadata:
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.20.3
-    eslint-plugin-react-hooks: ^4.0.7
+    eslint-plugin-react-hooks: ^4.0.8
     eslint-plugin-testing-library: ^3.3.1
     eslint-plugin-unicorn: ^20.1.0
     lint-staged: ^10.2.11
@@ -1607,7 +1607,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^3.6.0":
+"@typescript-eslint/parser@npm:^3.6.1":
   version: 3.6.1
   resolution: "@typescript-eslint/parser@npm:3.6.1"
   dependencies:
@@ -3669,7 +3669,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.3.21":
+"eslint-plugin-formatjs@npm:^2.5.2":
   version: 2.5.2
   resolution: "eslint-plugin-formatjs@npm:2.5.2"
   dependencies:
@@ -3783,7 +3783,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^4.0.7":
+"eslint-plugin-react-hooks@npm:^4.0.8":
   version: 4.0.8
   resolution: "eslint-plugin-react-hooks@npm:4.0.8"
   peerDependencies:
@@ -4375,12 +4375,12 @@ __metadata:
   resolution: "forge@workspace:."
   dependencies:
     "@typescript-eslint/eslint-plugin": ^3.6.0
-    "@typescript-eslint/parser": ^3.6.0
+    "@typescript-eslint/parser": ^3.6.1
     cz-conventional-changelog: ^3.2.0
     eslint: ^7.4.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.3.21
+    eslint-plugin-formatjs: ^2.5.2
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.18.0
     eslint-plugin-jest-dom: ^3.1.4
@@ -4388,7 +4388,7 @@ __metadata:
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.20.3
-    eslint-plugin-react-hooks: ^4.0.7
+    eslint-plugin-react-hooks: ^4.0.8
     eslint-plugin-testing-library: ^3.3.1
     eslint-plugin-unicorn: ^20.1.0
     husky: ^4.2.5
