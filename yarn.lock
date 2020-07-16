@@ -1433,7 +1433,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@toml-tools/lexer@npm:*, @toml-tools/lexer@npm:^0.3.1":
+"@toml-tools/lexer@npm:^0.3.1":
   version: 0.3.1
   resolution: "@toml-tools/lexer@npm:0.3.1"
   dependencies:
@@ -3431,9 +3431,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.488":
-  version: 1.3.497
-  resolution: "electron-to-chromium@npm:1.3.497"
-  checksum: 631bb08ccc4965b7ee732d86bc4da628046e8dacd3b8dbeaa1785f35673d5d4b1f9af81ca21388fced8412a9b3c614ae496d6fc7c2da183367c39fc0440066c7
+  version: 1.3.498
+  resolution: "electron-to-chromium@npm:1.3.498"
+  checksum: e156c0ced1bdc78f1729c768ed5dcccd715721541dfdeb450a99937f6b236deb4d550de33c75e4b020b12f426bd5d6a6417e65d1e88de924536b908e574f31d3
   languageName: node
   linkType: hard
 
@@ -7696,7 +7696,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-html@npm:*, postcss-html@npm:^0.36.0":
+"postcss-html@npm:^0.36.0":
   version: 0.36.0
   resolution: "postcss-html@npm:0.36.0"
   dependencies:
@@ -7808,7 +7808,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:*, postcss@npm:^7.0.14, postcss@npm:^7.0.17, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.31, postcss@npm:^7.0.32, postcss@npm:^7.0.6, postcss@npm:^7.0.7":
+"postcss@npm:^7.0.14, postcss@npm:^7.0.17, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.31, postcss@npm:^7.0.32, postcss@npm:^7.0.6, postcss@npm:^7.0.7":
   version: 7.0.32
   resolution: "postcss@npm:7.0.32"
   dependencies:

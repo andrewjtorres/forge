@@ -19,7 +19,14 @@ jobs:
           node-version: 12.18
       - name: Install Yarn
         run: npm install --global yarn@1.22
+      - name: Restore Node dependencies
+        id: restore-node-dependencies
+        uses: actions/cache@v2.0.0
+        with:
+          path: node_modules
+          key: node-dependencies-${{ hashFiles('yarn.lock') }}
       - name: Install Node dependencies
+        if: steps.restore-node-dependencies.outputs.cache-hit != 'true'
         run: yarn install --immutable --immutable-cache
       - name: Lint files
         run: yarn lint:files
@@ -39,7 +46,14 @@ jobs:
           node-version: 12.18
       - name: Install Yarn
         run: npm install --global yarn@1.22
+      - name: Restore Node dependencies
+        id: restore-node-dependencies
+        uses: actions/cache@v2.0.0
+        with:
+          path: node_modules
+          key: node-dependencies-${{ hashFiles('yarn.lock') }}
       - name: Install Node dependencies
+        if: steps.restore-node-dependencies.outputs.cache-hit != 'true'
         run: yarn install --immutable --immutable-cache
       - name: Setup Cargo cache
         run: sudo chown -H --recursive $(id --name --user):$(id --group --name) ~/.cargo
@@ -88,7 +102,14 @@ jobs:
           node-version: 12.18
       - name: Install Yarn
         run: npm install --global yarn@1.22
+      - name: Restore Node dependencies
+        id: restore-node-dependencies
+        uses: actions/cache@v2.0.0
+        with:
+          path: node_modules
+          key: node-dependencies-${{ hashFiles('yarn.lock') }}
       - name: Install Node dependencies
+        if: steps.restore-node-dependencies.outputs.cache-hit != 'true'
         run: yarn install --immutable --immutable-cache
       - name: Setup Cargo cache
         run: sudo chown -H --recursive $(id --name --user):$(id --group --name) ~/.cargo
@@ -142,7 +163,14 @@ jobs:
           node-version: 12.18
       - name: Install Yarn
         run: npm install --global yarn@1.22
+      - name: Restore Node dependencies
+        id: restore-node-dependencies
+        uses: actions/cache@v2.0.0
+        with:
+          path: node_modules
+          key: node-dependencies-${{ hashFiles('yarn.lock') }}
       - name: Install Node dependencies
+        if: steps.restore-node-dependencies.outputs.cache-hit != 'true'
         run: yarn install --immutable --immutable-cache
       - name: Lint files, scripts, and styles
         run: yarn lint

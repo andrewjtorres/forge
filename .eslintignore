@@ -3,7 +3,7 @@
 
 # Dependencies
 .yarn
-.pnp.js
+node_modules
 
 # Version Control
 .git
