@@ -382,7 +382,7 @@ __metadata:
     eslint: ^7.4.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.5.3
+    eslint-plugin-formatjs: ^2.5.4
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.18.0
     eslint-plugin-jest-dom: ^3.1.4
@@ -410,21 +410,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@formatjs/intl-numberformat@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "@formatjs/intl-numberformat@npm:5.3.0"
+"@formatjs/intl-numberformat@npm:^5.3.1":
+  version: 5.3.1
+  resolution: "@formatjs/intl-numberformat@npm:5.3.1"
   dependencies:
-    "@formatjs/intl-utils": ^3.8.0
-  checksum: 0c443e835fd5f2b91359f48457c2c3e660063cfc4b324a55f2f0311bb033d01422c220e3e07cef674ed844dac642a6c7789c64117679cac31558c09bb10a8171
+    "@formatjs/intl-utils": ^3.8.1
+  checksum: 8f25ae6bc4226f6e9fe4a9707003d6bebcfe4b3f393007ae170a21c363f5f39479859998891142218e028a6d341141d2a2749ba404411cc902116a784d377c60
   languageName: node
   linkType: hard
 
-"@formatjs/intl-utils@npm:^3.8.0":
-  version: 3.8.0
-  resolution: "@formatjs/intl-utils@npm:3.8.0"
+"@formatjs/intl-utils@npm:^3.8.1":
+  version: 3.8.1
+  resolution: "@formatjs/intl-utils@npm:3.8.1"
   dependencies:
     emojis-list: ^3.0.0
-  checksum: 11e57337a711501042c36f95d8612c84e2549125fef65af0989ee2f32d447e2fdf41d172c8c5a75c3826ea79bb6ac814901547e04d952734f1a12f3c704ee05c
+  checksum: 454a6301f94ad360a7415221747009321df9b0c2b6640d5ae19f4d6de44aec067c05e6886fb453fc04347625627e090f5265faca220a7680531b81831ee7db6f
   languageName: node
   linkType: hard
 
@@ -1400,11 +1400,11 @@ __metadata:
   linkType: hard
 
 "@octokit/types@npm:^5.0.0, @octokit/types@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "@octokit/types@npm:5.0.1"
+  version: 5.1.0
+  resolution: "@octokit/types@npm:5.1.0"
   dependencies:
     "@types/node": ">= 8"
-  checksum: 201960072c7a0eabbfd1ce582b706213720903555e996263e69d0790f4694c1df2a0416e47c41738b91e125382a503129b6525d598949c1aa6ecb7abb7958f53
+  checksum: ab29b23a8415b5147f2b4c2d206ca1d4ed40989db6573c634a063822330fc5794aeb294d814f97b1a38b76c70c87d6a5cb54d0a15e6ba8b5acfb58e9e64c82c6
   languageName: node
   linkType: hard
 
@@ -3668,19 +3668,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.5.3":
-  version: 2.5.3
-  resolution: "eslint-plugin-formatjs@npm:2.5.3"
+"eslint-plugin-formatjs@npm:^2.5.4":
+  version: 2.5.4
+  resolution: "eslint-plugin-formatjs@npm:2.5.4"
   dependencies:
     "@types/emoji-regex": ^8.0.0
     "@types/eslint": ^7.2.0
     "@types/estree": ^0.0.45
     "@typescript-eslint/typescript-estree": ^3.6.0
     emoji-regex: ^9.0.0
-    intl-messageformat-parser: ^5.3.3
+    intl-messageformat-parser: ^5.3.4
   peerDependencies:
     eslint: ^7.0.0
-  checksum: 0de5ae019f5b9232f04802636fb93ec1fea4870570b96bb9d6517aa337f93d01284b5bac8a6b386f0d2a881e0750585b04c0ad2d196fb38acc776b229c245f79
+  checksum: 0c738536a1571a3b077f515ca7d0549845200ad7dac8463f13daad1c78d344fe55684085e2af7f659ca9bd8d7890eddd2858176a1f5739fa1b6d41e956d82e61
   languageName: node
   linkType: hard
 
@@ -4379,7 +4379,7 @@ __metadata:
     eslint: ^7.4.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.5.3
+    eslint-plugin-formatjs: ^2.5.4
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.18.0
     eslint-plugin-jest-dom: ^3.1.4
@@ -5342,12 +5342,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"intl-messageformat-parser@npm:^5.3.3":
-  version: 5.3.3
-  resolution: "intl-messageformat-parser@npm:5.3.3"
+"intl-messageformat-parser@npm:^5.3.4":
+  version: 5.3.4
+  resolution: "intl-messageformat-parser@npm:5.3.4"
   dependencies:
-    "@formatjs/intl-numberformat": ^5.3.0
-  checksum: 00bf4b3f6b98da552cce0f49958213021d71711f877ce541f1db60f2981458b40984912fcd69b841b1571d1f61846c398396b7aa9844e09a02861890a86d9d29
+    "@formatjs/intl-numberformat": ^5.3.1
+  checksum: 3d2fd206f6fd333b41ab3a8d0ac1d0de66ced743fb0cebaf4c4c00013614a00ba5d308b3b0daeba3cc16b37eea5ce2ee5a58030d7f925018cfe7364256671b96
   languageName: node
   linkType: hard
 
