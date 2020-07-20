@@ -61,7 +61,7 @@
     "stylelint-order": "^4.1.0",
     "stylelint-prettier": "^1.1.2",
     "stylelint-processor-styled-components": "^1.10.0",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.7"
   },
   "dependenciesMeta": {
     "core-js-pure": {

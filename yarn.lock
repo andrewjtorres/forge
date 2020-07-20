@@ -406,7 +406,7 @@ __metadata:
     stylelint-order: ^4.1.0
     stylelint-prettier: ^1.1.2
     stylelint-processor-styled-components: ^1.10.0
-    typescript: ^3.9.6
+    typescript: ^3.9.7
   languageName: unknown
   linkType: soft
 
@@ -4405,7 +4405,7 @@ __metadata:
     stylelint-order: ^4.1.0
     stylelint-prettier: ^1.1.2
     stylelint-processor-styled-components: ^1.10.0
-    typescript: ^3.9.6
+    typescript: ^3.9.7
   dependenciesMeta:
     core-js-pure:
       built: false
@@ -9844,7 +9844,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-typescript@^3.9.6:
+typescript@^3.9.7:
   version: 3.9.7
   resolution: "typescript@npm:3.9.7"
   bin:
@@ -9854,7 +9854,7 @@ typescript@^3.9.6:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^3.9.6#builtin<compat/typescript>":
+"typescript@patch:typescript@^3.9.7#builtin<compat/typescript>":
   version: 3.9.7
   resolution: "typescript@patch:typescript@npm%3A3.9.7#builtin<compat/typescript>::version=3.9.7&hash=5b02a2"
   bin:
