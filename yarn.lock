@@ -379,7 +379,7 @@ __metadata:
   dependencies:
     "@typescript-eslint/eslint-plugin": ^3.6.1
     "@typescript-eslint/parser": ^3.6.1
-    eslint: ^7.4.0
+    eslint: ^7.5.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.5.4
@@ -3886,7 +3886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.4.0":
+"eslint@npm:^7.5.0":
   version: 7.5.0
   resolution: "eslint@npm:7.5.0"
   dependencies:
@@ -4376,7 +4376,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^3.6.1
     "@typescript-eslint/parser": ^3.6.1
     cz-conventional-changelog: ^3.2.0
-    eslint: ^7.4.0
+    eslint: ^7.5.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.5.4
