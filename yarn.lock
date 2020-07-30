@@ -377,8 +377,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@forge/user@workspace:packages/user"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^3.6.1
-    "@typescript-eslint/parser": ^3.6.1
+    "@typescript-eslint/eslint-plugin": ^3.7.1
+    "@typescript-eslint/parser": ^3.7.1
     eslint: ^7.5.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
@@ -389,7 +389,7 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
-    eslint-plugin-react: ^7.20.3
+    eslint-plugin-react: ^7.20.5
     eslint-plugin-react-hooks: ^4.0.8
     eslint-plugin-testing-library: ^3.3.1
     eslint-plugin-unicorn: ^21.0.0
@@ -1556,7 +1556,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^3.6.1":
+"@typescript-eslint/eslint-plugin@npm:^3.7.1":
   version: 3.7.1
   resolution: "@typescript-eslint/eslint-plugin@npm:3.7.1"
   dependencies:
@@ -1606,7 +1606,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^3.6.1":
+"@typescript-eslint/parser@npm:^3.7.1":
   version: 3.7.1
   resolution: "@typescript-eslint/parser@npm:3.7.1"
   dependencies:
@@ -3791,7 +3791,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.20.3":
+"eslint-plugin-react@npm:^7.20.5":
   version: 7.20.5
   resolution: "eslint-plugin-react@npm:7.20.5"
   dependencies:
@@ -4373,8 +4373,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "forge@workspace:."
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^3.6.1
-    "@typescript-eslint/parser": ^3.6.1
+    "@typescript-eslint/eslint-plugin": ^3.7.1
+    "@typescript-eslint/parser": ^3.7.1
     cz-conventional-changelog: ^3.2.0
     eslint: ^7.5.0
     eslint-config-prettier: ^6.11.0
@@ -4386,7 +4386,7 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
-    eslint-plugin-react: ^7.20.3
+    eslint-plugin-react: ^7.20.5
     eslint-plugin-react-hooks: ^4.0.8
     eslint-plugin-testing-library: ^3.3.1
     eslint-plugin-unicorn: ^21.0.0
