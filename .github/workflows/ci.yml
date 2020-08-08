@@ -71,7 +71,7 @@ jobs:
       - name: Install Rust and Cargo
         uses: actions-rs/toolchain@v1.0.6
         with:
-          toolchain: nightly-2020-06-25
+          toolchain: nightly-2020-07-27
           default: true
           profile: minimal
           components: clippy, rustfmt
@@ -127,7 +127,7 @@ jobs:
       - name: Install Rust and Cargo
         uses: actions-rs/toolchain@v1.0.6
         with:
-          toolchain: nightly-2020-06-25
+          toolchain: nightly-2020-07-27
           default: true
           profile: minimal
       - name: Install Rust dependencies
