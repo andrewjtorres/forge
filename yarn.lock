@@ -382,7 +382,7 @@ __metadata:
     eslint: ^7.6.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.5.7
+    eslint-plugin-formatjs: ^2.6.0
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.20.0
     eslint-plugin-jest-dom: ^3.1.7
@@ -3677,7 +3677,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.5.7":
+"eslint-plugin-formatjs@npm:^2.6.0":
   version: 2.6.0
   resolution: "eslint-plugin-formatjs@npm:2.6.0"
   dependencies:
@@ -4389,7 +4389,7 @@ __metadata:
     eslint: ^7.6.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.5.7
+    eslint-plugin-formatjs: ^2.6.0
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.20.0
     eslint-plugin-jest-dom: ^3.1.7
@@ -10248,11 +10248,11 @@ __metadata:
   linkType: hard
 
 "windows-release@npm:^3.1.0":
-  version: 3.3.1
-  resolution: "windows-release@npm:3.3.1"
+  version: 3.3.3
+  resolution: "windows-release@npm:3.3.3"
   dependencies:
     execa: ^1.0.0
-  checksum: 209dd36f044399c4d1c52b8352ba924d2d79da51959a1e5aa34a22b67e869a513df430f618cb897002c4be014e180f57a5c3d160208605352053f54887bffb2d
+  checksum: 87a218d7e15ffbe5f0a6bd6e0e989a6d57d1e481c0c2939b356de0581d3d467e3f4e6457d9420867a517ee681ef46ac417179d6d720d3e9d20430735d7fea99c
   languageName: node
   linkType: hard
 
