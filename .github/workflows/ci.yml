@@ -21,7 +21,7 @@ jobs:
         run: npm install --global yarn@1.22
       - name: Restore Node dependencies
         id: restore-node-dependencies
-        uses: actions/cache@v2.1.0
+        uses: actions/cache@v2.1.1
         with:
           path: node_modules
           key: node-dependencies-${{ hashFiles('yarn.lock') }}
@@ -48,7 +48,7 @@ jobs:
         run: npm install --global yarn@1.22
       - name: Restore Node dependencies
         id: restore-node-dependencies
-        uses: actions/cache@v2.1.0
+        uses: actions/cache@v2.1.1
         with:
           path: node_modules
           key: node-dependencies-${{ hashFiles('yarn.lock') }}
@@ -59,7 +59,7 @@ jobs:
         run: sudo chown -H --recursive $(id --name --user):$(id --group --name) ~/.cargo
       - name: Restore Cargo cache and artifacts
         id: restore-cargo-cache-and-artifacts
-        uses: actions/cache@v2.1.0
+        uses: actions/cache@v2.1.1
         with:
           path: |
             ~/.cargo/bin
@@ -104,7 +104,7 @@ jobs:
         run: npm install --global yarn@1.22
       - name: Restore Node dependencies
         id: restore-node-dependencies
-        uses: actions/cache@v2.1.0
+        uses: actions/cache@v2.1.1
         with:
           path: node_modules
           key: node-dependencies-${{ hashFiles('yarn.lock') }}
@@ -115,7 +115,7 @@ jobs:
         run: sudo chown -H --recursive $(id --name --user):$(id --group --name) ~/.cargo
       - name: Restore Cargo cache and artifacts
         id: restore-cargo-cache-and-artifacts
-        uses: actions/cache@v2.1.0
+        uses: actions/cache@v2.1.1
         with:
           path: |
             ~/.cargo/bin
@@ -165,7 +165,7 @@ jobs:
         run: npm install --global yarn@1.22
       - name: Restore Node dependencies
         id: restore-node-dependencies
-        uses: actions/cache@v2.1.0
+        uses: actions/cache@v2.1.1
         with:
           path: node_modules
           key: node-dependencies-${{ hashFiles('yarn.lock') }}
