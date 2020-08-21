@@ -38,7 +38,6 @@ module.exports = {
     'formatjs/enforce-placeholders': 'error',
     'formatjs/enforce-plural-rules': ['error', { other: true }],
     'formatjs/no-multiple-whitespaces': 'error',
-    'formatjs/supported-datetime-skeleton': 'error',
     'import/order': [
       'error',
       {
