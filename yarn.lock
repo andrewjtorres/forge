@@ -377,12 +377,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@forge/user@workspace:packages/user"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^3.9.1
-    "@typescript-eslint/parser": ^3.9.1
+    "@typescript-eslint/eslint-plugin": ^3.10.0
+    "@typescript-eslint/parser": ^3.10.0
     eslint: ^7.7.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.2
+    eslint-plugin-formatjs: ^2.7.5
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.20.0
     eslint-plugin-jest-dom: ^3.1.7
@@ -391,7 +391,7 @@ __metadata:
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.20.6
     eslint-plugin-react-hooks: ^4.1.0
-    eslint-plugin-testing-library: ^3.4.1
+    eslint-plugin-testing-library: ^3.7.0
     eslint-plugin-unicorn: ^21.0.0
     lint-staged: ^10.2.11
     npm-run-all: ^4.1.5
@@ -1555,7 +1555,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^3.9.1":
+"@typescript-eslint/eslint-plugin@npm:^3.10.0":
   version: 3.10.0
   resolution: "@typescript-eslint/eslint-plugin@npm:3.10.0"
   dependencies:
@@ -1605,7 +1605,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^3.9.1":
+"@typescript-eslint/parser@npm:^3.10.0":
   version: 3.10.0
   resolution: "@typescript-eslint/parser@npm:3.10.0"
   dependencies:
@@ -3069,7 +3069,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cz-conventional-changelog@npm:^3.2.0":
+"cz-conventional-changelog@npm:^3.2.1":
   version: 3.2.1
   resolution: "cz-conventional-changelog@npm:3.2.1"
   dependencies:
@@ -3685,7 +3685,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.7.2":
+"eslint-plugin-formatjs@npm:^2.7.5":
   version: 2.7.5
   resolution: "eslint-plugin-formatjs@npm:2.7.5"
   dependencies:
@@ -3830,7 +3830,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^3.4.1":
+"eslint-plugin-testing-library@npm:^3.7.0":
   version: 3.7.0
   resolution: "eslint-plugin-testing-library@npm:3.7.0"
   dependencies:
@@ -4391,13 +4391,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "forge@workspace:."
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^3.9.1
-    "@typescript-eslint/parser": ^3.9.1
-    cz-conventional-changelog: ^3.2.0
+    "@typescript-eslint/eslint-plugin": ^3.10.0
+    "@typescript-eslint/parser": ^3.10.0
+    cz-conventional-changelog: ^3.2.1
     eslint: ^7.7.0
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.2
+    eslint-plugin-formatjs: ^2.7.5
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.20.0
     eslint-plugin-jest-dom: ^3.1.7
@@ -4406,7 +4406,7 @@ __metadata:
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.20.6
     eslint-plugin-react-hooks: ^4.1.0
-    eslint-plugin-testing-library: ^3.4.1
+    eslint-plugin-testing-library: ^3.7.0
     eslint-plugin-unicorn: ^21.0.0
     husky: ^4.2.5
     lerna: ^3.22.1
