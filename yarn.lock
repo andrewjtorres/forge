@@ -402,7 +402,7 @@ __metadata:
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.9
     eslint-plugin-import: ^2.22.0
-    eslint-plugin-jest: ^23.20.0
+    eslint-plugin-jest: ^24.0.0
     eslint-plugin-jest-dom: ^3.2.2
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
@@ -1587,7 +1587,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:4.1.0":
+"@typescript-eslint/experimental-utils@npm:4.1.0, @typescript-eslint/experimental-utils@npm:^4.0.1":
   version: 4.1.0
   resolution: "@typescript-eslint/experimental-utils@npm:4.1.0"
   dependencies:
@@ -1603,7 +1603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:^2.29.0, @typescript-eslint/experimental-utils@npm:^2.5.0":
+"@typescript-eslint/experimental-utils@npm:^2.29.0":
   version: 2.34.0
   resolution: "@typescript-eslint/experimental-utils@npm:2.34.0"
   dependencies:
@@ -3802,14 +3802,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^23.20.0":
-  version: 23.20.0
-  resolution: "eslint-plugin-jest@npm:23.20.0"
+"eslint-plugin-jest@npm:^24.0.0":
+  version: 24.0.0
+  resolution: "eslint-plugin-jest@npm:24.0.0"
   dependencies:
-    "@typescript-eslint/experimental-utils": ^2.5.0
+    "@typescript-eslint/experimental-utils": ^4.0.1
   peerDependencies:
     eslint: ">=5"
-  checksum: 2f3b875346cad48925c306044482590fa35231ec80bf74ff5d5137a722ec4186430e23c13ee318b978c0b2f3264db6f965bf469b2e6c7c8b72c86ca6560e1211
+  checksum: 5a210350b3e6c9da9ab536c6868e0eb8547e8e879168ac105241dd6df64883da1befd1c97eb75fedb1d54b57ec6bbb5f4f29e3b7a0d5ae35b0757e7346d5e62e
   languageName: node
   linkType: hard
 
@@ -4479,7 +4479,7 @@ __metadata:
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.9
     eslint-plugin-import: ^2.22.0
-    eslint-plugin-jest: ^23.20.0
+    eslint-plugin-jest: ^24.0.0
     eslint-plugin-jest-dom: ^3.2.2
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
