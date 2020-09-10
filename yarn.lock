@@ -400,7 +400,7 @@ __metadata:
     eslint: ^7.8.1
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.7
+    eslint-plugin-formatjs: ^2.7.9
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.20.0
     eslint-plugin-jest-dom: ^3.2.2
@@ -3750,7 +3750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.7.7":
+"eslint-plugin-formatjs@npm:^2.7.9":
   version: 2.7.9
   resolution: "eslint-plugin-formatjs@npm:2.7.9"
   dependencies:
@@ -4477,7 +4477,7 @@ __metadata:
     eslint: ^7.8.1
     eslint-config-prettier: ^6.11.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.7
+    eslint-plugin-formatjs: ^2.7.9
     eslint-plugin-import: ^2.22.0
     eslint-plugin-jest: ^23.20.0
     eslint-plugin-jest-dom: ^3.2.2
