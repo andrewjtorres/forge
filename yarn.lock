@@ -396,13 +396,13 @@ __metadata:
   resolution: "@forge/user@workspace:packages/user"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.1.0
-    "@typescript-eslint/parser": ^4.1.0
+    "@typescript-eslint/parser": ^4.2.0
     eslint: ^7.9.0
-    eslint-config-prettier: ^6.11.0
+    eslint-config-prettier: ^6.12.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.10
+    eslint-plugin-formatjs: ^2.7.12
     eslint-plugin-import: ^2.22.0
-    eslint-plugin-jest: ^24.0.1
+    eslint-plugin-jest: ^24.0.2
     eslint-plugin-jest-dom: ^3.2.2
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
@@ -410,7 +410,7 @@ __metadata:
     eslint-plugin-react: ^7.21.2
     eslint-plugin-react-hooks: ^4.1.2
     eslint-plugin-testing-library: ^3.8.0
-    eslint-plugin-unicorn: ^21.0.0
+    eslint-plugin-unicorn: ^22.0.0
     lint-staged: ^10.4.0
     npm-run-all: ^4.1.5
     prettier: ^2.1.2
@@ -1620,7 +1620,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.1.0":
+"@typescript-eslint/parser@npm:^4.2.0":
   version: 4.2.0
   resolution: "@typescript-eslint/parser@npm:4.2.0"
   dependencies:
@@ -3665,7 +3665,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^6.11.0":
+"eslint-config-prettier@npm:^6.12.0":
   version: 6.12.0
   resolution: "eslint-config-prettier@npm:6.12.0"
   dependencies:
@@ -3725,7 +3725,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.7.10":
+"eslint-plugin-formatjs@npm:^2.7.12":
   version: 2.7.12
   resolution: "eslint-plugin-formatjs@npm:2.7.12"
   dependencies:
@@ -3777,7 +3777,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^24.0.1":
+"eslint-plugin-jest@npm:^24.0.2":
   version: 24.0.2
   resolution: "eslint-plugin-jest@npm:24.0.2"
   dependencies:
@@ -3881,17 +3881,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^21.0.0":
-  version: 21.0.0
-  resolution: "eslint-plugin-unicorn@npm:21.0.0"
+"eslint-plugin-unicorn@npm:^22.0.0":
+  version: 22.0.0
+  resolution: "eslint-plugin-unicorn@npm:22.0.0"
   dependencies:
     ci-info: ^2.0.0
     clean-regexp: ^1.0.0
     eslint-ast-utils: ^1.1.0
-    eslint-template-visitor: ^2.0.0
+    eslint-template-visitor: ^2.2.1
     eslint-utils: ^2.1.0
     import-modules: ^2.0.0
-    lodash: ^4.17.15
+    lodash: ^4.17.20
     pluralize: ^8.0.0
     read-pkg-up: ^7.0.1
     regexp-tree: ^0.1.21
@@ -3899,8 +3899,8 @@ __metadata:
     safe-regex: ^2.1.1
     semver: ^7.3.2
   peerDependencies:
-    eslint: ">=7.3.0"
-  checksum: 45a60004de4871662fcf0c3422053d6605f64bf5f7e80ba61e6600b8aea7677a72b01db82300ac513b24abfc704ee16b16a38c9550ada7f244545f60f105602a
+    eslint: ">=7.8.0"
+  checksum: bed800d74970f7666e7a82d7a516c21a649cd14be7af3dd10323970f510515ee6341275a2671733ed9e24bd0236f8da22949ee42edfecc509e41199763fcb638
   languageName: node
   linkType: hard
 
@@ -3914,7 +3914,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-template-visitor@npm:^2.0.0":
+"eslint-template-visitor@npm:^2.2.1":
   version: 2.2.1
   resolution: "eslint-template-visitor@npm:2.2.1"
   dependencies:
@@ -4447,14 +4447,14 @@ __metadata:
   resolution: "forge@workspace:."
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.1.0
-    "@typescript-eslint/parser": ^4.1.0
+    "@typescript-eslint/parser": ^4.2.0
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.9.0
-    eslint-config-prettier: ^6.11.0
+    eslint-config-prettier: ^6.12.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.10
+    eslint-plugin-formatjs: ^2.7.12
     eslint-plugin-import: ^2.22.0
-    eslint-plugin-jest: ^24.0.1
+    eslint-plugin-jest: ^24.0.2
     eslint-plugin-jest-dom: ^3.2.2
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
@@ -4462,7 +4462,7 @@ __metadata:
     eslint-plugin-react: ^7.21.2
     eslint-plugin-react-hooks: ^4.1.2
     eslint-plugin-testing-library: ^3.8.0
-    eslint-plugin-unicorn: ^21.0.0
+    eslint-plugin-unicorn: ^22.0.0
     husky: ^4.3.0
     lerna: ^3.22.1
     lint-staged: ^10.4.0
