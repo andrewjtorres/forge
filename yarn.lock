@@ -416,7 +416,7 @@ __metadata:
     prettier: ^2.1.2
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
-    stylelint: ^13.7.1
+    stylelint: ^13.7.2
     stylelint-a11y: ^1.2.3
     stylelint-config-prettier: ^8.0.2
     stylelint-config-recommended: ^3.0.0
@@ -4470,7 +4470,7 @@ __metadata:
     prettier: ^2.1.2
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
-    stylelint: ^13.7.1
+    stylelint: ^13.7.2
     stylelint-a11y: ^1.2.3
     stylelint-config-prettier: ^8.0.2
     stylelint-config-recommended: ^3.0.0
@@ -9448,7 +9448,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^13.7.1":
+"stylelint@npm:^13.7.2":
   version: 13.7.2
   resolution: "stylelint@npm:13.7.2"
   dependencies:
