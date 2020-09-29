@@ -396,12 +396,12 @@ __metadata:
   resolution: "@forge/user@workspace:packages/user"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.3.0
-    "@typescript-eslint/parser": ^4.2.0
+    "@typescript-eslint/parser": ^4.3.0
     eslint: ^7.10.0
     eslint-config-prettier: ^6.12.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.12
-    eslint-plugin-import: ^2.22.0
+    eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.0.2
     eslint-plugin-jest-dom: ^3.2.3
     eslint-plugin-jsx-a11y: ^6.3.1
@@ -1620,7 +1620,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.2.0":
+"@typescript-eslint/parser@npm:^4.3.0":
   version: 4.3.0
   resolution: "@typescript-eslint/parser@npm:4.3.0"
   dependencies:
@@ -3742,7 +3742,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.22.0":
+"eslint-plugin-import@npm:^2.22.1":
   version: 2.22.1
   resolution: "eslint-plugin-import@npm:2.22.1"
   dependencies:
@@ -4447,13 +4447,13 @@ __metadata:
   resolution: "forge@workspace:."
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.3.0
-    "@typescript-eslint/parser": ^4.2.0
+    "@typescript-eslint/parser": ^4.3.0
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.10.0
     eslint-config-prettier: ^6.12.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.12
-    eslint-plugin-import: ^2.22.0
+    eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.0.2
     eslint-plugin-jest-dom: ^3.2.3
     eslint-plugin-jsx-a11y: ^6.3.1
