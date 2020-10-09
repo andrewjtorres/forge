@@ -396,18 +396,18 @@ __metadata:
   resolution: "@forge/user@workspace:packages/user"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.4.0
-    "@typescript-eslint/parser": ^4.3.0
+    "@typescript-eslint/parser": ^4.4.0
     eslint: ^7.10.0
     eslint-config-prettier: ^6.12.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.12
+    eslint-plugin-formatjs: ^2.7.14
     eslint-plugin-import: ^2.22.1
-    eslint-plugin-jest: ^24.0.2
+    eslint-plugin-jest: ^24.1.0
     eslint-plugin-jest-dom: ^3.2.3
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
-    eslint-plugin-react: ^7.21.2
+    eslint-plugin-react: ^7.21.3
     eslint-plugin-react-hooks: ^4.1.2
     eslint-plugin-testing-library: ^3.9.0
     eslint-plugin-unicorn: ^22.0.0
@@ -1616,7 +1616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.3.0":
+"@typescript-eslint/parser@npm:^4.4.0":
   version: 4.4.0
   resolution: "@typescript-eslint/parser@npm:4.4.0"
   dependencies:
@@ -3720,7 +3720,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.7.12":
+"eslint-plugin-formatjs@npm:^2.7.14":
   version: 2.7.14
   resolution: "eslint-plugin-formatjs@npm:2.7.14"
   dependencies:
@@ -3773,7 +3773,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^24.0.2":
+"eslint-plugin-jest@npm:^24.1.0":
   version: 24.1.0
   resolution: "eslint-plugin-jest@npm:24.1.0"
   dependencies:
@@ -3845,7 +3845,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.21.2":
+"eslint-plugin-react@npm:^7.21.3":
   version: 7.21.3
   resolution: "eslint-plugin-react@npm:7.21.3"
   dependencies:
@@ -4443,19 +4443,19 @@ __metadata:
   resolution: "forge@workspace:."
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.4.0
-    "@typescript-eslint/parser": ^4.3.0
+    "@typescript-eslint/parser": ^4.4.0
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.10.0
     eslint-config-prettier: ^6.12.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.12
+    eslint-plugin-formatjs: ^2.7.14
     eslint-plugin-import: ^2.22.1
-    eslint-plugin-jest: ^24.0.2
+    eslint-plugin-jest: ^24.1.0
     eslint-plugin-jest-dom: ^3.2.3
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
-    eslint-plugin-react: ^7.21.2
+    eslint-plugin-react: ^7.21.3
     eslint-plugin-react-hooks: ^4.1.2
     eslint-plugin-testing-library: ^3.9.0
     eslint-plugin-unicorn: ^22.0.0
