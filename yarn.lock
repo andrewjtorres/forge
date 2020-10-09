@@ -407,7 +407,7 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
-    eslint-plugin-react: ^7.21.2
+    eslint-plugin-react: ^7.21.3
     eslint-plugin-react-hooks: ^4.1.2
     eslint-plugin-testing-library: ^3.9.0
     eslint-plugin-unicorn: ^22.0.0
@@ -3845,7 +3845,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.21.2":
+"eslint-plugin-react@npm:^7.21.3":
   version: 7.21.3
   resolution: "eslint-plugin-react@npm:7.21.3"
   dependencies:
@@ -4455,7 +4455,7 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.3.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
-    eslint-plugin-react: ^7.21.2
+    eslint-plugin-react: ^7.21.3
     eslint-plugin-react-hooks: ^4.1.2
     eslint-plugin-testing-library: ^3.9.0
     eslint-plugin-unicorn: ^22.0.0
