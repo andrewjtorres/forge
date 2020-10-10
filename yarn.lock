@@ -400,7 +400,7 @@ __metadata:
     eslint: ^7.11.0
     eslint-config-prettier: ^6.12.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.14
+    eslint-plugin-formatjs: ^2.7.15
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.1.0
     eslint-plugin-jest-dom: ^3.2.3
@@ -428,25 +428,25 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@formatjs/ecma402-abstract@npm:^1.2.4":
-  version: 1.2.4
-  resolution: "@formatjs/ecma402-abstract@npm:1.2.4"
+"@formatjs/ecma402-abstract@npm:^1.2.5":
+  version: 1.2.5
+  resolution: "@formatjs/ecma402-abstract@npm:1.2.5"
   dependencies:
     tslib: ^2.0.1
-  checksum: 8af588206cc83824e4e650f0344cef24a73550a7be7dfd58565fc5234168065e30ee3434870001fb9c1f3065c8647ead88a357af950646ed8548d7e146b5a36a
+  checksum: e4aa5701b2989ba3a24007343ac3b28f69221615e17072fd4fe87535a8cc7cf934b6c5ae3ed26972703bf14fc26a5ff6ba0a00f7da32254e5f4047c61bb70208
   languageName: node
   linkType: hard
 
-"@formatjs/ts-transformer@npm:^2.11.2":
-  version: 2.11.2
-  resolution: "@formatjs/ts-transformer@npm:2.11.2"
+"@formatjs/ts-transformer@npm:^2.11.3":
+  version: 2.11.3
+  resolution: "@formatjs/ts-transformer@npm:2.11.3"
   dependencies:
-    intl-messageformat-parser: ^6.0.9
+    intl-messageformat-parser: ^6.0.10
     tslib: ^2.0.1
     typescript: ^4.0
   peerDependencies:
     ts-jest: ^26.4.0
-  checksum: 6df5952f5ffdec923f11e64c2dde5995c98a21d7eb2b7f3f80e529cffe1591bbdd813ba8507e700b454b274b369c7238ce4958e19827e37e7cb94ca16cce1bd9
+  checksum: 8bc6d2b9daa7feb2f2b8e8f33868f34c9342d4dff75d332dea047ae5d3b346e239719a8706a543669815d047f796131c39f15dbc1042076f70001947ef41d738
   languageName: node
   linkType: hard
 
@@ -1800,14 +1800,14 @@ __metadata:
   linkType: hard
 
 "ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.3, ajv@npm:^6.12.4":
-  version: 6.12.5
-  resolution: "ajv@npm:6.12.5"
+  version: 6.12.6
+  resolution: "ajv@npm:6.12.6"
   dependencies:
     fast-deep-equal: ^3.1.1
     fast-json-stable-stringify: ^2.0.0
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
-  checksum: d9ec559bd71be2479b91d293a5b14c96d60ba89f471d8b3369443830b6c72954bdc38f480194413f45f46fc250c8bd769275584ffde033aeb3c56cc218868d95
+  checksum: 19a8f3b0a06001eb68e6268f4f9f04424b32baadd5df6ba8292cd473e22e5f4019ed9ab17c3e3510394178ed8bef9b42ad0bdb5c675d65f042421a774780ce1a
   languageName: node
   linkType: hard
 
@@ -3720,21 +3720,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.7.14":
-  version: 2.7.14
-  resolution: "eslint-plugin-formatjs@npm:2.7.14"
+"eslint-plugin-formatjs@npm:^2.7.15":
+  version: 2.7.15
+  resolution: "eslint-plugin-formatjs@npm:2.7.15"
   dependencies:
-    "@formatjs/ts-transformer": ^2.11.2
+    "@formatjs/ts-transformer": ^2.11.3
     "@types/emoji-regex": ^8.0.0
     "@types/eslint": ^7.2.0
     "@types/estree": ^0.0.45
     "@typescript-eslint/typescript-estree": ^3.6.0
     emoji-regex: ^9.0.0
-    intl-messageformat-parser: ^6.0.9
+    intl-messageformat-parser: ^6.0.10
     tslib: ^2.0.1
   peerDependencies:
     eslint: ^7.0.0
-  checksum: dbdee50f8d3bcf4185e295966430bbd3df43ccd457dddc0eb10f943621d869fb52690aa30778ee27fda151c57fb463c8e2505c82dd8962f4ace100ae049faa80
+  checksum: a0263fa0f45ec619f973ea7af14b9cd0c83b805fe3f11a2a7395d97fc61573ede7837ff7f06ca776f83b576ab6fc9ea507f731c5874d81a6eef22edb44ae35cb
   languageName: node
   linkType: hard
 
@@ -4448,7 +4448,7 @@ __metadata:
     eslint: ^7.11.0
     eslint-config-prettier: ^6.12.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.14
+    eslint-plugin-formatjs: ^2.7.15
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.1.0
     eslint-plugin-jest-dom: ^3.2.3
@@ -5390,13 +5390,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"intl-messageformat-parser@npm:^6.0.9":
-  version: 6.0.9
-  resolution: "intl-messageformat-parser@npm:6.0.9"
+"intl-messageformat-parser@npm:^6.0.10":
+  version: 6.0.10
+  resolution: "intl-messageformat-parser@npm:6.0.10"
   dependencies:
-    "@formatjs/ecma402-abstract": ^1.2.4
+    "@formatjs/ecma402-abstract": ^1.2.5
     tslib: ^2.0.1
-  checksum: 442cead118e5ad7e617af3b7e37beb87e8cf6b53656f483ccf543a877f44a619699b8387c1d0b8e28bd89667cb2e7ecc5eb34b5e4a4aa19375a7779a2f522cf5
+  checksum: 2722bbd20aef4b90b00d84d50227edb539cc07ae3d5fab3a2448bcded1afd0795cdf6c781940717f85c1f1133721384292b9f826bb82f08b3df2566c1a350bac
   languageName: node
   linkType: hard
 
@@ -9812,16 +9812,16 @@ __metadata:
   linkType: hard
 
 "tslib@npm:^1.8.0, tslib@npm:^1.8.1, tslib@npm:^1.9.0":
-  version: 1.14.0
-  resolution: "tslib@npm:1.14.0"
-  checksum: dfbb39a7f241f952ada0f1b148ad88b736e2030a2d44de2aad0723ac7527a3fdda1f710859e66495fd46659cf227727f74d6a10410d5562b7b23dbdc92e66c98
+  version: 1.14.1
+  resolution: "tslib@npm:1.14.1"
+  checksum: f44fe7f216946b17d3e3074df3746372703cf24e9127b4c045511456e8e4bf25515fb0a1bb3937676cc305651c5d4fcb6377b0588a4c6a957e748c4c28905d17
   languageName: node
   linkType: hard
 
 "tslib@npm:^2.0.1":
-  version: 2.0.2
-  resolution: "tslib@npm:2.0.2"
-  checksum: a6a3a3eda60d8882631d872b94c7af35baf40a224a08c04866ed611e4d277ba4893dd49c2b8f33c85dd904ff55d881baeed248bfdd69c4cf33e384fd86f0dd4f
+  version: 2.0.3
+  resolution: "tslib@npm:2.0.3"
+  checksum: 447bfca5deaa157806c3f77eaba74d05dd0b38b014e47ce79d98b5c77ce7d91b00a687ba13ca1b5a74d35ca1098ac7a072c0a97fad06f0266612f2a03a6c8e8f
   languageName: node
   linkType: hard
 
