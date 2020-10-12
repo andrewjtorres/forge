@@ -409,7 +409,7 @@ __metadata:
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.21.4
     eslint-plugin-react-hooks: ^4.1.2
-    eslint-plugin-testing-library: ^3.9.0
+    eslint-plugin-testing-library: ^3.9.1
     eslint-plugin-unicorn: ^22.0.0
     lint-staged: ^10.4.0
     npm-run-all: ^4.1.5
@@ -3866,14 +3866,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^3.9.0":
-  version: 3.9.0
-  resolution: "eslint-plugin-testing-library@npm:3.9.0"
+"eslint-plugin-testing-library@npm:^3.9.1":
+  version: 3.9.1
+  resolution: "eslint-plugin-testing-library@npm:3.9.1"
   dependencies:
     "@typescript-eslint/experimental-utils": ^3.10.1
   peerDependencies:
     eslint: ^5 || ^6 || ^7
-  checksum: 30f4ec5f0a53c83ffbbb1eb9abd9a5d2f5b9afea0d594b23c7add3a4f22cbb05e03340187dc03cf16224b269c7d3920844ebfd51ad56f9752950d356e1566094
+  checksum: 971ce7a6689497cca34dc1c292edd497ec006876fc0a3ebfa1ae0cbab14697446f187d8405d55639cb5e41d19ad4e8f4fcfd8509f6a2e1e7120aa1fb5eb9a24e
   languageName: node
   linkType: hard
 
@@ -4457,7 +4457,7 @@ __metadata:
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.21.4
     eslint-plugin-react-hooks: ^4.1.2
-    eslint-plugin-testing-library: ^3.9.0
+    eslint-plugin-testing-library: ^3.9.1
     eslint-plugin-unicorn: ^22.0.0
     husky: ^4.3.0
     lerna: ^3.22.1
