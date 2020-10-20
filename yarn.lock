@@ -384,7 +384,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@forge/server@workspace:packages/server"
   dependencies:
-    lint-staged: ^10.4.0
+    lint-staged: ^10.4.2
     npm-run-all: ^4.1.5
     prettier: ^2.1.2
     prettier-plugin-toml: ^0.3.1
@@ -399,7 +399,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.4.1
     "@typescript-eslint/parser": ^4.4.1
     eslint: ^7.11.0
-    eslint-config-prettier: ^6.12.0
+    eslint-config-prettier: ^6.13.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.15
     eslint-plugin-import: ^2.22.1
@@ -412,7 +412,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.1.2
     eslint-plugin-testing-library: ^3.9.2
     eslint-plugin-unicorn: ^22.0.0
-    lint-staged: ^10.4.0
+    lint-staged: ^10.4.2
     npm-run-all: ^4.1.5
     prettier: ^2.1.2
     prettier-plugin-toml: ^0.3.1
@@ -3661,7 +3661,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^6.12.0":
+"eslint-config-prettier@npm:^6.13.0":
   version: 6.13.0
   resolution: "eslint-config-prettier@npm:6.13.0"
   dependencies:
@@ -4447,7 +4447,7 @@ __metadata:
     "@typescript-eslint/parser": ^4.4.1
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.11.0
-    eslint-config-prettier: ^6.12.0
+    eslint-config-prettier: ^6.13.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.15
     eslint-plugin-import: ^2.22.1
@@ -4462,7 +4462,7 @@ __metadata:
     eslint-plugin-unicorn: ^22.0.0
     husky: ^4.3.0
     lerna: ^3.22.1
-    lint-staged: ^10.4.0
+    lint-staged: ^10.4.2
     npm-run-all: ^4.1.5
     prettier: ^2.1.2
     prettier-plugin-toml: ^0.3.1
@@ -6102,7 +6102,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.4.0":
+"lint-staged@npm:^10.4.2":
   version: 10.4.2
   resolution: "lint-staged@npm:10.4.2"
   dependencies:
