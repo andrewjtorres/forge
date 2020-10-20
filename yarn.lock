@@ -397,7 +397,7 @@ __metadata:
   resolution: "@forge/user@workspace:packages/user"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.5.0
-    "@typescript-eslint/parser": ^4.4.1
+    "@typescript-eslint/parser": ^4.5.0
     eslint: ^7.11.0
     eslint-config-prettier: ^6.13.0
     eslint-import-resolver-typescript: 1.1.1
@@ -1617,7 +1617,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.4.1":
+"@typescript-eslint/parser@npm:^4.5.0":
   version: 4.5.0
   resolution: "@typescript-eslint/parser@npm:4.5.0"
   dependencies:
@@ -4444,7 +4444,7 @@ __metadata:
   resolution: "forge@workspace:."
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.5.0
-    "@typescript-eslint/parser": ^4.4.1
+    "@typescript-eslint/parser": ^4.5.0
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.11.0
     eslint-config-prettier: ^6.13.0
