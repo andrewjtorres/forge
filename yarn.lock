@@ -399,7 +399,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.5.0
     "@typescript-eslint/parser": ^4.5.0
     eslint: ^7.11.0
-    eslint-config-prettier: ^6.13.0
+    eslint-config-prettier: ^6.14.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.15
     eslint-plugin-import: ^2.22.1
@@ -1335,9 +1335,11 @@ __metadata:
   linkType: hard
 
 "@octokit/plugin-request-log@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@octokit/plugin-request-log@npm:1.0.0"
-  checksum: fa9e3bd25fb1ec89b28ac0fa11bfc70f4d105ec603c958444a83ff0a6e5076aa1cdc6279e6344e79cac118cf8a0eae26b277e57c9dc08b7ec12aab16d196c66f
+  version: 1.0.1
+  resolution: "@octokit/plugin-request-log@npm:1.0.1"
+  peerDependencies:
+    "@octokit/core": ">=3"
+  checksum: ac7ef551a1381239a10cc3571f167387af9b77a512c9faf1aed2f93a3cf1f4e618c824ec3f1464988cd56d78a4a6abca7ba2178d72d8f139ca9f7f3da6407800
   languageName: node
   linkType: hard
 
@@ -1538,9 +1540,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>= 8":
-  version: 14.11.10
-  resolution: "@types/node@npm:14.11.10"
-  checksum: 74c50cfd07b5e4bbc4303c063acf8524048f5035161f009ea2ceeb12001d278fd43a1e399d03f6277caa5c67c61a785bf406f0541b8fc2252e1bcaaa2f2d414b
+  version: 14.14.2
+  resolution: "@types/node@npm:14.14.2"
+  checksum: e6ad786008ec81e010525beb09067f31cc55a3a02120a7e383e21309c1422a0d4a56059c1da46716509e36dbd4d2c607790f3fd715275a09b9f3ffb2cf3b243e
   languageName: node
   linkType: hard
 
@@ -2462,9 +2464,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001135":
-  version: 1.0.30001148
-  resolution: "caniuse-lite@npm:1.0.30001148"
-  checksum: 3231c85a2cffcd39d2371f4f0640ff3297946abf9f90eb30030e2ec0bffc5d16e3ab8953f9a63e1504431a869a45e0541c4bb01c469d9ef8313fd074e863dd7f
+  version: 1.0.30001150
+  resolution: "caniuse-lite@npm:1.0.30001150"
+  checksum: ff8944b2ca6db465e9e878be38f66efad7f4a8cf06aea7c3d463b428649266f75b84dddd130fd3fd46841e160cfac3cfedbe40f3434f428ceaaa709ef6b8b2b1
   languageName: node
   linkType: hard
 
@@ -2752,11 +2754,11 @@ __metadata:
   linkType: hard
 
 "commitizen@npm:^4.0.3":
-  version: 4.2.1
-  resolution: "commitizen@npm:4.2.1"
+  version: 4.2.2
+  resolution: "commitizen@npm:4.2.2"
   dependencies:
     cachedir: 2.2.0
-    cz-conventional-changelog: 3.2.0
+    cz-conventional-changelog: 3.3.0
     dedent: 0.7.0
     detect-indent: 6.0.0
     find-node-modules: 2.0.0
@@ -2773,7 +2775,7 @@ __metadata:
     commitizen: bin/commitizen
     cz: bin/git-cz
     git-cz: bin/git-cz
-  checksum: 95483fa1b1157f707b4166e2b4ba372b0ff4421e00a21511d984e47226fab546e553db0b2b1f5490c335245e08473868bf2c859fc778643ec62058fe87631d0f
+  checksum: 3b126399bb75742cd73910d9d154e3f4367ff48f9c19609ee8065b00291c010e72a06863001c3c3cffe7f7d16c8dfa9e6c9e141b7afd897e09e237d61d19f7b5
   languageName: node
   linkType: hard
 
@@ -3084,25 +3086,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cz-conventional-changelog@npm:3.2.0":
-  version: 3.2.0
-  resolution: "cz-conventional-changelog@npm:3.2.0"
-  dependencies:
-    "@commitlint/load": ">6.1.1"
-    chalk: ^2.4.1
-    commitizen: ^4.0.3
-    conventional-commit-types: ^3.0.0
-    lodash.map: ^4.5.1
-    longest: ^2.0.1
-    word-wrap: ^1.0.3
-  dependenciesMeta:
-    "@commitlint/load":
-      optional: true
-  checksum: 8fce253c2c99181994ea16f52606ec1e23d710fc04f928560c5918ae686b07b58384fd49173212a378643397c2b05008fc55fc27a865412a1771bc4377957f3f
-  languageName: node
-  linkType: hard
-
-"cz-conventional-changelog@npm:^3.3.0":
+"cz-conventional-changelog@npm:3.3.0, cz-conventional-changelog@npm:^3.3.0":
   version: 3.3.0
   resolution: "cz-conventional-changelog@npm:3.3.0"
   dependencies:
@@ -3471,9 +3455,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.571":
-  version: 1.3.582
-  resolution: "electron-to-chromium@npm:1.3.582"
-  checksum: 6cfe5f32b8f9397c0664b2082c8868cdfccc562849fc24a93e9eddb2e15182c708030f9860e1e68a7add533e8e97b1bd614b41f9b54e41b115950660fc695c6d
+  version: 1.3.583
+  resolution: "electron-to-chromium@npm:1.3.583"
+  checksum: 134710b06cdd0a722bba5efe502beb914bae9285cd3140c5824f043984b2595e64d6cb893675d8b185cf8bef46cc8f39c72a9f1c78237e31def0c64e076e532f
   languageName: node
   linkType: hard
 
@@ -3492,9 +3476,9 @@ __metadata:
   linkType: hard
 
 "emoji-regex@npm:^9.0.0":
-  version: 9.1.1
-  resolution: "emoji-regex@npm:9.1.1"
-  checksum: d82f69cb30587197754ce4696688a8c3972338a23509271987bb54b427e2ceaed9629949fec391f3fd755aaef4537a8aaeebc4a315400386615611059d16f312
+  version: 9.2.0
+  resolution: "emoji-regex@npm:9.2.0"
+  checksum: 0ccee5f5e8ffcfe084e1a7499398b1ddb3b2f0e395a9bd5711ff136fc4606f24ca8bad930d60f5a12d4b2ce38dbb2b8cd0fd3e20a0d291770123b1e12bba9f04
   languageName: node
   linkType: hard
 
@@ -3590,7 +3574,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es-abstract@npm:^1.18.0-next.0":
+"es-abstract@npm:^1.18.0-next.0, es-abstract@npm:^1.18.0-next.1":
   version: 1.18.0-next.1
   resolution: "es-abstract@npm:1.18.0-next.1"
   dependencies:
@@ -3661,16 +3645,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^6.13.0":
-  version: 6.13.0
-  resolution: "eslint-config-prettier@npm:6.13.0"
+"eslint-config-prettier@npm:^6.14.0":
+  version: 6.14.0
+  resolution: "eslint-config-prettier@npm:6.14.0"
   dependencies:
     get-stdin: ^6.0.0
   peerDependencies:
     eslint: ">=3.14.1"
   bin:
     eslint-config-prettier-check: bin/cli.js
-  checksum: fe88da82a493da579fe57cc7b0be0cac5c84bfb5148d5e35abda99a73e6a0ab1125aa24ceae52144c9382c958f1f33efaadb4b86455cd28fef72172d9046a683
+  checksum: 8d478429bb6c63a538270b8d2fae13a2ffe5c5bd8401d2f478e9a65e1bc94ed6e0f6ca3d063a8decd0003ad91ef26ca32fadf2d08f3e2d7dd4c76ee8efea6711
   languageName: node
   linkType: hard
 
@@ -3838,11 +3822,11 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-react-hooks@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "eslint-plugin-react-hooks@npm:4.1.2"
+  version: 4.2.0
+  resolution: "eslint-plugin-react-hooks@npm:4.2.0"
   peerDependencies:
     eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
-  checksum: 252496dbaaafa6812fbd3aeaafac1192a1e35238172d8271eb370025b43604e10f04cecec3583da395358a3e6be3ace6958ec938102fe3c1b77caf30f1393c91
+  checksum: 5378d16b5a56431a7a77b56d61464dbbfa343e8607da87b851a6caee44b96e08847147321f5f38de30d20668418691d859f69d9c5262dfb5308856382252096c
   languageName: node
   linkType: hard
 
@@ -4447,7 +4431,7 @@ __metadata:
     "@typescript-eslint/parser": ^4.5.0
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.11.0
-    eslint-config-prettier: ^6.13.0
+    eslint-config-prettier: ^6.14.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.15
     eslint-plugin-import: ^2.22.1
@@ -4736,11 +4720,11 @@ __metadata:
   linkType: hard
 
 "git-url-parse@npm:^11.1.2":
-  version: 11.3.0
-  resolution: "git-url-parse@npm:11.3.0"
+  version: 11.4.0
+  resolution: "git-url-parse@npm:11.4.0"
   dependencies:
     git-up: ^4.0.0
-  checksum: 86155163c8e33c0268d2741c65bc01eecf82c6d9818759de65993b04ca2baa7009a6a77dd1dfdb527510e24dac558f3cb4d134e41a88d0374c2fd39b0676ef84
+  checksum: 9c6073f0b03576dd80810433bf5b6f8bc83a96aa73a9f897315c5cbb1420c0ff8db5aeed9ddf472bdf0135a3ce2d8f36cd269d10d58f84c93f21b33d54034c4c
   languageName: node
   linkType: hard
 
@@ -9198,22 +9182,22 @@ __metadata:
   linkType: hard
 
 "string.prototype.trimend@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "string.prototype.trimend@npm:1.0.1"
+  version: 1.0.2
+  resolution: "string.prototype.trimend@npm:1.0.2"
   dependencies:
     define-properties: ^1.1.3
-    es-abstract: ^1.17.5
-  checksum: 93046463de6a3b4ae27d0622ae8795239c8d372b1be1a60122fce591bf7578b719becf00bf04326642a868bc6185f35901119b61a246509dd0dc0666b2a803ed
+    es-abstract: ^1.18.0-next.1
+  checksum: 6e89c1fc6a8ec5c1e609be0ee27a2b87f8f750086876a9981510da39f36713f2acea814134fc1b84a7d10479b10234562b68263130102d4bc8a471f037f9a14e
   languageName: node
   linkType: hard
 
 "string.prototype.trimstart@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "string.prototype.trimstart@npm:1.0.1"
+  version: 1.0.2
+  resolution: "string.prototype.trimstart@npm:1.0.2"
   dependencies:
     define-properties: ^1.1.3
-    es-abstract: ^1.17.5
-  checksum: 20c4a940f1ba65b0aa5abf0c319dceba4fbf04d24553583b0b82eba2711815d1e40663ce36175ed06475701dbe797cac81be1ec1dc4bb4416b2077e8b0409036
+    es-abstract: ^1.18.0-next.1
+  checksum: 9b94804eb9568a2072f3d034ed816bcaacbac7799c3780bf3dc1debd174ec826cbf285f9a08422c4ff9cf2574654c21e5d5c16b78ff6209a3a72579a3712a75f
   languageName: node
   linkType: hard
 
