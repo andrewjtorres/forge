@@ -398,14 +398,14 @@ __metadata:
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.5.0
     "@typescript-eslint/parser": ^4.5.0
-    eslint: ^7.11.0
+    eslint: ^7.12.0
     eslint-config-prettier: ^6.14.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.15
+    eslint-plugin-formatjs: ^2.7.16
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.1.0
     eslint-plugin-jest-dom: ^3.2.4
-    eslint-plugin-jsx-a11y: ^6.3.1
+    eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.21.5
@@ -3705,7 +3705,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.7.15":
+"eslint-plugin-formatjs@npm:^2.7.16":
   version: 2.7.16
   resolution: "eslint-plugin-formatjs@npm:2.7.16"
   dependencies:
@@ -3769,7 +3769,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:^6.3.1":
+"eslint-plugin-jsx-a11y@npm:^6.4.1":
   version: 6.4.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.4.1"
   dependencies:
@@ -3932,7 +3932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.11.0":
+"eslint@npm:^7.12.0":
   version: 7.12.0
   resolution: "eslint@npm:7.12.0"
   dependencies:
@@ -4430,14 +4430,14 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.5.0
     "@typescript-eslint/parser": ^4.5.0
     cz-conventional-changelog: ^3.3.0
-    eslint: ^7.11.0
+    eslint: ^7.12.0
     eslint-config-prettier: ^6.14.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.15
+    eslint-plugin-formatjs: ^2.7.16
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.1.0
     eslint-plugin-jest-dom: ^3.2.4
-    eslint-plugin-jsx-a11y: ^6.3.1
+    eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
     eslint-plugin-react: ^7.21.5
