@@ -404,7 +404,7 @@ __metadata:
     eslint-plugin-formatjs: ^2.7.16
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.1.0
-    eslint-plugin-jest-dom: ^3.2.3
+    eslint-plugin-jest-dom: ^3.2.4
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
@@ -3746,7 +3746,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest-dom@npm:^3.2.3":
+"eslint-plugin-jest-dom@npm:^3.2.4":
   version: 3.2.4
   resolution: "eslint-plugin-jest-dom@npm:3.2.4"
   dependencies:
@@ -4436,7 +4436,7 @@ __metadata:
     eslint-plugin-formatjs: ^2.7.16
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.1.0
-    eslint-plugin-jest-dom: ^3.2.3
+    eslint-plugin-jest-dom: ^3.2.4
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-promise: ^4.2.1
