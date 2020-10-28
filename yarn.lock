@@ -398,10 +398,10 @@ __metadata:
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.6.0
     "@typescript-eslint/parser": ^4.6.0
-    eslint: ^7.12.0
-    eslint-config-prettier: ^6.14.0
+    eslint: ^7.12.1
+    eslint-config-prettier: ^6.15.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.16
+    eslint-plugin-formatjs: ^2.8.0
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.1.0
     eslint-plugin-jest-dom: ^3.2.4
@@ -3645,7 +3645,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^6.14.0":
+"eslint-config-prettier@npm:^6.15.0":
   version: 6.15.0
   resolution: "eslint-config-prettier@npm:6.15.0"
   dependencies:
@@ -3705,7 +3705,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-formatjs@npm:^2.7.16":
+"eslint-plugin-formatjs@npm:^2.8.0":
   version: 2.8.0
   resolution: "eslint-plugin-formatjs@npm:2.8.0"
   dependencies:
@@ -3932,7 +3932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.12.0":
+"eslint@npm:^7.12.1":
   version: 7.12.1
   resolution: "eslint@npm:7.12.1"
   dependencies:
@@ -4430,10 +4430,10 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.6.0
     "@typescript-eslint/parser": ^4.6.0
     cz-conventional-changelog: ^3.3.0
-    eslint: ^7.12.0
-    eslint-config-prettier: ^6.14.0
+    eslint: ^7.12.1
+    eslint-config-prettier: ^6.15.0
     eslint-import-resolver-typescript: 1.1.1
-    eslint-plugin-formatjs: ^2.7.16
+    eslint-plugin-formatjs: ^2.8.0
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.1.0
     eslint-plugin-jest-dom: ^3.2.4
