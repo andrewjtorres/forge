@@ -280,9 +280,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/eslintrc@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@eslint/eslintrc@npm:0.2.0"
+"@eslint/eslintrc@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@eslint/eslintrc@npm:0.2.1"
   dependencies:
     ajv: ^6.12.4
     debug: ^4.1.1
@@ -294,7 +294,7 @@ __metadata:
     lodash: ^4.17.19
     minimatch: ^3.0.4
     strip-json-comments: ^3.1.1
-  checksum: bdc8346add0fe57337c09134f19e693fa8a3c03357bf54c05de2270388774b0469b6d6dbd9f368cbd5de53919c4c9e8b644177acc417ea1ff4f99cbf32feefa6
+  checksum: 99310cddf0f1abb2de4b5278293db6e2639445aab4e525f3c5f5b3b8ad53a59d6003a306954fb7ad15edd2f8a02b658d43418fa8b52ae2d07e074b24d991de2a
   languageName: node
   linkType: hard
 
@@ -399,7 +399,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.6.0
     "@typescript-eslint/parser": ^4.6.0
     eslint: ^7.12.0
-    eslint-config-prettier: ^6.14.0
+    eslint-config-prettier: ^6.15.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.16
     eslint-plugin-import: ^2.22.1
@@ -438,16 +438,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/ts-transformer@npm:^2.11.4":
-  version: 2.11.4
-  resolution: "@formatjs/ts-transformer@npm:2.11.4"
+"@formatjs/ts-transformer@npm:^2.12.0":
+  version: 2.12.0
+  resolution: "@formatjs/ts-transformer@npm:2.12.0"
   dependencies:
     intl-messageformat-parser: ^6.0.11
     tslib: ^2.0.1
     typescript: ^4.0
   peerDependencies:
     ts-jest: ^26.4.0
-  checksum: c7a40ff4a9b6bf3a8c3dcb309a74600f3918549f54772595200ea377055f45b1770d46b1a640c1315e14027d444db588963e154bb81244e43a4ce34b90c3e627
+  checksum: 40c13f7f54e4ad64786e79f9359880ed23f958ffad3c209da1fb43a987c4253e9161a48b9444c298b61d361d5f5d78bdf5a31dd2fbe6e3c04b0e62ef5e63b469
   languageName: node
   linkType: hard
 
@@ -1540,9 +1540,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>= 8":
-  version: 14.14.3
-  resolution: "@types/node@npm:14.14.3"
-  checksum: f77a69dfc0edb74007883f339636f7d79b891219389311ff6d756a966ca1025557c84c68643f738e897385d2e57e9124cc8261fcf080d378398ab60babaffd57
+  version: 14.14.6
+  resolution: "@types/node@npm:14.14.6"
+  checksum: 9b06b04ab2ae3761136fb39b573f95d90e748ebcf232e126304d642e4910039a74973547635729b627a0401791a1f2491aa9aa6d4d6bb80922a0b869a2731a63
   languageName: node
   linkType: hard
 
@@ -2478,9 +2478,9 @@ __metadata:
   linkType: hard
 
 "ccount@npm:^1.0.0":
-  version: 1.0.5
-  resolution: "ccount@npm:1.0.5"
-  checksum: 7580ada7a3efa38d9dbdd581d3a9d5844529663d8faa5a9c209de3cce75cd96b721ebda7fa328ff4980a4392da6b30b27753a416823cae44a3e76dcf5c93b7a0
+  version: 1.1.0
+  resolution: "ccount@npm:1.1.0"
+  checksum: 3f665763cbb12fc8db2732937e748e838f9c33fb07abdde7a0f2a908db2a8b9a9eb4b91c879ca87b75be0407c4e34d707ad04f3410e943561ff2f6cf6f44047d
   languageName: node
   linkType: hard
 
@@ -3455,9 +3455,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.571":
-  version: 1.3.583
-  resolution: "electron-to-chromium@npm:1.3.583"
-  checksum: 134710b06cdd0a722bba5efe502beb914bae9285cd3140c5824f043984b2595e64d6cb893675d8b185cf8bef46cc8f39c72a9f1c78237e31def0c64e076e532f
+  version: 1.3.584
+  resolution: "electron-to-chromium@npm:1.3.584"
+  checksum: 34064db714d728f4495557eba05f454f0adb0de73c0b9125eb5fb837eb05fc42790e2e1a4df22b978176f2b8d30da2396132ba4abdb3cd26fe248085cc82f212
   languageName: node
   linkType: hard
 
@@ -3645,16 +3645,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^6.14.0":
-  version: 6.14.0
-  resolution: "eslint-config-prettier@npm:6.14.0"
+"eslint-config-prettier@npm:^6.15.0":
+  version: 6.15.0
+  resolution: "eslint-config-prettier@npm:6.15.0"
   dependencies:
     get-stdin: ^6.0.0
   peerDependencies:
     eslint: ">=3.14.1"
   bin:
     eslint-config-prettier-check: bin/cli.js
-  checksum: 8d478429bb6c63a538270b8d2fae13a2ffe5c5bd8401d2f478e9a65e1bc94ed6e0f6ca3d063a8decd0003ad91ef26ca32fadf2d08f3e2d7dd4c76ee8efea6711
+  checksum: a790bc61699e43a2edc5453488576cd977fad3b3cf99c129c10760ce6970d422923fddf80b65b2b10a93c00af0180a854e4b7824cc268e5957826cbe5b969e90
   languageName: node
   linkType: hard
 
@@ -3706,10 +3706,10 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-formatjs@npm:^2.7.16":
-  version: 2.7.16
-  resolution: "eslint-plugin-formatjs@npm:2.7.16"
+  version: 2.8.0
+  resolution: "eslint-plugin-formatjs@npm:2.8.0"
   dependencies:
-    "@formatjs/ts-transformer": ^2.11.4
+    "@formatjs/ts-transformer": ^2.12.0
     "@types/emoji-regex": ^8.0.0
     "@types/eslint": ^7.2.0
     "@types/estree": ^0.0.45
@@ -3719,7 +3719,7 @@ __metadata:
     tslib: ^2.0.1
   peerDependencies:
     eslint: ^7.0.0
-  checksum: 3526a785f9e632f09a8f7a24e20e04a3e94b0630869c74032b14754af5d4c528c18a613aabbc30f3f2fdb957d747642b6b6dd8181fa402e94699c0427bb79eef
+  checksum: c38a3584dc573decb9f59d8164ca3cbdcd884b2208bdbedc69d8110504ad08d072884d050d6594ef93954d06140e0cb914e8e96e009d36f86a1190d2cfe9fd14
   languageName: node
   linkType: hard
 
@@ -3933,11 +3933,11 @@ __metadata:
   linkType: hard
 
 "eslint@npm:^7.12.0":
-  version: 7.12.0
-  resolution: "eslint@npm:7.12.0"
+  version: 7.12.1
+  resolution: "eslint@npm:7.12.1"
   dependencies:
     "@babel/code-frame": ^7.0.0
-    "@eslint/eslintrc": ^0.2.0
+    "@eslint/eslintrc": ^0.2.1
     ajv: ^6.10.0
     chalk: ^4.0.0
     cross-spawn: ^7.0.2
@@ -3975,7 +3975,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 22f86c0ebaf75993d197d230a8c35f11ba4ffc7cd0b280aeecb28a04c26446b9e6906eedee264a445311a3b9b31f9bca787ee58546acc087cb2c1056ca89f624
+  checksum: b3d11ea516d2932db5854ea942a546b711e6ee8735306627042bb9e2539e96844cc62cdb5826039f5d0509202936045c2cd7b84b457004c891a326f8eccae333
   languageName: node
   linkType: hard
 
@@ -4062,8 +4062,8 @@ __metadata:
   linkType: hard
 
 "execa@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "execa@npm:4.0.3"
+  version: 4.1.0
+  resolution: "execa@npm:4.1.0"
   dependencies:
     cross-spawn: ^7.0.0
     get-stream: ^5.0.0
@@ -4074,7 +4074,7 @@ __metadata:
     onetime: ^5.1.0
     signal-exit: ^3.0.2
     strip-final-newline: ^2.0.0
-  checksum: 65b237d178b468045ee57af6aa4e4124807b28aec9573d9b3b16b02a7e41bd65996236e0c5575d053d3888585ffc795cbed38847c6c9669e9c8481fc44ac05e4
+  checksum: 79bd736acd63aa7c0afb32cc99af21cfd70db696580686c7cd56c177857b93b78bc0b9bb2b4410f377f46c71c566c8e723987e71ef0bc9b23791bfbced02f75c
   languageName: node
   linkType: hard
 
@@ -4242,11 +4242,11 @@ __metadata:
   linkType: hard
 
 "fastq@npm:^1.6.0":
-  version: 1.8.0
-  resolution: "fastq@npm:1.8.0"
+  version: 1.9.0
+  resolution: "fastq@npm:1.9.0"
   dependencies:
     reusify: ^1.0.4
-  checksum: 77d71545ba88a5c4cbe628716bcf7a0db1dbe81943c1abfbe9eab65db17c6c1db7836e99478b3b8baf21d260b896dff4723f7b7af6606b3d3db2b135bf414c16
+  checksum: e9b46ea8990fa626ea23c8a790335a4220a659e189b6ec6cf9f38b879c259327a1532ec89d1ff196ebec365145d644a833a8edab6f975a8c46bad4b98c0e2ef7
   languageName: node
   linkType: hard
 
@@ -4431,7 +4431,7 @@ __metadata:
     "@typescript-eslint/parser": ^4.6.0
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.12.0
-    eslint-config-prettier: ^6.14.0
+    eslint-config-prettier: ^6.15.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.16
     eslint-plugin-import: ^2.22.1
@@ -4575,9 +4575,9 @@ __metadata:
   linkType: hard
 
 "gensync@npm:^1.0.0-beta.1":
-  version: 1.0.0-beta.1
-  resolution: "gensync@npm:1.0.0-beta.1"
-  checksum: 3d14f7c34fc903dd52c36d0879de2c4afde8315edccd630e97919c365819b32c06d98770ef87f7ba45686ee5d2bd5818354920187659b42828319f7cc3352fdb
+  version: 1.0.0-beta.2
+  resolution: "gensync@npm:1.0.0-beta.2"
+  checksum: d523437689c97b3aba9c5cdeca4677d5fff9a29d620db693fea40d852bad63563110f16979d0170248439dbcd2ecee0780fb2533d3f0519f019081aa10767c60
   languageName: node
   linkType: hard
 
@@ -6025,9 +6025,9 @@ __metadata:
   linkType: hard
 
 "language-subtag-registry@npm:~0.3.2":
-  version: 0.3.20
-  resolution: "language-subtag-registry@npm:0.3.20"
-  checksum: ea5fea4f2ef1ca074706bc6f70c647e5c21056390674773025296f00d7d16396871b2eb8155b061d14ed6df793b4c9b6107fe24e488b8ab0868831e30fcabce9
+  version: 0.3.21
+  resolution: "language-subtag-registry@npm:0.3.21"
+  checksum: 91bcb4717a5a64ddb86b720807081c7f4aff05b22cb813652ad6f2ea745008170bec244b74212c1f6d84ab21a63a854f3fb569386544f1fb61297e07492c1a1f
   languageName: node
   linkType: hard
 
@@ -8608,9 +8608,9 @@ __metadata:
   linkType: hard
 
 "run-parallel@npm:^1.1.9":
-  version: 1.1.9
-  resolution: "run-parallel@npm:1.1.9"
-  checksum: a05ca86e9908b2d2f90d659a0eb4129e040341729fc9ac1fa8971bf0d77ca6ccfb69f9a559cecce9cd541a9328fa4fa19a3faa6d24698d93cf751efb90aec61f
+  version: 1.1.10
+  resolution: "run-parallel@npm:1.1.10"
+  checksum: 5c851a6bb74b6561002c53a68b896a4bfb7d6368c281fb9144098bdfd60188e4cb550ed88587ade3c60e3e961364a0d74c3c5f4fbffafe6842f0d2908d79e104
   languageName: node
   linkType: hard
 
@@ -9763,9 +9763,9 @@ __metadata:
   linkType: hard
 
 "trim-trailing-lines@npm:^1.0.0":
-  version: 1.1.3
-  resolution: "trim-trailing-lines@npm:1.1.3"
-  checksum: e09d4a1f5817726747a3ef0c99766934c56b308bb383cba27d689fa7bd1be7bf935743a4a08818f9069d4d762b68b1376dadece94d061f6e95b41ab649051f2f
+  version: 1.1.4
+  resolution: "trim-trailing-lines@npm:1.1.4"
+  checksum: d3fd2a2804baaffc9859b439524c0736fbecdc2114816fd7138c2289291c73f8b25d7e4497b4dccab8e74ddf357072c79b4041bd32c6583847e2453ed6f77df0
   languageName: node
   linkType: hard
 
@@ -9897,22 +9897,22 @@ __metadata:
   linkType: hard
 
 "typescript@^4.0, typescript@^4.0.3":
-  version: 4.0.3
-  resolution: "typescript@npm:4.0.3"
+  version: 4.0.5
+  resolution: "typescript@npm:4.0.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 5c892e132756a83d22030d7fb38be47cde27613f71d233dbe7faf79e4a92852c5146bfddcaf8c2da1a37d35ae8bf7b8c888fdcd763d5ad184cea6b21e7466838
+  checksum: ce94d4bbb914cc9d6fbd42e1476ab18c3292b262b8ba7ba76cd167a858545207a604e75bf1efbb75b8654c8f85deaa19795c3ef00098d7612855139b4ecc0240
   languageName: node
   linkType: hard
 
 "typescript@patch:typescript@^4.0#builtin<compat/typescript>, typescript@patch:typescript@^4.0.3#builtin<compat/typescript>":
-  version: 4.0.3
-  resolution: "typescript@patch:typescript@npm%3A4.0.3#builtin<compat/typescript>::version=4.0.3&hash=5b02a2"
+  version: 4.0.5
+  resolution: "typescript@patch:typescript@npm%3A4.0.5#builtin<compat/typescript>::version=4.0.5&hash=5b02a2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 72db87d09f728c83062d64b5e12ed52effb6278963b6bc5c006219b22c104e02b8ce80164261de554923d3c47d894a1ca937ed542328caccb83ebaedeae98a69
+  checksum: d4be0bd2a2050b2d7b132cb2a40329178f181543e9d2ac6d1f06babd9f047208558a736a7effdeb28759ae2e815f070b61d10ee2f02cc93a6221a1490f21ffce
   languageName: node
   linkType: hard
 
@@ -10144,9 +10144,9 @@ __metadata:
   linkType: hard
 
 "v8-compile-cache@npm:^2.0.3, v8-compile-cache@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "v8-compile-cache@npm:2.1.1"
-  checksum: 1290922fe1501a732155206f2d516f91bdfd7acf318542ffe2813ff06465cf49051fae7e1a40f3e0a56cf78b41f799473f6e389fec0534e4ecc62eb4105cf22f
+  version: 2.2.0
+  resolution: "v8-compile-cache@npm:2.2.0"
+  checksum: 1efc9946401fcad7a67619b520d8d12e31c7138090ffd9f98af9b919461fa23d947ecef0eab89cca4037c01d29d25a389ab6c0fac70ee4ed030443b08cdf6cff
   languageName: node
   linkType: hard
 
