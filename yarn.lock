@@ -399,7 +399,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.6.0
     "@typescript-eslint/parser": ^4.6.0
     eslint: ^7.12.1
-    eslint-config-prettier: ^6.14.0
+    eslint-config-prettier: ^6.15.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.16
     eslint-plugin-import: ^2.22.1
@@ -3645,7 +3645,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^6.14.0":
+"eslint-config-prettier@npm:^6.15.0":
   version: 6.15.0
   resolution: "eslint-config-prettier@npm:6.15.0"
   dependencies:
@@ -4431,7 +4431,7 @@ __metadata:
     "@typescript-eslint/parser": ^4.6.0
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.12.1
-    eslint-config-prettier: ^6.14.0
+    eslint-config-prettier: ^6.15.0
     eslint-import-resolver-typescript: 1.1.1
     eslint-plugin-formatjs: ^2.7.16
     eslint-plugin-import: ^2.22.1
