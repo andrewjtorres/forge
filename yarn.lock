@@ -3,7 +3,7 @@
 
 __metadata:
   version: 4
-  cacheKey: 6
+  cacheKey: 7
 
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.10.4":
   version: 7.10.4
@@ -228,7 +228,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.10.4, @babel/types@npm:^7.11.0, @babel/types@npm:^7.12.1, @babel/types@npm:^7.7.0":
+"@babel/types@npm:^7.10.4, @babel/types@npm:^7.11.0, @babel/types@npm:^7.12.1, @babel/types@npm:^7.7.0, @babel/types@npm:^7.8.3":
   version: 7.12.1
   resolution: "@babel/types@npm:7.12.1"
   dependencies:
@@ -9908,7 +9908,7 @@ __metadata:
 
 "typescript@patch:typescript@^4.0#builtin<compat/typescript>, typescript@patch:typescript@^4.0.5#builtin<compat/typescript>":
   version: 4.0.5
-  resolution: "typescript@patch:typescript@npm%3A4.0.5#builtin<compat/typescript>::version=4.0.5&hash=5b02a2"
+  resolution: "typescript@patch:typescript@npm%3A4.0.5#builtin<compat/typescript>::version=4.0.5&hash=5bf698"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
