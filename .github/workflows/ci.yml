@@ -69,7 +69,7 @@ jobs:
             packages/server/target
           key: server-cargo-cache-and-artifacts-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Install Rust and Cargo
-        uses: actions-rs/toolchain@v1.0.6
+        uses: actions-rs/toolchain@v1.0.7
         with:
           toolchain: nightly-2020-10-25
           default: true
@@ -125,7 +125,7 @@ jobs:
             packages/server/target
           key: server-cargo-cache-and-artifacts-${{ hashFiles('packages/server/Cargo.lock') }}
       - name: Install Rust and Cargo
-        uses: actions-rs/toolchain@v1.0.6
+        uses: actions-rs/toolchain@v1.0.7
         with:
           toolchain: nightly-2020-10-25
           default: true
