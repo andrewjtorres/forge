@@ -386,7 +386,7 @@ __metadata:
   dependencies:
     lint-staged: ^10.5.1
     npm-run-all: ^4.1.5
-    prettier: ^2.1.2
+    prettier: ^2.2.0
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
   languageName: unknown
@@ -414,7 +414,7 @@ __metadata:
     eslint-plugin-unicorn: ^23.0.0
     lint-staged: ^10.5.1
     npm-run-all: ^4.1.5
-    prettier: ^2.1.2
+    prettier: ^2.2.0
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
     stylelint: ^13.8.0
@@ -4478,7 +4478,7 @@ __metadata:
     lerna: ^3.22.1
     lint-staged: ^10.5.1
     npm-run-all: ^4.1.5
-    prettier: ^2.1.2
+    prettier: ^2.2.0
     prettier-plugin-toml: ^0.3.1
     prettylint: ^1.0.0
     stylelint: ^13.8.0
@@ -7959,7 +7959,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.1.2":
+"prettier@npm:^2.2.0":
   version: 2.2.0
   resolution: "prettier@npm:2.2.0"
   bin:
