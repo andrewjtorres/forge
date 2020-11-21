@@ -567,7 +567,7 @@ dependencies = [
  "diesel_derives",
  "pq-sys",
  "r2d2",
- "uuid",
+ "uuid 0.8.1",
 ]
 
 [[package]]
@@ -975,7 +975,7 @@ dependencies = [
  "serde",
  "serde_derive",
  "url",
- "uuid",
+ "uuid 0.7.4",
 ]
 
 [[package]]
@@ -1626,7 +1626,7 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "structopt",
- "uuid",
+ "uuid 0.7.4",
 ]
 
 [[package]]
@@ -1958,6 +1958,12 @@ dependencies = [
  "rand 0.6.5",
  "serde",
 ]
+
+[[package]]
+name = "uuid"
+version = "0.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9fde2f6a4bea1d6e007c4ad38c6839fa71cbb63b6dbf5b595aa38dc9b1093c11"
 
 [[package]]
 name = "vcpkg"
