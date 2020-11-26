@@ -2,7 +2,6 @@
 !**/.*
 
 # Dependencies
-.yarn
 node_modules
 
 # Version Control
