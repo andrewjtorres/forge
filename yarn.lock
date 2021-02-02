@@ -2940,10 +2940,10 @@ eslint-module-utils@^2.6.0:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-formatjs@^2.11.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.11.0.tgz#46dac11f9c0f96b72fad2da55812c25b9d864f0a"
-  integrity sha512-/HVmY343p44str15ETCejlPct25Yi1yZTEyv8MONZuUKCTG1YEeyQ+SuAC8y6Xpt/z5mFC0G5dXxz6/zc/uRJw==
+eslint-plugin-formatjs@^2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.12.0.tgz#3f9400aa9097e54b35d6d487a059b0e44a39bc41"
+  integrity sha512-FAWPlqRsPmqTLUhGmU2atcE3K48jSN52ppdpnPPacL6fmgggo9EGYPV5tTmMYN9YutqOK2Tnh3sWuAtLd60GgA==
   dependencies:
     "@formatjs/ts-transformer" "3.0.4"
     "@types/emoji-regex" "^8.0.0"
