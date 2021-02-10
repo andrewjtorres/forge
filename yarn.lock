@@ -2770,9 +2770,9 @@ ecc-jsbn@~0.1.1:
     safer-buffer "^2.1.0"
 
 electron-to-chromium@^1.3.649:
-  version "1.3.658"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.658.tgz#aac0f3d74e28cd805741b28a0d660ebff4cbdd44"
-  integrity sha512-1sRTaBVbn02sqadml7IchB1VxgRBcrJg55rlNa7dNszT0ZDDAM0/8NVHtbe0yCrOafLVB+lBzapWX1HpS+Knhg==
+  version "1.3.661"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.661.tgz#8603ec971b3e3b3d83389ac2bb64b9b07d7bb40a"
+  integrity sha512-INNzKoL9ceOpPCpF5J+Fp9AOHY1RegwKViohAyTzV3XbkuRUx04r4v8edsDbevsog8UuL0GvD/Qerr2HwVTlSA==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
