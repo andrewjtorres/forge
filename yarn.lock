@@ -409,19 +409,19 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
-"@formatjs/ecma402-abstract@1.5.4":
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.5.4.tgz#ed7e17fdf6f6c6c163ba95fb7a752404dea9324b"
-  integrity sha512-PyzVaiXHCp1WtXnR30P06BYqWHHY5YIkbwxfB2WE1yNa7XXvozmh6mSc099HgSoTY5ZmOAqwh78G2qOg0j5aPw==
+"@formatjs/ecma402-abstract@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.6.0.tgz#bd8f97dba7b8a22671a6a581d9e20fc4db0032e5"
+  integrity sha512-c+mv3Sld8ZZ+qXP37z7xzNMIkyZLC0iU5TzYBs5vmromnWjyMctPpgTkQoka1evkhzudBcSZ/cORCvX6qM5+rg==
   dependencies:
     tslib "^2.0.1"
 
-"@formatjs/ts-transformer@3.1.3":
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.1.3.tgz#3fbc53c2fc0de6983f514a3a5ffd7e009aa014f1"
-  integrity sha512-+aCLVLecPfBV0IA3OTGF9ZYbLzSDZGSPkA0dyFP8/l0ny+tUxsDJxi1u2b0MAqioAtqn46McuF4c15RUbsqm0w==
+"@formatjs/ts-transformer@3.1.4":
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.1.4.tgz#ac4703dd1742b0b353452a458dd2ad45600ea11c"
+  integrity sha512-DJNQ+H5U0BNfOs85MXFcRkRZZQyrBHeRTdpgigu4UdGrrECf1N2NsACW4b7ZuSeAT20DiLHSF2HhuNjxZ6r4Qg==
   dependencies:
-    intl-messageformat-parser "6.3.4"
+    intl-messageformat-parser "6.4.0"
     tslib "^2.0.1"
     typescript "^4.0"
 
@@ -3016,17 +3016,17 @@ eslint-module-utils@^2.6.0:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-formatjs@^2.12.4:
-  version "2.12.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.12.4.tgz#c45d216c71344f0b52b03a474f4e3790de0a8dd4"
-  integrity sha512-2UyVSwwXWHrK1FPI+6/LmpPaN2dIyPStlzjg8e7iO+bSV22Qkn9H2ne56zLK/mqCX1lALoSLnrlCfMTcQrcigA==
+eslint-plugin-formatjs@^2.12.5:
+  version "2.12.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.12.5.tgz#2f08473902c928d837283826e65001beaeafc3f7"
+  integrity sha512-zcWyN73w3VDUy8OgxrgGGEALnRsTVWWp+a3iFJr7/oENaPRmZdFdSg/3qr72x0naZ+XBSR8NLB9LnsZl9Lvw9Q==
   dependencies:
-    "@formatjs/ts-transformer" "3.1.3"
+    "@formatjs/ts-transformer" "3.1.4"
     "@types/emoji-regex" "^8.0.0"
     "@types/eslint" "^7.2.0"
     "@typescript-eslint/typescript-estree" "^3.6.0"
     emoji-regex "^9.0.0"
-    intl-messageformat-parser "6.3.4"
+    intl-messageformat-parser "6.4.0"
     tslib "^2.0.1"
 
 eslint-plugin-import@^2.22.1:
@@ -4280,12 +4280,12 @@ internal-slot@^1.0.3:
     has "^1.0.3"
     side-channel "^1.0.4"
 
-intl-messageformat-parser@6.3.4:
-  version "6.3.4"
-  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.3.4.tgz#1005ad4d3f7dcc8ec6f7e8e6933e3bf00b77db50"
-  integrity sha512-nlAjRbE52xxK6F6bdJ8nR7mQodP7VanP8dWPfLwby8Murt7pvyq4V49/f9l0LqvmZvqqKE4tS0+EHI6u0Xx+6A==
+intl-messageformat-parser@6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-6.4.0.tgz#b054b2b87f920c5ecbbbf5f2b0fe932df137d4ff"
+  integrity sha512-i5wd0emP1DXc3BhGcRCR3Qmq/n9VK54CzYljCzli7hD8MPPv5Dl08w5HYHn3Uo367XzU+BcpiYnEhFhcWOE/sg==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.5.4"
+    "@formatjs/ecma402-abstract" "1.6.0"
     tslib "^2.0.1"
 
 ip@1.1.5:
