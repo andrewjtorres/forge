@@ -29,7 +29,7 @@
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-import-resolver-typescript": "1.1.1",
-    "eslint-plugin-formatjs": "^2.12.5",
+    "eslint-plugin-formatjs": "^2.12.6",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.1.5",
     "eslint-plugin-jest-dom": "^3.6.5",
