@@ -20,6 +20,7 @@
     "lint:files": "prettylint \"**/*.{json,md,yml}\"",
     "lint:scripts": "eslint \"**/*.js\"",
     "lint:workspaces": "lerna run --stream lint",
+    "prepare": "husky install",
     "test": "npm-run-all --parallel \"test:*\"",
     "test:workspaces": "lerna run --stream test"
   },
@@ -79,11 +80,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn hook:pre-commit && lerna run --concurrency 1 --since HEAD --stream hook:pre-commit"
-    }
-  },
   "lint-staged": {
     "!(packages/**)*.js": [
       "eslint --fix"
