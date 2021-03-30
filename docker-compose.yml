@@ -7,5 +7,5 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: amnesia_fletch_soonest_baruch_syphilis_windbag
     ports:
-      - 5432:5432
+      - 5454:5432
     restart: always
