@@ -28,6 +28,7 @@ structopt = "^0.3.21"
 [dependencies.actix-web]
 version = "^3.3.2"
 default-features = false
+features = ["compress"]
 
 [dependencies.chrono]
 version = "^0.4.19"

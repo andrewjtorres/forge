@@ -9,7 +9,9 @@ mod models;
 mod routes;
 
 use actix_cors::Cors;
-use actix_web::{http::header, middleware::Logger, web::Data, App, HttpServer};
+use actix_web::{
+    http::header, middleware::Compress, middleware::Logger, web::Data, App, HttpServer,
+};
 use std::{env, io::Result, sync::Arc};
 
 use config::Config;
@@ -34,6 +36,7 @@ async fn main() -> Result<()> {
         App::new()
             .app_data(pool.clone())
             .data(schema.clone())
+            .wrap(Compress::default())
             .wrap(
                 Cors::default()
                     .allowed_methods(vec!["GET", "POST"])
