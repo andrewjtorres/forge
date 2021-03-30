@@ -14,7 +14,7 @@ publish = false
 
 [dependencies]
 actix-cors = "^0.5.4"
-actix-rt = "^1.1.1"
+actix-rt = "^2.2.0"
 dotenv = "^0.15.0"
 env_logger = "^0.8.3"
 juniper = "^0.15.3"
