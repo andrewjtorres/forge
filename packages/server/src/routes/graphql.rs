@@ -15,7 +15,7 @@ use crate::database::{self, pool::Pool};
 
 #[actix_web::get("/graphql")]
 async fn graphql_get_handler() -> Result<HttpResponse> {
-    let body = playground::playground_source("");
+    let body = playground::playground_source("", None);
 
     Ok(HttpResponse::Ok()
         .content_type("text/html; charset=utf-8")
@@ -31,7 +31,7 @@ async fn graphql_post_handler(
     let connection = database::connect(&pool)?;
     let context = Context::new(connection);
 
-    let response = request.execute(&schema, &context);
+    let response = request.execute(&schema, &context).await;
     let body = serde_json::to_string(&response).map_err(ErrorInternalServerError)?;
 
     Ok(HttpResponse::Ok()

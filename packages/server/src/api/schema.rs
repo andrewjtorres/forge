@@ -1,12 +1,13 @@
-use juniper::{self, RootNode};
+use juniper::{self, EmptySubscription, RootNode};
+use send_wrapper::SendWrapper;
 use std::sync::Arc;
 
 use crate::database::pool::PooledConnection;
 
-pub type Schema = RootNode<'static, Query, Mutation>;
+pub type Schema = RootNode<'static, Query, Mutation, EmptySubscription<Context>>;
 
 pub struct Context {
-    pub connection: Arc<PooledConnection>,
+    pub connection: Arc<SendWrapper<PooledConnection>>,
 }
 
 impl juniper::Context for Context {}
@@ -14,7 +15,7 @@ impl juniper::Context for Context {}
 impl Context {
     pub fn new(connection: PooledConnection) -> Self {
         Self {
-            connection: Arc::new(connection),
+            connection: Arc::new(SendWrapper::new(connection)),
         }
     }
 }
@@ -22,7 +23,7 @@ impl Context {
 pub struct Mutation;
 
 /// The mutation root of the GraphQL interface.
-#[juniper::object(Context = Context)]
+#[juniper::graphql_object(Context = Context)]
 impl Mutation {
     fn mutation() -> bool {
         true
@@ -32,7 +33,7 @@ impl Mutation {
 pub struct Query;
 
 /// The query root of the GraphQL interface.
-#[juniper::object(Context = Context)]
+#[juniper::graphql_object(Context = Context)]
 impl Query {
     fn query() -> bool {
         true
@@ -40,5 +41,5 @@ impl Query {
 }
 
 pub fn create() -> Schema {
-    Schema::new(Query {}, Mutation {})
+    Schema::new(Query {}, Mutation {}, EmptySubscription::new())
 }
