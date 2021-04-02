@@ -34,7 +34,7 @@ async fn main() -> Result<()> {
         ..
     } = Config::parse();
     let origin = format!("http://{}:{}", host, port);
-    let pool = database::pool::connect(database_url.as_str());
+    let pool = database::pool::create(database_url.as_str());
     let schema = Arc::new(api::schema::create());
 
     let server = HttpServer::new(move || {
