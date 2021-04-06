@@ -1035,9 +1035,9 @@ checksum = "dd25036021b0de88a0aff6b850051563c6516d0bf53f8638938edbb9de732736"
 
 [[package]]
 name = "juniper"
-version = "0.15.3"
+version = "0.15.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9ce9122e520b17ce7593f628d2b440318a5fd77b8923b1918e59ec28cf2c2815"
+checksum = "4e1330b4b3b2fe7de256fd08738f7fba28ffa574109c834988c28972f0760dbd"
 dependencies = [
  "async-trait",
  "bson",
@@ -1049,6 +1049,7 @@ dependencies = [
  "indexmap",
  "juniper_codegen",
  "serde",
+ "smartstring",
  "static_assertions",
  "url",
  "uuid 0.8.2",
@@ -1675,6 +1676,15 @@ name = "smallvec"
 version = "1.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fe0f37c9e8f3c5a4a66ad655a93c74daac4ad00c441533bf5c6e7990bb42604e"
+
+[[package]]
+name = "smartstring"
+version = "0.2.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1ada87540bf8ef4cf8a1789deb175626829bb59b1fefd816cf7f7f55efcdbae9"
+dependencies = [
+ "static_assertions",
+]
 
 [[package]]
 name = "socket2"
