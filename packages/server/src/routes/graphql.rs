@@ -29,9 +29,9 @@ impl From<GraphQLRequestSearchParams> for GraphQLRequest {
             ..
         } = params;
 
-        let variables = params.variables.map_or(None, |variables| {
-            Some(serde_json::from_str(&variables).unwrap())
-        });
+        let variables = params
+            .variables
+            .map(|variables| serde_json::from_str(&variables).unwrap());
 
         Self::new(query, operation_name, variables)
     }
