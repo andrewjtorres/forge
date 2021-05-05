@@ -2339,9 +2339,9 @@ copy-descriptor@^0.1.0:
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
 core-js-pure@^3.0.0:
-  version "3.11.1"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.11.1.tgz#fd52fa8c8b7b797b3606524b3d97278a8d8e7f09"
-  integrity sha512-2JukQi8HgAOCD5CSimxWWXVrUBoA9Br796uIA5Z06bIjt7PBBI19ircFaAxplgE1mJf3x2BY6MkT/HWA/UryPg==
+  version "3.11.3"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.11.3.tgz#a4f86fe4b5146726ffebc2330c40dd11e5a9585b"
+  integrity sha512-1c18Ef3sZh3l6R0I5ciNVxAfXxlQDW/6IoCayUvut4UipK3Ut682iuzhlEaHb4RITkLrzevUB+q/TEVbOA0p6g==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
