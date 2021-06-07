@@ -274,36 +274,36 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@formatjs/ecma402-abstract@1.9.2":
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.9.2.tgz#90618ec54701e6a8ee38688df8fc2436b9953d23"
-  integrity sha512-sZ4GHcitIBz837RSatMDr/6GkYT8hUDffvW+bo2N5lRrBmLk37i0IGSmsxZ6QcxLu2GuymN/4gATEyL/50z3Bg==
+"@formatjs/ecma402-abstract@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.9.3.tgz#00892014c805935b5b1345d238246e9bf3a2de50"
+  integrity sha512-DBrRUL65m4SVtfq+T4Qltd8+upAzfb9K1MX0UZ0hqQ0wpBY0PSIti9XJe0ZQ/j2v/KxpwQ0Jw5NLumKVezJFQg==
   dependencies:
     tslib "^2.1.0"
 
-"@formatjs/icu-messageformat-parser@2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@formatjs/icu-messageformat-parser/-/icu-messageformat-parser-2.0.5.tgz#bf72328862de61bf237e5b2eb340a1cefc02fbdb"
-  integrity sha512-SYJBga4onwv7D1/33PVk+inSrs5AWzbW968odRYPtlEIiyUJDQu+hBoQCdKMI7BpryftNUK9hlQIiRxKmrFiTw==
+"@formatjs/icu-messageformat-parser@2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@formatjs/icu-messageformat-parser/-/icu-messageformat-parser-2.0.6.tgz#7471c2116982f07b3d9b80e4572a870f20adbaf6"
+  integrity sha512-dgOZ2kq3sbjjC4P0IIghXFUiGY+x9yyypBJF9YFACjw8gPq/OSPmOzdMGvjY9hl4EeeIhhsDd4LIAN/3zHG99A==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.9.2"
-    "@formatjs/icu-skeleton-parser" "1.2.6"
+    "@formatjs/ecma402-abstract" "1.9.3"
+    "@formatjs/icu-skeleton-parser" "1.2.7"
     tslib "^2.1.0"
 
-"@formatjs/icu-skeleton-parser@1.2.6":
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/@formatjs/icu-skeleton-parser/-/icu-skeleton-parser-1.2.6.tgz#19cc85c1f91bc43f2cc5ded479ca57e8241d3737"
-  integrity sha512-j7pnLpWYCW370crnefZBd7z/2j/CRffjBaQ1wR+EpE6+HkeeAGwgaW7XHe3uInZ5Glb2/vnamPALmwFGTVwKvw==
+"@formatjs/icu-skeleton-parser@1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@formatjs/icu-skeleton-parser/-/icu-skeleton-parser-1.2.7.tgz#a74954695c37470efdeff828799654088e567c34"
+  integrity sha512-xm1rJMOz4fwVfWH98VKtbTpZvyQ45plHilkCF16Nm6bAgosYC/IcMmgJisGr6uHqb5TvJRXE07+EvnkIIQjsdA==
   dependencies:
-    "@formatjs/ecma402-abstract" "1.9.2"
+    "@formatjs/ecma402-abstract" "1.9.3"
     tslib "^2.1.0"
 
-"@formatjs/ts-transformer@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.4.0.tgz#14640eb557b7f861ed6ce52e15643e67312a36c0"
-  integrity sha512-vXL0m9VSW2aVzip4GKxF3jh0zm/HVoFFZ8qPiBOmwfUQ2wqNA0/9G35BeORYdx++1OpVJHXYmiIGFzymbsArfw==
+"@formatjs/ts-transformer@3.4.1":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.4.1.tgz#69e922721dcb38a6a697bc40b0cf27e56509f5f3"
+  integrity sha512-MxyY+/P7c631gaZXUWh4wP+QHjTTJ4XYG4Kfxpr4pOM0Td99dqRuefaiSrkAy6GRQRjZEhtAUc7Aj/U/t1YXRQ==
   dependencies:
-    "@formatjs/icu-messageformat-parser" "2.0.5"
+    "@formatjs/icu-messageformat-parser" "2.0.6"
     tslib "^2.1.0"
     typescript "^4.0"
 
@@ -2653,13 +2653,13 @@ eslint-module-utils@^2.6.1:
     debug "^3.2.7"
     pkg-dir "^2.0.0"
 
-eslint-plugin-formatjs@^2.15.5:
-  version "2.15.5"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.15.5.tgz#4585d239c6affa3d2a65eee4be4602d2e0971fff"
-  integrity sha512-gAJ7urt9FG3NLPSHWqSuZHC/j5nBLxVQQHtBn6amyVcD2VllYD2R7QDVeYv2bIwwqzwCKbUWSj7Y6CfEFolYnA==
+eslint-plugin-formatjs@^2.15.6:
+  version "2.15.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.15.6.tgz#4a890e65f2e470ea412ab9d9426c112fc15689bd"
+  integrity sha512-kgafRCKW0dCVmsOo48wzXJ+0Uj8cNoLDbyPR0cy6JHq0dx76IGe9AhCVHaufkNpO6xUkFzB1zm8UWNC4Wm1acw==
   dependencies:
-    "@formatjs/icu-messageformat-parser" "2.0.5"
-    "@formatjs/ts-transformer" "3.4.0"
+    "@formatjs/icu-messageformat-parser" "2.0.6"
+    "@formatjs/ts-transformer" "3.4.1"
     "@types/emoji-regex" "^8.0.0"
     "@types/eslint" "^7.2.0"
     "@typescript-eslint/typescript-estree" "^4.11.0"
