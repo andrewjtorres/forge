@@ -2653,10 +2653,10 @@ eslint-module-utils@^2.6.1:
     debug "^3.2.7"
     pkg-dir "^2.0.0"
 
-eslint-plugin-formatjs@^2.15.7:
-  version "2.15.7"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.15.7.tgz#c6f826bf76d5f6499355862bbc5d78b86962d982"
-  integrity sha512-7M2yCSQ7QR44HdrI3M/iXBsMAjRkQBJL0OYAxOOHt0G/tGR2uclB+isTrUOf10riFoLHaRziRcgzs5YC54m3OQ==
+eslint-plugin-formatjs@^2.16.0:
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.16.0.tgz#0f7ce8dabc6dec89e5999e727914116fb00002da"
+  integrity sha512-ITQy1LD+ef+vxnptEIxedpaegbEl3wxftDNWMDNO5nkk43+Lwy4iKHcrnveK2xNXC8ydN4rDxT7m9wBEb7cLKw==
   dependencies:
     "@formatjs/icu-messageformat-parser" "2.0.6"
     "@formatjs/ts-transformer" "3.4.2"
