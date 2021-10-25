@@ -303,19 +303,19 @@
     "@formatjs/intl-localematcher" "0.2.21"
     tslib "^2.1.0"
 
-"@formatjs/icu-messageformat-parser@2.0.13":
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/@formatjs/icu-messageformat-parser/-/icu-messageformat-parser-2.0.13.tgz#fcd7816b3d0b799daf20ff9e5e0fe81d3618276e"
-  integrity sha512-dIdcNnuJj1V+DnXQUjJTA+uES/UCpxLPbIA8R1wSrWY/yCgv9N1beSY1lTHrhcG0XC++ShP+AEqqVV/zX3BMZg==
+"@formatjs/icu-messageformat-parser@2.0.14":
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/@formatjs/icu-messageformat-parser/-/icu-messageformat-parser-2.0.14.tgz#d794af24e4896f4d2b400e28c25b1ba72604c106"
+  integrity sha512-M79MdUMLnfLK8eMrznUwke6afH9G/eOQeYvMUJ7uElXIL+//PyyjOzb42hAYfDAGYsAcKA2TsUo33Yuy2lE4AQ==
   dependencies:
     "@formatjs/ecma402-abstract" "1.10.0"
-    "@formatjs/icu-skeleton-parser" "1.3.0"
+    "@formatjs/icu-skeleton-parser" "1.3.1"
     tslib "^2.1.0"
 
-"@formatjs/icu-skeleton-parser@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@formatjs/icu-skeleton-parser/-/icu-skeleton-parser-1.3.0.tgz#fedf604bf788a587b23c9a03ec148c1f2c3177f7"
-  integrity sha512-ORUHdglLuE0Vvg3KlxeeguDq2ErUlCWmIU9EmQAhqwhtRwf78nNy2WAJ9qvxzSsp4dAv1CJ9AoS43RdY8JTVaA==
+"@formatjs/icu-skeleton-parser@1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/icu-skeleton-parser/-/icu-skeleton-parser-1.3.1.tgz#02ad3209cb518096b830582068a322fee050adcf"
+  integrity sha512-WdPNjhv9e7EfyrIVYk6hN6/mC9YF+PcfFViDI2kATwoi1uKHr+AkQCMoNrWyCDdUQ+Dn50mQOlrEkCBXoLrkPQ==
   dependencies:
     "@formatjs/ecma402-abstract" "1.10.0"
     tslib "^2.1.0"
@@ -327,16 +327,16 @@
   dependencies:
     tslib "^2.1.0"
 
-"@formatjs/ts-transformer@3.5.1":
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.5.1.tgz#5039d052d61316134ebf1bba8b9054e8885ebc53"
-  integrity sha512-O3ESBBYZQRIsoyqdes5bj+GUwdGnwQRC5WO1CMiCdj9YMgIONrOyzFkNW/ZsB0vlHzTERBXeXvlWZuA0XWP0Eg==
+"@formatjs/ts-transformer@3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.6.0.tgz#0d24f5dc3cc1862bb4661bfc611580093b862583"
+  integrity sha512-r0J230J3TOLJolnAMbWsmzKu1NNitORzoPRGv0CPzjQSAmbTOtbrWNfYsyp+Ro8k5Gfkm9Qdg+BhxRXfyVTmtg==
   dependencies:
-    "@formatjs/icu-messageformat-parser" "2.0.13"
+    "@formatjs/icu-messageformat-parser" "2.0.14"
     "@types/node" "14 || 16"
     chalk "^4.0.0"
     tslib "^2.1.0"
-    typescript "^4.3"
+    typescript "^4.4"
 
 "@gar/promisify@^1.0.1":
   version "1.1.2"
@@ -2728,18 +2728,18 @@ eslint-module-utils@^2.7.0:
     find-up "^2.1.0"
     pkg-dir "^2.0.0"
 
-eslint-plugin-formatjs@^2.17.9:
-  version "2.17.9"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.17.9.tgz#a5feb0763563a060baac14885404d72810e67c55"
-  integrity sha512-sXy0kytC6idyaC7MggG0Mm0WMcFLXkKqfkCIGJqSmbaqHN5mQ6J+v+k34rYyjWZQ/YoWHMmw1OKVqSUm2E60oQ==
+eslint-plugin-formatjs@^2.18.0:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.18.0.tgz#49b0436ed51634f453d36b505e85fe85a957a251"
+  integrity sha512-v7rRP2xbVZ0vCGLS4e7lyJU0v233zArzM057WAPVoQ/ZWLPxO1sa/epUgwYAJEJUHfW745ZYfhoNZ06RTe+sSA==
   dependencies:
-    "@formatjs/icu-messageformat-parser" "2.0.13"
-    "@formatjs/ts-transformer" "3.5.1"
+    "@formatjs/icu-messageformat-parser" "2.0.14"
+    "@formatjs/ts-transformer" "3.6.0"
     "@types/eslint" "^7.2.0"
     "@typescript-eslint/typescript-estree" "^4.11.0"
     emoji-regex "^9.2.0"
     tslib "^2.1.0"
-    typescript "^4.3"
+    typescript "^4.4"
 
 eslint-plugin-import@^2.25.2:
   version "2.25.2"
@@ -6978,7 +6978,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.3, typescript@^4.4.4:
+typescript@^4.4, typescript@^4.4.4:
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.4.tgz#2cd01a1a1f160704d3101fd5a58ff0f9fcb8030c"
   integrity sha512-DqGhF5IKoBl8WNf8C1gu8q0xZSInh9j1kJJMqT3a94w1JzVaBU4EXOSMrz9yDqMT0xt3selp83fuFMQ0uzv6qA==
