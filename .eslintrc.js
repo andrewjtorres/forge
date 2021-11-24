@@ -90,7 +90,7 @@ module.exports = {
     'import/extensions': ['.d.ts', '.js', '.ts', '.tsx'],
     'import/parsers': { '@typescript-eslint/parser': ['.d.ts', '.ts', '.tsx'] },
     'import/resolver': {
-      typescript: { alwaysTryTypes: true, directory: 'tsconfig.json' },
+      typescript: { alwaysTryTypes: true, project: 'tsconfig.json' },
     },
     react: { version: 'latest' },
   },
