@@ -9,6 +9,7 @@ module.exports = {
     'stylelint-a11y/recommended',
     'stylelint-config-prettier',
   ],
+  customSyntax: '@stylelint/postcss-css-in-js',
   rules: {
     'order/properties-order': [
       [
