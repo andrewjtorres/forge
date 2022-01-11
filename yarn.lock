@@ -326,13 +326,13 @@
   dependencies:
     tslib "^2.1.0"
 
-"@formatjs/ts-transformer@3.8.1":
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.8.1.tgz#f6a326d114d5585235f7cf5a37a38acb22098840"
-  integrity sha512-emndJkdURyan9i9KkZN1Oa+xWG0y5Y17PLFz76rE21mO4OOx02nEJ9wX12PWfxdlmzt9sjN0O7WlRUw10HUaFA==
+"@formatjs/ts-transformer@3.8.2":
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/@formatjs/ts-transformer/-/ts-transformer-3.8.2.tgz#67c0ad9f0f10e9b9137f26933cca4f095bab31f7"
+  integrity sha512-XWMG4DoFDdLnDKEd0qKQO+/3Kppe6vuchvYvkE0VvLNfKFfEpvJL2IGEU4hEJSK27vC99x1TsfVhMU0ODgKFZw==
   dependencies:
     "@formatjs/icu-messageformat-parser" "2.0.16"
-    "@types/node" "14 || 16"
+    "@types/node" "14 || 16 || 17"
     chalk "^4.0.0"
     tslib "^2.1.0"
     typescript "^4.5"
@@ -1303,10 +1303,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
-"@types/node@14 || 16":
-  version "16.11.10"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.10.tgz#2e3ad0a680d96367103d3e670d41c2fed3da61ae"
-  integrity sha512-3aRnHa1KlOEEhJ6+CvyHKK5vE9BcLGjtUpwvqYLRvYNQKMfabu3BwfJaA/SLW8dxe28LsNDjtHwePTuzn3gmOA==
+"@types/node@14 || 16 || 17":
+  version "17.0.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.8.tgz#50d680c8a8a78fe30abe6906453b21ad8ab0ad7b"
+  integrity sha512-YofkM6fGv4gDJq78g4j0mMuGMkZVxZDgtU0JRdx6FgiJDG+0fY0GKVolOV8WqVmEhLCXkQRjwDdKyPxJp/uucg==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -2666,13 +2666,13 @@ eslint-module-utils@^2.7.2:
     debug "^3.2.7"
     find-up "^2.1.0"
 
-eslint-plugin-formatjs@^2.20.1:
-  version "2.20.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.20.1.tgz#16d9b42a027ad57f09add28dc91fd39ad962d32a"
-  integrity sha512-9WB0aqr49DOlLYCK67vQcUqtUOdVvkHKxEa3SGstXVHy02bmfpEROIU/VEWSNYfyer1nck3rZucXOgaB7KIksQ==
+eslint-plugin-formatjs@^2.20.2:
+  version "2.20.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-2.20.2.tgz#572a199bb7196559b955b58f8ebe76410dde4080"
+  integrity sha512-ODs6jPUJU4tWxmI2Z01pPFnilTbrgn82ORwMlTxHyjDkuEr57kfVVTFvwpLetP5GDxJYxtTw7Yiq6DgZP6NHmA==
   dependencies:
     "@formatjs/icu-messageformat-parser" "2.0.16"
-    "@formatjs/ts-transformer" "3.8.1"
+    "@formatjs/ts-transformer" "3.8.2"
     "@types/eslint" "8"
     "@typescript-eslint/typescript-estree" "^4.11.0"
     emoji-regex "^9.2.0"
