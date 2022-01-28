@@ -1039,9 +1039,9 @@ dependencies = [
 
 [[package]]
 name = "juniper_codegen"
-version = "0.15.7"
+version = "0.15.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a040e09482a45e77dd2dafa0d9d2651d17faf0ac674da0c93eabc3075ee24997"
+checksum = "437dfaf580f470754d79b16bf2426d8de97e74fea1b2d38c587cd5054d07c6d7"
 dependencies = [
  "proc-macro-error",
  "proc-macro2",
