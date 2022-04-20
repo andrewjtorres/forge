@@ -46,6 +46,6 @@ default-features = false
 features = ["std", "derive"]
 
 [dependencies.uuid]
-version = "^0.8.2"
+version = "^1.0.0"
 default-features = false
 features = ["serde", "std", "v4"]
