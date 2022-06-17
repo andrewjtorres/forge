@@ -2707,9 +2707,9 @@ duplexer@^0.1.1:
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
 
 electron-to-chromium@^1.4.147:
-  version "1.4.151"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.151.tgz#d1c09dd3a06cb81ef03a3bbbff6905827c33ab4b"
-  integrity sha512-XaG2LpZi9fdiWYOqJh0dJy4SlVywCvpgYXhzOlZTp4JqSKqxn5URqOjbm9OMYB3aInA2GuHQiem1QUOc1yT0Pw==
+  version "1.4.160"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.160.tgz#da54e24fddeaca52f37965c7bec1bd964c97d487"
+  integrity sha512-O1Z12YfyeX2LXYO7MdHIPazGXzLzQnr1ADW55U2ARQsJBPgfpJz3u+g3Mo2l1wSyfOCdiGqaX9qtV4XKZ0HNRA==
 
 emoji-regex@^10.0.0:
   version "10.0.0"
