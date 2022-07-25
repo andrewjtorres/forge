@@ -2463,9 +2463,9 @@ convert-source-map@^1.7.0:
     safe-buffer "~5.1.1"
 
 core-js-pure@^3.19.0:
-  version "3.23.4"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.23.4.tgz#aba5c7fb297063444f6bf93afb0362151679a012"
-  integrity sha512-lizxkcgj3XDmi7TUBFe+bQ1vNpD5E4t76BrBWI3HdUxdw/Mq1VF4CkiHzIKyieECKtcODK2asJttoofEeUKICQ==
+  version "3.24.0"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.24.0.tgz#10eeb90dbf0d670a6b22b081aecc7deb2faec7e1"
+  integrity sha512-uzMmW8cRh7uYw4JQtzqvGWRyC2T5+4zipQLQdi2FmiRqP83k3d6F3stv2iAlNhOs6cXN401FCD5TL0vvleuHgA==
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -3220,9 +3220,9 @@ fast-levenshtein@^2.0.6:
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
 fastest-levenshtein@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/fastest-levenshtein/-/fastest-levenshtein-1.0.12.tgz#9990f7d3a88cc5a9ffd1f1745745251700d497e2"
-  integrity sha512-On2N+BpYJ15xIC974QNVuYGMOlEVt4s0EOI3wwMqOmK1fdDY+FN/zltPV8vosq4ad4c/gJ1KHScUn/6AWIgiow==
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/fastest-levenshtein/-/fastest-levenshtein-1.0.14.tgz#9054384e4b7a78c88d01a4432dc18871af0ac859"
+  integrity sha512-tFfWHjnuUfKE186Tfgr+jtaFc0mZTApEgKDOeyN+FwOqRkO/zK/3h1AiRd8u8CY53owL3CUmGr/oI9p/RdyLTA==
 
 fastq@^1.6.0:
   version "1.13.0"
