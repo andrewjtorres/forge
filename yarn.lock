@@ -2947,10 +2947,10 @@ eslint-module-utils@^2.7.3:
     debug "^3.2.7"
     find-up "^2.1.0"
 
-eslint-plugin-formatjs@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-4.0.2.tgz#63e92f634bc2c824ee423ad30f29685c895ff555"
-  integrity sha512-6tEtLtH4N39pnYp5MjelxHDdohU6yMp5fmXqQq4Uu8MAbkAWAiufNKXfFdLSjuPa0lY5x/ExXKJHr1NJsZtzVA==
+eslint-plugin-formatjs@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-formatjs/-/eslint-plugin-formatjs-4.1.0.tgz#3dfcd6c44037414229d1e071817fc0496f36e213"
+  integrity sha512-r8qCy5SDwsCcUUdP6ua1gYFd6I+tj/5GORj7jTOGGvmOfzkDQk+6ieaUqZ8ZF7xFUubDvLJwaZLHVdHI4Cq6Yw==
   dependencies:
     "@formatjs/icu-messageformat-parser" "2.1.4"
     "@formatjs/ts-transformer" "3.9.9"
@@ -6898,12 +6898,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.5, typescript@^4.7.3:
-  version "4.7.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.3.tgz#8364b502d5257b540f9de4c40be84c98e23a129d"
-  integrity sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA==
-
-typescript@^4.6.4:
+typescript@^4.5, typescript@^4.6.4, typescript@^4.7.3:
   version "4.7.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
   integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
