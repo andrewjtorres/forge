@@ -4399,9 +4399,9 @@ jsonparse@^1.2.0, jsonparse@^1.3.1:
     object.assign "^4.1.2"
 
 just-diff-apply@^5.2.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/just-diff-apply/-/just-diff-apply-5.4.0.tgz#c7698d80a19493e5a3d8dac0deaff499b565d6eb"
-  integrity sha512-nXI6VsJ3Z+9+qC4LYmxmvs40LY9VwYkACSCxD9lctd2nEtf+Jdf7lbkPuGycnu53gVoIACpPhOJ+8nZYRK9Gcw==
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/just-diff-apply/-/just-diff-apply-5.4.1.tgz#1debed059ad009863b4db0e8d8f333d743cdd83b"
+  integrity sha512-AAV5Jw7tsniWwih8Ly3fXxEZ06y+6p5TwQMsw0dzZ/wPKilzyDgdAnL0Ug4NNIquPUOh1vfFWEHbmXUqM5+o8g==
 
 just-diff@^5.0.1:
   version "5.1.0"
