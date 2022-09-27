@@ -1338,19 +1338,19 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@nrwl/cli@14.7.11":
-  version "14.7.11"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-14.7.11.tgz#c762915c2a5137c05d46973a8225d0a1b5afb362"
-  integrity sha512-x6mRGFtETKvLfimpNH9YKabiCjPsJ7OjsjGrK/w1g+kjQ9Ls6iGdk7hsJYvmiquHWsfZVAWyNoDnuhiiAEFuJQ==
+"@nrwl/cli@14.7.17":
+  version "14.7.17"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-14.7.17.tgz#eb7eda69a8934eaf1145b8b70737d8b2f81f3424"
+  integrity sha512-ovzGpWnTrmFXX5TEV2VzBUz8oPLoPkqtGKpdvlHvnd0UADQUpmNxoSY7mzHclDLRMyb6MWnVKqlJiypTG/p9iw==
   dependencies:
-    nx "14.7.11"
+    nx "14.7.17"
 
-"@nrwl/tao@14.7.11":
-  version "14.7.11"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-14.7.11.tgz#12daf00c61b8f641543d00ce23eae631f789a5b6"
-  integrity sha512-fV34dIkAGZD0wRl1Od1AnxBsUJgAwDdnu+7ILx9jt8FsS/RdrBu0gUlzX7P2CMsxrTWKhM/dcjS9edUFXWGdng==
+"@nrwl/tao@14.7.17":
+  version "14.7.17"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-14.7.17.tgz#30e671d86526e9513d3d0dbb28c72d87b0d3f846"
+  integrity sha512-35IPDtv4hdkmDvLuQ/Q5AaDACgsznpmj3+/SitL1U/vYpFUcAPUrPznL3QK4TuvL3IeCLwYaYO0NCZotDEQi4g==
   dependencies:
-    nx "14.7.11"
+    nx "14.7.17"
 
 "@octokit/auth-token@^3.0.0":
   version "3.0.0"
@@ -1693,9 +1693,9 @@
   integrity sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==
 
 "@yarnpkg/parsers@^3.0.0-rc.18":
-  version "3.0.0-rc.20"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/parsers/-/parsers-3.0.0-rc.20.tgz#6842744d2419512e39c652dfabf8693c1ec13d31"
-  integrity sha512-ZzW6i9dspJsMzA0SxOTa/HABWWHYDIM4qSGE/ndX8wgae1qg+1+iqLQVVxKli674f386mo3RAKAmXia0q5nCOg==
+  version "3.0.0-rc.21"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/parsers/-/parsers-3.0.0-rc.21.tgz#71a4114668c56eb5d1c3d8527ec229c01ddd5197"
+  integrity sha512-aM82UlEU12+grklXCyGnMXMqChrW8BDI6DZuw2JjijLyErEqZ/9MjEyYhcn+oz8bKSvudEAe8ygRzkt1cVMOtQ==
   dependencies:
     js-yaml "^3.10.0"
     tslib "^2.4.0"
@@ -5204,13 +5204,13 @@ npmlog@^6.0.0, npmlog@^6.0.2:
     gauge "^4.0.3"
     set-blocking "^2.0.0"
 
-nx@14.7.11, "nx@>=14.6.1 < 16":
-  version "14.7.11"
-  resolved "https://registry.yarnpkg.com/nx/-/nx-14.7.11.tgz#99d9602ee1dfce9dafc17e730129822505c63c87"
-  integrity sha512-OMHkpReawEsI93b6zVfAs+gl6u2r8X7ebHCGOstvrI3BBP6q+TTCxJmuD99lrHLgXWGfPuQxhIEoBDINU+kNPA==
+nx@14.7.17, "nx@>=14.6.1 < 16":
+  version "14.7.17"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-14.7.17.tgz#54a78b6fa9b36caa31981ca5f0c87b740e0ebdf6"
+  integrity sha512-LLXdz4xeR54Lqw9t3XtOJsBtlwtSexrlIwhWc42GKlv4MHrBOnTp99jTQ/hdP9TpGCU7tvShRQ4ildZJapgRSg==
   dependencies:
-    "@nrwl/cli" "14.7.11"
-    "@nrwl/tao" "14.7.11"
+    "@nrwl/cli" "14.7.17"
+    "@nrwl/tao" "14.7.17"
     "@parcel/watcher" "2.0.4"
     "@yarnpkg/lockfile" "^1.1.0"
     "@yarnpkg/parsers" "^3.0.0-rc.18"
