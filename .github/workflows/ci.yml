@@ -149,7 +149,7 @@ jobs:
           grcov --branch --ignore '/*' --ignore-not-existing --llvm --output-path coverage/lcov.info --source-dir . target
         working-directory: packages/server
       - name: Publish code coverage report
-        uses: codecov/codecov-action@v3.1.0
+        uses: codecov/codecov-action@v3.1.1
         with:
           file: packages/server/coverage/lcov.info
           flags: server
