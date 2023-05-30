@@ -32,9 +32,9 @@
     "@babel/highlight" "^7.16.7"
 
 "@babel/compat-data@^7.17.10":
-  version "7.17.10"
-  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.17.10.tgz#711dc726a492dfc8be8220028b1b92482362baab"
-  integrity sha512-GZt/TCsG70Ms19gfZO1tM4CVnXsPgEPBCpJu+Qz3L0LUDsY5nZqFZglIoPC1kIYOtNBZlrnFT+klg12vFGZXrw==
+  version "7.22.3"
+  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.22.3.tgz#cd502a6a0b6e37d7ad72ce7e71a7160a3ae36f7e"
+  integrity sha512-aNtko9OPOwVESUFp3MZfD8Uzxl7JzSeJpd7npIoxCasU37PFbAQRpKglkaKwlHOyeJdrREpo8TW8ldrkYWwvIQ==
 
 "@babel/core@^7.17.9":
   version "7.17.10"
